@@ -10,6 +10,22 @@ export default function Home() {
   const leader = drivers[0];
   const constructorLeader = constructors[0];
 
+  // 次のレースを取得
+  const getNextRace = () => {
+    const now = new Date();
+    const today = now.toISOString().split('T')[0];
+
+    for (const race of f1Data.races) {
+      const raceDate = new Date(race.date_end);
+      if (raceDate >= now) {
+        return race;
+      }
+    }
+    return f1Data.races[0]; // すべてのレースが終了している場合は最初のレースを表示
+  };
+
+  const nextRace = getNextRace();
+
   // 優勝に必要なポイントを計算（最大ポイントは24レース × 25ポイント = 600）
   const maxPoints = 600;
   const pointsNeededDriver = Math.max(0, maxPoints - leader.points);
@@ -64,6 +80,37 @@ export default function Home() {
               </Button>
             </Link>
           </div>
+        </section>
+
+        {/* 次のレース情報 */}
+        <section className="mb-16">
+          <Card className="bg-gradient-to-r from-red-900/50 to-slate-800 border-red-600">
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-red-400 text-sm font-semibold mb-2">NEXT RACE</p>
+                  <CardTitle className="text-3xl text-white mb-2">{nextRace.name_ja || nextRace.name}</CardTitle>
+                  <p className="text-slate-300 text-lg">{nextRace.circuit}</p>
+                  <p className="text-slate-400 text-sm">{nextRace.location}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-slate-400 text-sm">第{nextRace.round}戦</p>
+                  <p className="text-white text-2xl font-bold mt-2">{nextRace.date_end}</p>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                {nextRace.sessions.map((session: any, index: number) => (
+                  <div key={index} className="bg-slate-800/80 rounded-lg p-4 border border-slate-700">
+                    <p className="text-slate-400 text-xs mb-1">{session.name}</p>
+                    <p className="text-white font-bold text-lg">{session.time_jst}</p>
+                    <p className="text-slate-300 text-sm">{session.date}</p>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         {/* フィーチャーグリッド */}
