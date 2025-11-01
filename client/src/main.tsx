@@ -37,10 +37,23 @@ queryClient.getMutationCache().subscribe((event: any) => {
   }
 });
 
+const getBaseUrl = () => {
+  if (typeof window !== "undefined") {
+    // Browser: use relative URL
+    return "";
+  }
+  if (process.env.VERCEL_URL) {
+    // Vercel: use deployment URL
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  // Localhost
+  return `http://localhost:${process.env.PORT ?? 3000}`;
+};
+
 const trpcClient = trpc.createClient({
   links: [
     httpBatchLink({
-      url: "/api/trpc",
+      url: `${getBaseUrl()}/api/trpc`,
       transformer: superjson,
       fetch(input, init) {
         return globalThis.fetch(input, {
