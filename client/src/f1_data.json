@@ -8,7 +8,7 @@
       "circuit": "Albert Park Circuit",
       "location": "Melbourne, Australia",
       "date_start": "2025-03-14",
-      "date_end": "2025-03-14",
+      "date_end": "2025-03-16",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -24,19 +24,19 @@
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-03-14",
+          "date": "2025-03-15",
           "time_jst": "10:30",
           "time_utc": "01:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-03-14",
+          "date": "2025-03-15",
           "time_jst": "14:00",
           "time_utc": "05:00"
         },
         {
           "name": "Race",
-          "date": "2025-03-14",
+          "date": "2025-03-16",
           "time_jst": "13:00",
           "time_utc": "04:00"
         }
@@ -49,7 +49,7 @@
       "circuit": "Shanghai International Circuit",
       "location": "Shanghai, China",
       "date_start": "2025-03-21",
-      "date_end": "2025-03-21",
+      "date_end": "2025-03-23",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -65,19 +65,19 @@
         },
         {
           "name": "Sprint",
-          "date": "2025-03-21",
+          "date": "2025-03-22",
           "time_jst": "12:00",
           "time_utc": "03:00"
         },
         {
           "name": "Qualifying",
-          "date": "2025-03-21",
+          "date": "2025-03-22",
           "time_jst": "16:00",
           "time_utc": "07:00"
         },
         {
           "name": "Race",
-          "date": "2025-03-21",
+          "date": "2025-03-23",
           "time_jst": "16:00",
           "time_utc": "07:00"
         }
@@ -90,7 +90,7 @@
       "circuit": "Suzuka Circuit",
       "location": "Suzuka, Japan",
       "date_start": "2025-04-04",
-      "date_end": "2025-04-04",
+      "date_end": "2025-04-06",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -106,19 +106,19 @@
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-04-04",
+          "date": "2025-04-05",
           "time_jst": "11:30",
           "time_utc": "02:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-04-04",
+          "date": "2025-04-05",
           "time_jst": "15:00",
           "time_utc": "06:00"
         },
         {
           "name": "Race",
-          "date": "2025-04-04",
+          "date": "2025-04-06",
           "time_jst": "14:00",
           "time_utc": "05:00"
         }
@@ -131,7 +131,7 @@
       "circuit": "Bahrain International Circuit",
       "location": "Sakhir, Bahrain",
       "date_start": "2025-04-11",
-      "date_end": "2025-04-11",
+      "date_end": "2025-04-13",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -141,26 +141,26 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-04-11",
-          "time_jst": "24:00",
+          "date": "2025-04-12",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-04-11",
+          "date": "2025-04-12",
           "time_jst": "21:30",
           "time_utc": "12:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-04-11",
-          "time_jst": "25:00",
+          "date": "2025-04-13",
+          "time_jst": "01:00",
           "time_utc": "16:00"
         },
         {
           "name": "Race",
-          "date": "2025-04-11",
-          "time_jst": "24:00",
+          "date": "2025-04-14",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         }
       ]
@@ -172,7 +172,7 @@
       "circuit": "Jeddah Corniche Circuit",
       "location": "Jeddah, Saudi Arabia",
       "date_start": "2025-04-18",
-      "date_end": "2025-04-18",
+      "date_end": "2025-04-20",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -182,26 +182,26 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-04-18",
-          "time_jst": "26:00",
+          "date": "2025-04-19",
+          "time_jst": "02:00",
           "time_utc": "17:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-04-18",
+          "date": "2025-04-19",
           "time_jst": "22:30",
           "time_utc": "13:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-04-18",
-          "time_jst": "26:00",
+          "date": "2025-04-20",
+          "time_jst": "02:00",
           "time_utc": "17:00"
         },
         {
           "name": "Race",
-          "date": "2025-04-18",
-          "time_jst": "26:00",
+          "date": "2025-04-21",
+          "time_jst": "02:00",
           "time_utc": "17:00"
         }
       ]
@@ -213,36 +213,36 @@
       "circuit": "Miami International Autodrome",
       "location": "Miami, USA",
       "date_start": "2025-05-02",
-      "date_end": "2025-05-02",
+      "date_end": "2025-05-04",
       "sessions": [
         {
           "name": "Free Practice 1",
-          "date": "2025-05-02",
-          "time_jst": "25:30",
+          "date": "2025-05-03",
+          "time_jst": "01:30",
           "time_utc": "16:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-05-02",
-          "time_jst": "29:30",
+          "date": "2025-05-03",
+          "time_jst": "05:30",
           "time_utc": "20:30"
         },
         {
           "name": "Sprint",
-          "date": "2025-05-02",
-          "time_jst": "25:00",
+          "date": "2025-05-04",
+          "time_jst": "01:00",
           "time_utc": "16:00"
         },
         {
           "name": "Qualifying",
-          "date": "2025-05-02",
-          "time_jst": "29:00",
+          "date": "2025-05-04",
+          "time_jst": "05:00",
           "time_utc": "20:00"
         },
         {
           "name": "Race",
-          "date": "2025-05-02",
-          "time_jst": "29:00",
+          "date": "2025-05-05",
+          "time_jst": "05:00",
           "time_utc": "20:00"
         }
       ]
@@ -254,7 +254,7 @@
       "circuit": "Autodromo Enzo e Dino Ferrari",
       "location": "Imola, Italy",
       "date_start": "2025-05-16",
-      "date_end": "2025-05-16",
+      "date_end": "2025-05-18",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -264,25 +264,25 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-05-16",
-          "time_jst": "24:00",
+          "date": "2025-05-17",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-05-16",
+          "date": "2025-05-17",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-05-16",
+          "date": "2025-05-17",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-05-16",
+          "date": "2025-05-18",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -295,7 +295,7 @@
       "circuit": "Circuit de Monaco",
       "location": "Monte Carlo, Monaco",
       "date_start": "2025-05-23",
-      "date_end": "2025-05-23",
+      "date_end": "2025-05-25",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -305,25 +305,25 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-05-23",
-          "time_jst": "24:00",
+          "date": "2025-05-24",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-05-23",
+          "date": "2025-05-24",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-05-23",
+          "date": "2025-05-24",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-05-23",
+          "date": "2025-05-25",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -336,7 +336,7 @@
       "circuit": "Circuit de Barcelona-Catalunya",
       "location": "Barcelona, Spain",
       "date_start": "2025-05-30",
-      "date_end": "2025-05-30",
+      "date_end": "2025-06-01",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -346,25 +346,25 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-05-30",
-          "time_jst": "24:00",
+          "date": "2025-05-31",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-05-30",
+          "date": "2025-05-31",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-05-30",
+          "date": "2025-05-31",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-05-30",
+          "date": "2025-06-01",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -377,36 +377,36 @@
       "circuit": "Circuit Gilles Villeneuve",
       "location": "Montreal, Canada",
       "date_start": "2025-06-13",
-      "date_end": "2025-06-13",
+      "date_end": "2025-06-15",
       "sessions": [
         {
           "name": "Free Practice 1",
-          "date": "2025-06-13",
-          "time_jst": "26:30",
+          "date": "2025-06-14",
+          "time_jst": "02:30",
           "time_utc": "17:30"
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-06-13",
-          "time_jst": "30:00",
+          "date": "2025-06-14",
+          "time_jst": "06:00",
           "time_utc": "21:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-06-13",
-          "time_jst": "25:30",
+          "date": "2025-06-15",
+          "time_jst": "01:30",
           "time_utc": "16:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-06-13",
-          "time_jst": "29:00",
+          "date": "2025-06-15",
+          "time_jst": "05:00",
           "time_utc": "20:00"
         },
         {
           "name": "Race",
-          "date": "2025-06-13",
-          "time_jst": "27:00",
+          "date": "2025-06-16",
+          "time_jst": "03:00",
           "time_utc": "18:00"
         }
       ]
@@ -418,7 +418,7 @@
       "circuit": "Red Bull Ring",
       "location": "Spielberg, Austria",
       "date_start": "2025-06-27",
-      "date_end": "2025-06-27",
+      "date_end": "2025-06-29",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -434,19 +434,19 @@
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-06-27",
+          "date": "2025-06-28",
           "time_jst": "19:00",
           "time_utc": "10:00"
         },
         {
           "name": "Qualifying",
-          "date": "2025-06-27",
+          "date": "2025-06-28",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-06-27",
+          "date": "2025-06-29",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -459,7 +459,7 @@
       "circuit": "Silverstone Circuit",
       "location": "Silverstone, UK",
       "date_start": "2025-07-04",
-      "date_end": "2025-07-04",
+      "date_end": "2025-07-06",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -469,25 +469,25 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-07-04",
-          "time_jst": "24:00",
+          "date": "2025-07-05",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-07-04",
+          "date": "2025-07-05",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-07-04",
+          "date": "2025-07-05",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-07-04",
+          "date": "2025-07-06",
           "time_jst": "23:00",
           "time_utc": "14:00"
         }
@@ -500,7 +500,7 @@
       "circuit": "Circuit de Spa-Francorchamps",
       "location": "Spa, Belgium",
       "date_start": "2025-07-25",
-      "date_end": "2025-07-25",
+      "date_end": "2025-07-27",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -510,25 +510,25 @@
         },
         {
           "name": "Qualifying",
-          "date": "2025-07-25",
-          "time_jst": "24:00",
+          "date": "2025-07-26",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Sprint",
-          "date": "2025-07-25",
+          "date": "2025-07-26",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-07-25",
+          "date": "2025-07-26",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-07-25",
+          "date": "2025-07-27",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -541,7 +541,7 @@
       "circuit": "Hungaroring",
       "location": "Budapest, Hungary",
       "date_start": "2025-08-01",
-      "date_end": "2025-08-01",
+      "date_end": "2025-08-03",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -551,25 +551,25 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-08-01",
-          "time_jst": "24:00",
+          "date": "2025-08-02",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-08-01",
+          "date": "2025-08-02",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-08-01",
+          "date": "2025-08-02",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-08-01",
+          "date": "2025-08-03",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -582,7 +582,7 @@
       "circuit": "Circuit Zandvoort",
       "location": "Zandvoort, Netherlands",
       "date_start": "2025-08-29",
-      "date_end": "2025-08-29",
+      "date_end": "2025-08-31",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -598,19 +598,19 @@
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-08-29",
+          "date": "2025-08-30",
           "time_jst": "18:30",
           "time_utc": "09:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-08-29",
+          "date": "2025-08-30",
           "time_jst": "22:00",
           "time_utc": "13:00"
         },
         {
           "name": "Race",
-          "date": "2025-08-29",
+          "date": "2025-08-31",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -623,7 +623,7 @@
       "circuit": "Autodromo Nazionale di Monza",
       "location": "Monza, Italy",
       "date_start": "2025-09-05",
-      "date_end": "2025-09-05",
+      "date_end": "2025-09-07",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -633,25 +633,25 @@
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-09-05",
-          "time_jst": "24:00",
+          "date": "2025-09-06",
+          "time_jst": "00:00",
           "time_utc": "15:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-09-05",
+          "date": "2025-09-06",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-09-05",
+          "date": "2025-09-06",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-09-05",
+          "date": "2025-09-07",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -664,7 +664,7 @@
       "circuit": "Baku City Circuit",
       "location": "Baku, Azerbaijan",
       "date_start": "2025-09-19",
-      "date_end": "2025-09-19",
+      "date_end": "2025-09-21",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -680,19 +680,19 @@
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-09-19",
+          "date": "2025-09-20",
           "time_jst": "17:30",
           "time_utc": "08:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-09-19",
+          "date": "2025-09-20",
           "time_jst": "21:00",
           "time_utc": "12:00"
         },
         {
           "name": "Race",
-          "date": "2025-09-19",
+          "date": "2025-09-21",
           "time_jst": "20:00",
           "time_utc": "11:00"
         }
@@ -705,7 +705,7 @@
       "circuit": "Marina Bay Street Circuit",
       "location": "Singapore",
       "date_start": "2025-10-03",
-      "date_end": "2025-10-03",
+      "date_end": "2025-10-05",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -721,19 +721,19 @@
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-10-03",
+          "date": "2025-10-04",
           "time_jst": "18:30",
           "time_utc": "09:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-10-03",
+          "date": "2025-10-04",
           "time_jst": "22:00",
           "time_utc": "13:00"
         },
         {
           "name": "Race",
-          "date": "2025-10-03",
+          "date": "2025-10-05",
           "time_jst": "21:00",
           "time_utc": "12:00"
         }
@@ -746,36 +746,36 @@
       "circuit": "Circuit of the Americas",
       "location": "Austin, USA",
       "date_start": "2025-10-17",
-      "date_end": "2025-10-17",
+      "date_end": "2025-10-19",
       "sessions": [
         {
           "name": "Free Practice 1",
-          "date": "2025-10-17",
-          "time_jst": "26:30",
+          "date": "2025-10-18",
+          "time_jst": "02:30",
           "time_utc": "17:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-10-17",
-          "time_jst": "30:30",
+          "date": "2025-10-18",
+          "time_jst": "06:30",
           "time_utc": "21:30"
         },
         {
           "name": "Sprint",
-          "date": "2025-10-17",
-          "time_jst": "26:00",
+          "date": "2025-10-19",
+          "time_jst": "02:00",
           "time_utc": "17:00"
         },
         {
           "name": "Qualifying",
-          "date": "2025-10-17",
-          "time_jst": "30:00",
+          "date": "2025-10-19",
+          "time_jst": "06:00",
           "time_utc": "21:00"
         },
         {
           "name": "Race",
-          "date": "2025-10-17",
-          "time_jst": "28:00",
+          "date": "2025-10-20",
+          "time_jst": "04:00",
           "time_utc": "19:00"
         }
       ]
@@ -787,36 +787,36 @@
       "circuit": "Autódromo Hermanos Rodríguez",
       "location": "Mexico City, Mexico",
       "date_start": "2025-10-24",
-      "date_end": "2025-10-24",
+      "date_end": "2025-10-26",
       "sessions": [
         {
           "name": "Free Practice 1",
-          "date": "2025-10-24",
-          "time_jst": "27:30",
+          "date": "2025-10-25",
+          "time_jst": "03:30",
           "time_utc": "18:30"
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-10-24",
-          "time_jst": "31:00",
+          "date": "2025-10-25",
+          "time_jst": "07:00",
           "time_utc": "22:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-10-24",
-          "time_jst": "26:30",
+          "date": "2025-10-26",
+          "time_jst": "02:30",
           "time_utc": "17:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-10-24",
-          "time_jst": "30:00",
+          "date": "2025-10-26",
+          "time_jst": "06:00",
           "time_utc": "21:00"
         },
         {
           "name": "Race",
-          "date": "2025-10-24",
-          "time_jst": "29:00",
+          "date": "2025-10-27",
+          "time_jst": "05:00",
           "time_utc": "20:00"
         }
       ]
@@ -828,7 +828,7 @@
       "circuit": "Autódromo José Carlos Pace",
       "location": "São Paulo, Brazil",
       "date_start": "2025-11-07",
-      "date_end": "2025-11-07",
+      "date_end": "2025-11-09",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -838,26 +838,26 @@
         },
         {
           "name": "Qualifying",
-          "date": "2025-11-07",
-          "time_jst": "27:30",
+          "date": "2025-11-08",
+          "time_jst": "03:30",
           "time_utc": "18:30"
         },
         {
           "name": "Sprint",
-          "date": "2025-11-07",
+          "date": "2025-11-08",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Qualifying",
-          "date": "2025-11-07",
+          "date": "2025-11-09",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Race",
-          "date": "2025-11-07",
-          "time_jst": "24:30",
+          "date": "2025-11-10",
+          "time_jst": "00:30",
           "time_utc": "15:30"
         }
       ]
@@ -869,37 +869,37 @@
       "circuit": "Las Vegas Street Circuit",
       "location": "Las Vegas, USA",
       "date_start": "2025-11-20",
-      "date_end": "2025-11-20",
+      "date_end": "2025-11-22",
       "sessions": [
         {
           "name": "Free Practice 1",
-          "date": "2025-11-20",
-          "time_jst": "33:30",
-          "time_utc": "24:30"
+          "date": "2025-11-21",
+          "time_jst": "09:30",
+          "time_utc": "00:30"
         },
         {
           "name": "Free Practice 2",
-          "date": "2025-11-20",
-          "time_jst": "37:00",
-          "time_utc": "28:00"
+          "date": "2025-11-21",
+          "time_jst": "13:00",
+          "time_utc": "04:00"
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-11-20",
-          "time_jst": "33:30",
-          "time_utc": "24:30"
+          "date": "2025-11-22",
+          "time_jst": "09:30",
+          "time_utc": "00:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-11-20",
-          "time_jst": "37:00",
-          "time_utc": "28:00"
+          "date": "2025-11-22",
+          "time_jst": "13:00",
+          "time_utc": "04:00"
         },
         {
           "name": "Race",
-          "date": "2025-11-20",
-          "time_jst": "37:00",
-          "time_utc": "28:00"
+          "date": "2025-11-23",
+          "time_jst": "13:00",
+          "time_utc": "04:00"
         }
       ]
     },
@@ -910,7 +910,7 @@
       "circuit": "Losail International Circuit",
       "location": "Lusail, Qatar",
       "date_start": "2025-11-28",
-      "date_end": "2025-11-28",
+      "date_end": "2025-11-30",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -920,26 +920,26 @@
         },
         {
           "name": "Qualifying",
-          "date": "2025-11-28",
-          "time_jst": "26:30",
+          "date": "2025-11-29",
+          "time_jst": "02:30",
           "time_utc": "17:30"
         },
         {
           "name": "Sprint",
-          "date": "2025-11-28",
+          "date": "2025-11-29",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Qualifying",
-          "date": "2025-11-28",
-          "time_jst": "27:00",
+          "date": "2025-11-30",
+          "time_jst": "03:00",
           "time_utc": "18:00"
         },
         {
           "name": "Race",
-          "date": "2025-11-28",
-          "time_jst": "25:00",
+          "date": "2025-12-01",
+          "time_jst": "01:00",
           "time_utc": "16:00"
         }
       ]
@@ -951,7 +951,7 @@
       "circuit": "Yas Marina Circuit",
       "location": "Abu Dhabi, UAE",
       "date_start": "2025-12-05",
-      "date_end": "2025-12-05",
+      "date_end": "2025-12-07",
       "sessions": [
         {
           "name": "Free Practice 1",
@@ -967,19 +967,19 @@
         },
         {
           "name": "Free Practice 3",
-          "date": "2025-12-05",
+          "date": "2025-12-06",
           "time_jst": "19:30",
           "time_utc": "10:30"
         },
         {
           "name": "Qualifying",
-          "date": "2025-12-05",
+          "date": "2025-12-06",
           "time_jst": "23:00",
           "time_utc": "14:00"
         },
         {
           "name": "Race",
-          "date": "2025-12-05",
+          "date": "2025-12-07",
           "time_jst": "22:00",
           "time_utc": "13:00"
         }
@@ -1120,5 +1120,5 @@
       "points": 20
     }
   ],
-  "last_updated": "2025-11-01T12:45:18.302Z"
+  "last_updated": "2025-11-01T13:06:10.475Z"
 }

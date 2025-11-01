@@ -143,7 +143,6 @@ function parseRaceSection(heading: Element, round: number, raceNameJa: string, d
   }
 
   const sessions: RaceSession[] = [];
-  let currentDate = '';
   let dateStart = '';
   let dateEnd = '';
 
@@ -151,57 +150,87 @@ function parseRaceSection(heading: Element, round: number, raceNameJa: string, d
   let currentElement = heading.nextElementSibling;
 
   while (currentElement && currentElement.tagName !== 'H3') {
-    // 日付ヘッダーを検索（赤背景のp要素）
-    const dateHeader = currentElement.querySelector('p.has-vivid-red-background-color');
-    if (dateHeader) {
+    // wp-block-column div内の日付とセッションを探す
+    const dateColumns = currentElement.querySelectorAll('.wp-block-column');
+
+    dateColumns.forEach((column) => {
+      // 各columnに日付ヘッダーがあるかチェック
+      const dateHeader = column.querySelector('p.has-vivid-red-background-color');
+      if (!dateHeader) return;
+
       const dateText = dateHeader.textContent?.trim() || '';
       const dateMatch = dateText.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
-      if (dateMatch) {
-        const [, year, month, day] = dateMatch;
-        currentDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+      if (!dateMatch) return;
 
-        // 最初の日付を開始日として設定
-        if (!dateStart) {
-          dateStart = currentDate;
-        }
-        // 毎回更新して最後の日付を終了日として設定
-        dateEnd = currentDate;
+      const [, year, month, day] = dateMatch;
+      const currentDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+
+      // 最初の日付を開始日として設定
+      if (!dateStart) {
+        dateStart = currentDate;
       }
-    }
+      // 毎回更新して最後の日付を終了日として設定
+      dateEnd = currentDate;
 
-    // セッション情報を含むリストを検索
-    const listItems = currentElement.querySelectorAll('li');
-    listItems.forEach((li) => {
-      const strongElement = li.querySelector('strong');
-      if (strongElement) {
-        const sessionNameJa = strongElement.textContent?.trim() || '';
+      // 同じcolumn内のul要素を検索
+      const uls = column.querySelectorAll('ul');
 
-        // 日本時間を検索
-        const timeElements = li.querySelectorAll('li');
-        let timeJst = '';
+      uls.forEach((ul) => {
+        // トップレベルのliのみを取得
+        Array.from(ul.children).forEach((li) => {
+          if (li.tagName !== 'LI') return;
 
-        timeElements.forEach((timeEl) => {
-          const timeText = timeEl.textContent?.trim() || '';
-          if (timeText.includes('日本時間')) {
-            const timeMatch = timeText.match(/(\d{1,2}:\d{2})/);
-            if (timeMatch) {
-              timeJst = timeMatch[1];
+          const strongElement = li.querySelector('strong');
+          if (strongElement) {
+            const sessionNameJa = strongElement.textContent?.trim() || '';
+
+            // 日本時間を検索（liの子要素のulの中のliから）
+            let timeJst = '';
+            const nestedUl = li.querySelector('ul');
+            if (nestedUl) {
+              const nestedLis = nestedUl.querySelectorAll('li');
+              nestedLis.forEach((nestedLi) => {
+                const timeText = nestedLi.textContent?.trim() || '';
+                if (timeText.includes('日本時間')) {
+                  const timeMatch = timeText.match(/(\d{1,2}:\d{2})/);
+                  if (timeMatch) {
+                    timeJst = timeMatch[1];
+                  }
+                }
+              });
+            }
+
+            if (timeJst) {
+              // 24時以降の場合は翌日に調整
+              let sessionDate = currentDate;
+              const hourMatch = timeJst.match(/^(\d{1,2}):/);
+              if (hourMatch) {
+                const hour = parseInt(hourMatch[1]);
+                if (hour >= 24) {
+                  // 翌日に変換
+                  const date = new Date(currentDate);
+                  date.setDate(date.getDate() + 1);
+                  sessionDate = date.toISOString().split('T')[0];
+
+                  // 時刻を24時間以内に調整
+                  const adjustedHour = hour - 24;
+                  timeJst = `${adjustedHour.toString().padStart(2, '0')}:${timeJst.split(':')[1]}`;
+                }
+              }
+
+              const sessionName = getSessionName(sessionNameJa);
+              const timeUtc = convertJSTtoUTC(timeJst);
+
+              sessions.push({
+                name: sessionName,
+                date: sessionDate,
+                time_jst: timeJst,
+                time_utc: timeUtc
+              });
             }
           }
         });
-
-        if (timeJst && currentDate) {
-          const sessionName = getSessionName(sessionNameJa);
-          const timeUtc = convertJSTtoUTC(timeJst);
-
-          sessions.push({
-            name: sessionName,
-            date: currentDate,
-            time_jst: timeJst,
-            time_utc: timeUtc
-          });
-        }
-      }
+      });
     });
 
     currentElement = currentElement.nextElementSibling;
