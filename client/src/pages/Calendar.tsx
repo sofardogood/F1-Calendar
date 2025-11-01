@@ -126,7 +126,12 @@ export default function Calendar() {
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-2">
                             <Badge className="bg-red-600">第{race.round}戦</Badge>
-                            <span className="text-slate-400 text-sm">{formatDate(race.date_start)}</span>
+                            <span className="text-slate-400 text-sm">
+                              {race.date_start === race.date_end
+                                ? formatDate(race.date_start)
+                                : `${formatDate(race.date_start)} ～ ${formatDate(race.date_end)}`
+                              }
+                            </span>
                           </div>
                           <CardTitle className="text-white text-lg">{race.name_ja || race.name}</CardTitle>
                         </div>
@@ -160,24 +165,43 @@ export default function Calendar() {
 
                   {selectedRaceData.sessions && selectedRaceData.sessions.length > 0 && (
                     <div>
-                      <h3 className="text-slate-400 text-sm font-semibold mb-3">セッション</h3>
-                      <div className="space-y-3">
-                        {selectedRaceData.sessions.map((session, idx) => (
-                          <div key={idx} className="bg-slate-700 rounded p-4 border-l-4 border-red-600">
-                            <div className="flex items-center justify-between mb-2">
-                              <p className="text-white font-semibold text-sm">{sessionNameJa[session.name] || session.name}</p>
-                              <span className="text-xs bg-red-600 text-white px-2 py-1 rounded">{formatDate(session.date)}</span>
-                            </div>
-                            <div className="space-y-1">
-                              <div className="flex items-center gap-2 text-sm">
-                                <Clock className="w-4 h-4 text-green-400" />
-                                <span className="text-green-400 font-semibold">{session.time_jst}</span>
-                                <span className="text-slate-400 text-xs">(日本時間)</span>
+                      <h3 className="text-slate-400 text-sm font-semibold mb-3">セッションスケジュール</h3>
+                      <div className="space-y-4">
+                        {(() => {
+                          // 日付ごとにセッションをグループ化
+                          const sessionsByDate = selectedRaceData.sessions!.reduce((acc, session) => {
+                            if (!acc[session.date]) acc[session.date] = [];
+                            acc[session.date].push(session);
+                            return acc;
+                          }, {} as Record<string, typeof selectedRaceData.sessions>);
+
+                          return Object.entries(sessionsByDate).map(([date, sessions]) => (
+                            <div key={date} className="space-y-2">
+                              <div className="flex items-center gap-2">
+                                <div className="h-px bg-slate-600 flex-1"></div>
+                                <span className="text-xs font-semibold text-slate-400 bg-slate-800 px-2 py-1 rounded">
+                                  {formatDate(date)}
+                                </span>
+                                <div className="h-px bg-slate-600 flex-1"></div>
                               </div>
-                              <p className="text-xs text-slate-500 ml-6">{session.time_utc} (UTC)</p>
+                              {sessions!.map((session, idx) => (
+                                <div key={idx} className="bg-slate-700 rounded p-3 border-l-4 border-red-600">
+                                  <div className="flex items-center justify-between mb-1">
+                                    <p className="text-white font-semibold text-sm">{sessionNameJa[session.name] || session.name}</p>
+                                  </div>
+                                  <div className="space-y-1">
+                                    <div className="flex items-center gap-2 text-sm">
+                                      <Clock className="w-4 h-4 text-green-400" />
+                                      <span className="text-green-400 font-semibold">{session.time_jst}</span>
+                                      <span className="text-slate-400 text-xs">(JST)</span>
+                                      <span className="text-slate-500 text-xs">/ {session.time_utc} (UTC)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              ))}
                             </div>
-                          </div>
-                        ))}
+                          ));
+                        })()}
                       </div>
                     </div>
                   )}
