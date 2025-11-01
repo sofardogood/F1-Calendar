@@ -2,14 +2,9 @@ import { Link } from 'wouter';
 import { Calendar, Trophy, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { useAuth } from '@/_core/hooks/useAuth';
 import f1Data from '../f1_data.json';
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  const { user, loading, error, isAuthenticated, logout } = useAuth();
-
   const drivers = f1Data.drivers_standings;
   const constructors = f1Data.constructors_standings;
   const leader = drivers[0];
