@@ -279,9 +279,9 @@ export async function updateF1DataFile(): Promise<void> {
     // 各年のレース数は異なるため、最大24ラウンドを取得
     historicalResults[year] = await fetchAllRaceResults(year, 24);
 
-    // API制限を考慮して少し待つ
+    // API制限を考慮して待つ（3秒）
     if (year < endYear) {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise(resolve => setTimeout(resolve, 3000));
     }
   }
 

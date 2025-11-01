@@ -92,8 +92,8 @@ export async function fetchAllRaceResults(season: number, totalRounds: number): 
 
   console.log(`Fetching results for all races in ${season}...`);
 
-  // 並列でAPIリクエストを送信（最大5件ずつ）
-  const batchSize = 5;
+  // 並列でAPIリクエストを送信（最大2件ずつ、レート制限対策）
+  const batchSize = 2;
   for (let i = 1; i <= totalRounds; i += batchSize) {
     const batch = [];
     for (let round = i; round < i + batchSize && round <= totalRounds; round++) {
@@ -109,9 +109,9 @@ export async function fetchAllRaceResults(season: number, totalRounds: number): 
       }
     });
 
-    // API制限を考慮して少し待つ
+    // API制限を考慮して待つ（2秒）
     if (i + batchSize <= totalRounds) {
-      await new Promise(resolve => setTimeout(resolve, 500));
+      await new Promise(resolve => setTimeout(resolve, 2000));
     }
   }
 
