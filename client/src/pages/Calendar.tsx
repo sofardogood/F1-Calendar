@@ -74,16 +74,30 @@ export default function Calendar() {
     '7月', '8月', '9月', '10月', '11月', '12月'
   ];
 
-  const racesByMonth = races.reduce((acc, race) => {
-    const month = new Date(race.date_start).getMonth();
-    if (!acc[month]) acc[month] = [];
-    acc[month].push(race);
-    return acc;
-  }, {} as Record<number, Race[]>);
+  // 過去年度（結果のみ）かどうかを判定
+  const isHistoricalYear = races.length > 0 && races[0].date_start === `${selectedYear}-01-01`;
 
-  const monthsWithRaces = Object.keys(racesByMonth).map(Number).sort((a, b) => a - b);
-  const currentMonthIndex = monthsWithRaces[currentMonth] || 0;
-  const racesInMonth = racesByMonth[currentMonthIndex] || [];
+  // 過去年度は月別表示をせず、全レース表示
+  let racesInMonth: Race[];
+  let monthsWithRaces: number[];
+  let currentMonthIndex: number;
+
+  if (isHistoricalYear) {
+    racesInMonth = races;
+    monthsWithRaces = [0];
+    currentMonthIndex = 0;
+  } else {
+    const racesByMonth = races.reduce((acc, race) => {
+      const month = new Date(race.date_start).getMonth();
+      if (!acc[month]) acc[month] = [];
+      acc[month].push(race);
+      return acc;
+    }, {} as Record<number, Race[]>);
+
+    monthsWithRaces = Object.keys(racesByMonth).map(Number).sort((a, b) => a - b);
+    currentMonthIndex = monthsWithRaces[currentMonth] || 0;
+    racesInMonth = racesByMonth[currentMonthIndex] || [];
+  }
 
   const handlePrevMonth = () => {
     setCurrentMonth(Math.max(0, currentMonth - 1));
@@ -105,16 +119,18 @@ export default function Calendar() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link href="/">
-              <Button variant="ghost" className="text-slate-300 hover:text-white">
-                戻る
-              </Button>
-            </Link>
-            <h1 className="text-2xl font-bold text-white">{selectedYear} レースカレンダー</h1>
+        <div className="container mx-auto px-4 py-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-0">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 md:gap-3">
+              <Link href="/">
+                <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white px-2">
+                  戻る
+                </Button>
+              </Link>
+              <h1 className="text-lg md:text-2xl font-bold text-white">{selectedYear} カレンダー</h1>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 md:gap-2 overflow-x-auto pb-1 md:pb-0">
             {availableYears.map(year => (
               <Button
                 key={year}
@@ -125,10 +141,10 @@ export default function Calendar() {
                   setCurrentMonth(0);
                   setSelectedRound(null);
                 }}
-                className={selectedYear === year
+                className={`flex-shrink-0 text-xs md:text-sm px-2 md:px-3 ${selectedYear === year
                   ? "bg-red-600 hover:bg-red-700 text-white"
                   : "border-slate-600 text-white hover:bg-slate-800"
-                }
+                }`}
               >
                 {year}年
               </Button>
@@ -137,32 +153,41 @@ export default function Calendar() {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <main className="container mx-auto px-4 py-4 md:py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8">
           <div className="lg:col-span-2">
-            <div className="flex items-center justify-between mb-6">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handlePrevMonth}
-                disabled={currentMonth === 0}
-                className="border-slate-600 text-white hover:bg-slate-800"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </Button>
-              <h2 className="text-2xl font-bold text-white">
-                2025年 {months[currentMonthIndex]}
-              </h2>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleNextMonth}
-                disabled={currentMonth === monthsWithRaces.length - 1}
-                className="border-slate-600 text-white hover:bg-slate-800"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </Button>
-            </div>
+            {!isHistoricalYear && (
+              <div className="flex items-center justify-between mb-4 md:mb-6">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handlePrevMonth}
+                  disabled={currentMonth === 0}
+                  className="border-slate-600 text-white hover:bg-slate-800 px-2 md:px-3"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </Button>
+                <h2 className="text-lg md:text-2xl font-bold text-white">
+                  {selectedYear}年 {months[currentMonthIndex]}
+                </h2>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleNextMonth}
+                  disabled={currentMonth === monthsWithRaces.length - 1}
+                  className="border-slate-600 text-white hover:bg-slate-800 px-2 md:px-3"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </Button>
+              </div>
+            )}
+            {isHistoricalYear && (
+              <div className="mb-4 md:mb-6">
+                <h2 className="text-lg md:text-2xl font-bold text-white text-center">
+                  {selectedYear}年 全レース結果
+                </h2>
+              </div>
+            )}
 
             <div className="space-y-4">
               {racesInMonth.map((race) => {
@@ -236,10 +261,10 @@ export default function Calendar() {
 
           <div>
             {selectedRaceData ? (
-              <Card className="bg-slate-800 border-slate-700 sticky top-24">
+              <Card className="bg-slate-800 border-slate-700 lg:sticky lg:top-24">
                 <CardHeader>
-                  <Badge className="bg-red-600 w-fit mb-2">第{selectedRaceData.round}戦</Badge>
-                  <CardTitle className="text-white">{selectedRaceData.name_ja || selectedRaceData.name}</CardTitle>
+                  <Badge className="bg-red-600 w-fit mb-2 text-xs md:text-sm">第{selectedRaceData.round}戦</Badge>
+                  <CardTitle className="text-white text-lg md:text-xl">{selectedRaceData.name_ja || selectedRaceData.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div>

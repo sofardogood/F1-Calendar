@@ -110,26 +110,28 @@ export default function Statistics() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link href="/">
-              <Button variant="ghost" className="text-slate-300 hover:text-white">
-                戻る
-              </Button>
-            </Link>
-            <h1 className="text-2xl font-bold text-white">{selectedYear} 統計情報</h1>
+        <div className="container mx-auto px-4 py-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-0">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 md:gap-3">
+              <Link href="/">
+                <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white px-2">
+                  戻る
+                </Button>
+              </Link>
+              <h1 className="text-lg md:text-2xl font-bold text-white">{selectedYear} 統計</h1>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 md:gap-2 overflow-x-auto pb-1 md:pb-0">
             {availableYears.map(year => (
               <Button
                 key={year}
                 variant={selectedYear === year ? "default" : "outline"}
                 size="sm"
                 onClick={() => setSelectedYear(year)}
-                className={selectedYear === year
+                className={`flex-shrink-0 text-xs md:text-sm px-2 md:px-3 ${selectedYear === year
                   ? "bg-red-600 hover:bg-red-700 text-white"
                   : "border-slate-600 text-white hover:bg-slate-800"
-                }
+                }`}
               >
                 {year}年
               </Button>
@@ -138,15 +140,15 @@ export default function Statistics() {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-4 md:py-8">
         {/* ポイント推移グラフ */}
-        <Card className="bg-slate-800 border-slate-700 mb-8">
-          <CardHeader>
-            <CardTitle className="text-white">トップ10ドライバーのポイント推移</CardTitle>
-            <p className="text-slate-400 text-sm">各レースごとの累積ポイント推移を表示</p>
+        <Card className="bg-slate-800 border-slate-700 mb-4 md:mb-8">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-white text-base md:text-lg">トップ10ドライバーのポイント推移</CardTitle>
+            <p className="text-slate-400 text-xs md:text-sm">各レースごとの累積ポイント推移を表示</p>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={400}>
+            <ResponsiveContainer width="100%" height={300} className="md:!h-[400px]">
               <LineChart data={pointsProgressionData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
                 <XAxis dataKey="round" stroke="#94a3b8" />
@@ -172,14 +174,14 @@ export default function Statistics() {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
           {/* Drivers Points Chart */}
           <Card className="bg-slate-800 border-slate-700">
-            <CardHeader>
-              <CardTitle className="text-white">トップ10ドライバーのポイント</CardTitle>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-white text-base md:text-lg">トップ10ドライバーのポイント</CardTitle>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={250} className="md:!h-[300px]">
                 <BarChart data={driverChartData}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
                   <XAxis dataKey="name" stroke="#94a3b8" />
@@ -196,11 +198,11 @@ export default function Statistics() {
 
           {/* Constructors Points Chart */}
           <Card className="bg-slate-800 border-slate-700">
-            <CardHeader>
-              <CardTitle className="text-white">トップ10コンストラクターのポイント</CardTitle>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-white text-base md:text-lg">トップ10コンストラクターのポイント</CardTitle>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={250} className="md:!h-[300px]">
                 <BarChart data={constructorChartData}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
                   <XAxis dataKey="name" stroke="#94a3b8" angle={-45} textAnchor="end" height={80} />
@@ -217,12 +219,12 @@ export default function Statistics() {
         </div>
 
         {/* Points Distribution */}
-        <Card className="bg-slate-800 border-slate-700 mb-8">
-          <CardHeader>
-            <CardTitle className="text-white">ドライバーグループ別ポイント分布</CardTitle>
+        <Card className="bg-slate-800 border-slate-700 mb-4 md:mb-8">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-white text-base md:text-lg">ドライバーグループ別ポイント分布</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={300}>
+            <ResponsiveContainer width="100%" height={250} className="md:!h-[300px]">
               <PieChart>
                 <Pie
                   data={pointsDistribution}
@@ -248,41 +250,41 @@ export default function Statistics() {
         </Card>
 
         {/* Summary Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           <Card className="bg-slate-800 border-slate-700">
-            <CardContent className="pt-6">
+            <CardContent className="pt-4 md:pt-6 pb-4">
               <div className="text-center">
-                <p className="text-slate-400 text-sm mb-2">リーダー（ドライバー）</p>
-                <p className="text-2xl font-bold text-white">{drivers[0].name}</p>
-                <p className="text-red-600 font-semibold">{drivers[0].points} pts</p>
+                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">リーダー<br className="md:hidden" />（ドライバー）</p>
+                <p className="text-base md:text-2xl font-bold text-white truncate px-1">{drivers[0].name}</p>
+                <p className="text-red-600 font-semibold text-sm md:text-base">{drivers[0].points} pts</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="bg-slate-800 border-slate-700">
-            <CardContent className="pt-6">
+            <CardContent className="pt-4 md:pt-6 pb-4">
               <div className="text-center">
-                <p className="text-slate-400 text-sm mb-2">リーダー（コンストラクター）</p>
-                <p className="text-2xl font-bold text-white">{constructors[0].name}</p>
-                <p className="text-blue-600 font-semibold">{constructors[0].points} pts</p>
+                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">リーダー<br className="md:hidden" />（チーム）</p>
+                <p className="text-base md:text-2xl font-bold text-white truncate px-1">{constructors[0].name}</p>
+                <p className="text-blue-600 font-semibold text-sm md:text-base">{constructors[0].points} pts</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="bg-slate-800 border-slate-700">
-            <CardContent className="pt-6">
+            <CardContent className="pt-4 md:pt-6 pb-4">
               <div className="text-center">
-                <p className="text-slate-400 text-sm mb-2">総レース数</p>
-                <p className="text-2xl font-bold text-white">{races.length}</p>
+                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">総レース数</p>
+                <p className="text-xl md:text-2xl font-bold text-white">{races.length}</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="bg-slate-800 border-slate-700">
-            <CardContent className="pt-6">
+            <CardContent className="pt-4 md:pt-6 pb-4">
               <div className="text-center">
-                <p className="text-slate-400 text-sm mb-2">総ドライバー数</p>
-                <p className="text-2xl font-bold text-white">{drivers.length}</p>
+                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">総ドライバー数</p>
+                <p className="text-xl md:text-2xl font-bold text-white">{drivers.length}</p>
               </div>
             </CardContent>
           </Card>
