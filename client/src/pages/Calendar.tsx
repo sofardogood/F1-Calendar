@@ -160,22 +160,36 @@ export default function Calendar() {
                             </span>
                           </div>
                           <CardTitle className="text-white text-lg">{race.name_ja || race.name}</CardTitle>
-                          {hasResults && race.results[0] && (
-                            <div className="mt-2 flex items-center gap-2 text-sm">
-                              <Trophy className="w-4 h-4 text-yellow-400" />
-                              <span className="text-slate-300">
-                                優勝: <span className="text-yellow-400 font-semibold">{race.results[0].driver_code}</span>
-                              </span>
-                            </div>
-                          )}
                         </div>
                       </div>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="space-y-3">
                       <div className="flex items-center gap-2 text-slate-300">
                         <MapPin className="w-4 h-4 text-red-600" />
-                        <span>{race.circuit}, {race.location}</span>
+                        <span className="text-sm">{race.circuit}, {race.location}</span>
                       </div>
+
+                      {hasResults && (
+                        <div className="pt-2 border-t border-slate-700">
+                          <div className="space-y-1">
+                            {race.results.slice(0, 3).map((result, idx) => (
+                              <div key={idx} className="flex items-center justify-between text-sm">
+                                <div className="flex items-center gap-2">
+                                  <span className={`font-bold w-4 ${
+                                    idx === 0 ? 'text-yellow-400' :
+                                    idx === 1 ? 'text-slate-300' :
+                                    'text-orange-400'
+                                  }`}>
+                                    {result.position}
+                                  </span>
+                                  <span className="text-white font-medium">{result.driver_code}</span>
+                                </div>
+                                <span className="text-slate-400 text-xs">{result.team}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </CardContent>
                   </Card>
                 );
