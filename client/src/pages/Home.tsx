@@ -1,8 +1,28 @@
 import { Link } from 'wouter';
-import { Calendar, Trophy, TrendingUp } from 'lucide-react';
+import { Calendar, Trophy, TrendingUp, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import f1Data from '../f1_data.json';
+import { fetchRaceSessionInfo } from '@/services/raceInfoService';
+import { useState, useEffect } from 'react';
+
+interface RaceSession {
+  name: string;
+  date: string;
+  time_utc: string;
+  time_jst: string;
+}
+
+interface ExtendedRace {
+  round: number;
+  name: string;
+  circuit: string;
+  location: string;
+  date_start: string;
+  date_end: string;
+  name_ja?: string;
+  sessions?: RaceSession[];
+}
 
 export default function Home() {
   const drivers = f1Data.drivers_standings;
@@ -10,26 +30,67 @@ export default function Home() {
   const leader = drivers[0];
   const constructorLeader = constructors[0];
 
+  const [nextRace, setNextRace] = useState<ExtendedRace | null>(null);
+  const [loadingSessions, setLoadingSessions] = useState(false);
+
   // 次のレースを取得
   const getNextRace = () => {
     const now = new Date();
-    const today = now.toISOString().split('T')[0];
 
     for (const race of f1Data.races) {
       const raceDate = new Date(race.date_end);
       if (raceDate >= now) {
-        return race;
+        return race as ExtendedRace;
       }
     }
-    return f1Data.races[0]; // すべてのレースが終了している場合は最初のレースを表示
+    return f1Data.races[0] as ExtendedRace; // すべてのレースが終了している場合は最初のレースを表示
   };
 
-  const nextRace = getNextRace();
+  // レース情報をOpenAI APIで取得
+  const loadRaceInfo = async () => {
+    const race = getNextRace();
+    setNextRace(race);
+
+    // sessionsがない場合のみAPIから取得
+    if (!race.sessions || race.sessions.length === 0) {
+      setLoadingSessions(true);
+      try {
+        const info = await fetchRaceSessionInfo(
+          race.name,
+          race.circuit,
+          race.date_start,
+          race.date_end
+        );
+
+        setNextRace({
+          ...race,
+          sessions: info.sessions,
+          name_ja: info.name_ja || race.name_ja,
+        });
+      } catch (error) {
+        console.error('Failed to load race info:', error);
+      } finally {
+        setLoadingSessions(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    loadRaceInfo();
+  }, []);
 
   // 優勝に必要なポイントを計算（最大ポイントは24レース × 25ポイント = 600）
   const maxPoints = 600;
   const pointsNeededDriver = Math.max(0, maxPoints - leader.points);
   const pointsNeededConstructor = Math.max(0, maxPoints - constructorLeader.points);
+
+  if (!nextRace) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
+        <div className="text-white text-xl">読み込み中...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -100,9 +161,14 @@ export default function Home() {
               </div>
             </CardHeader>
             <CardContent>
-              {nextRace.sessions && nextRace.sessions.length > 0 ? (
+              {loadingSessions ? (
+                <div className="text-center py-8">
+                  <RefreshCw className="w-8 h-8 text-red-600 animate-spin mx-auto mb-3" />
+                  <p className="text-slate-400">AIでセッション情報を取得中...</p>
+                </div>
+              ) : nextRace.sessions && nextRace.sessions.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                  {nextRace.sessions.map((session: any, index: number) => (
+                  {nextRace.sessions.map((session: RaceSession, index: number) => (
                     <div key={index} className="bg-slate-800/80 rounded-lg p-4 border border-slate-700">
                       <p className="text-slate-400 text-xs mb-1">{session.name}</p>
                       <p className="text-white font-bold text-lg">{session.time_jst}</p>
@@ -111,8 +177,16 @@ export default function Home() {
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-4">
-                  <p className="text-slate-400">セッション情報は後日公開されます</p>
+                <div className="text-center py-4 space-y-3">
+                  <p className="text-slate-400">セッション情報がありません</p>
+                  <Button
+                    onClick={loadRaceInfo}
+                    variant="outline"
+                    className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
+                  >
+                    <RefreshCw className="w-4 h-4 mr-2" />
+                    AIで情報を取得
+                  </Button>
                 </div>
               )}
             </CardContent>
