@@ -100,15 +100,21 @@ export default function Home() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                {nextRace.sessions.map((session: any, index: number) => (
-                  <div key={index} className="bg-slate-800/80 rounded-lg p-4 border border-slate-700">
-                    <p className="text-slate-400 text-xs mb-1">{session.name}</p>
-                    <p className="text-white font-bold text-lg">{session.time_jst}</p>
-                    <p className="text-slate-300 text-sm">{session.date}</p>
-                  </div>
-                ))}
-              </div>
+              {nextRace.sessions && nextRace.sessions.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                  {nextRace.sessions.map((session: any, index: number) => (
+                    <div key={index} className="bg-slate-800/80 rounded-lg p-4 border border-slate-700">
+                      <p className="text-slate-400 text-xs mb-1">{session.name}</p>
+                      <p className="text-white font-bold text-lg">{session.time_jst}</p>
+                      <p className="text-slate-300 text-sm">{session.date}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-4">
+                  <p className="text-slate-400">セッション情報は後日公開されます</p>
+                </div>
+              )}
             </CardContent>
           </Card>
         </section>
