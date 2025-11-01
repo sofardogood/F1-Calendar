@@ -49,12 +49,21 @@ export default function Home() {
   // レース情報をOpenAI APIで取得
   const loadRaceInfo = async (force: boolean = false) => {
     const race = getNextRace();
-    setNextRace(race);
+
+    console.log('loadRaceInfo called with force:', force);
+    console.log('Current race:', race.name, 'has sessions:', race.sessions?.length || 0);
+
+    // 初回ロード時はまずレース情報をセット
+    if (!force && nextRace === null) {
+      setNextRace(race);
+    }
 
     // sessionsがない場合、または強制更新の場合にAPIから取得
     if (force || !race.sessions || race.sessions.length === 0) {
       setLoadingSessions(true);
       console.log('Starting to fetch race session info...');
+      console.log('Force:', force, 'Sessions:', race.sessions?.length || 0);
+
       try {
         const info = await fetchRaceSessionInfo(
           race.name,
@@ -75,6 +84,8 @@ export default function Home() {
       } finally {
         setLoadingSessions(false);
       }
+    } else {
+      console.log('Skipping API call - race already has sessions');
     }
   };
 
@@ -184,7 +195,10 @@ export default function Home() {
                 <div className="text-center py-4 space-y-3">
                   <p className="text-slate-400">セッション情報を取得できませんでした</p>
                   <Button
-                    onClick={() => loadRaceInfo(true)}
+                    onClick={() => {
+                      console.log('再取得ボタンがクリックされました');
+                      loadRaceInfo(true);
+                    }}
                     variant="outline"
                     className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
                     disabled={loadingSessions}
