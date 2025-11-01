@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import Calendar from "./pages/Calendar";
 import Standings from "./pages/Standings";
 import Statistics from "./pages/Statistics";
-import History from "./pages/History";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -18,7 +17,6 @@ function Router() {
       <Route path={"/calendar"} component={Calendar} />
       <Route path={"/standings"} component={Standings} />
       <Route path={"/statistics"} component={Statistics} />
-      <Route path={"/history"} component={History} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
