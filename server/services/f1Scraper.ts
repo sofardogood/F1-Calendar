@@ -265,26 +265,43 @@ function parseRaceSection(heading: Element, round: number, raceNameJa: string, d
 export async function updateF1DataFile(): Promise<void> {
   const races = await scrapeF1Schedule();
 
-  // Jolpica-F1 APIからレース結果を取得（2024年と2025年）
+  // Jolpica-F1 APIから過去10年間（2015-2024年）とl2025年のレース結果を取得
   const { fetchAllRaceResults } = await import('./ergastApi');
   const currentYear = new Date().getFullYear();
 
-  // 2024年の全レース結果を取得（24レース）
-  console.log('Fetching 2024 race results...');
-  const results2024 = await fetchAllRaceResults(2024, 24);
+  // 過去10年間のレース結果を取得
+  const historicalResults: Record<number, Record<number, any>> = {};
+  const startYear = 2015;
+  const endYear = 2024;
+
+  for (let year = startYear; year <= endYear; year++) {
+    console.log(`Fetching ${year} race results...`);
+    // 各年のレース数は異なるため、最大24ラウンドを取得
+    historicalResults[year] = await fetchAllRaceResults(year, 24);
+
+    // API制限を考慮して少し待つ
+    if (year < endYear) {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+  }
 
   // 2025年のレース結果を取得
   console.log('Fetching 2025 race results...');
   const results2025 = await fetchAllRaceResults(currentYear, races.length);
 
-  // レース結果をマージ（2024年のデータを優先的に使用し、2025年も追加）
+  // レース結果をマージ（最新の年のデータから優先的に使用）
   const racesWithResults = races.map(race => {
     // まず2025年の結果をチェック
     let results = results2025[race.round];
 
-    // 2025年の結果がない場合、2024年の同じラウンドを試す
-    if (!results && results2024[race.round]) {
-      results = results2024[race.round];
+    // 2025年の結果がない場合、過去のデータから新しい年から順に探す
+    if (!results) {
+      for (let year = endYear; year >= startYear; year--) {
+        if (historicalResults[year][race.round]) {
+          results = historicalResults[year][race.round];
+          break;
+        }
+      }
     }
 
     return results ? { ...race, results } : race;
@@ -306,6 +323,10 @@ export async function updateF1DataFile(): Promise<void> {
 
   await fs.writeFile(dataPath, JSON.stringify(updatedData, null, 2));
   console.log('f1_data.json updated successfully');
-  console.log(`Updated ${Object.keys(results2024).length} results from 2024`);
+
+  // 各年の結果数をログ出力
+  for (let year = startYear; year <= endYear; year++) {
+    console.log(`Updated ${Object.keys(historicalResults[year]).length} results from ${year}`);
+  }
   console.log(`Updated ${Object.keys(results2025).length} results from 2025`);
 }
