@@ -7,6 +7,16 @@ interface RaceSession {
   time_jst: string;
 }
 
+interface RaceResult {
+  position: number;
+  driver: string;
+  driver_code: string;
+  team: string;
+  points: number;
+  time?: string;
+  status: string;
+}
+
 interface RaceInfo {
   round: number;
   name: string;
@@ -16,6 +26,7 @@ interface RaceInfo {
   date_start: string;
   date_end: string;
   sessions: RaceSession[];
+  results?: RaceResult[];
 }
 
 /**
@@ -254,6 +265,17 @@ function parseRaceSection(heading: Element, round: number, raceNameJa: string, d
 export async function updateF1DataFile(): Promise<void> {
   const races = await scrapeF1Schedule();
 
+  // Ergast APIからレース結果を取得
+  const { fetchAllRaceResults } = await import('./ergastApi');
+  const season = new Date().getFullYear();
+  const raceResults = await fetchAllRaceResults(season, races.length);
+
+  // レース結果をマージ
+  const racesWithResults = races.map(race => {
+    const results = raceResults[race.round];
+    return results ? { ...race, results } : race;
+  });
+
   // f1_data.jsonを更新
   const fs = await import('fs/promises');
   const path = await import('path');
@@ -264,10 +286,11 @@ export async function updateF1DataFile(): Promise<void> {
   // 既存のドライバー/コンストラクター情報は保持
   const updatedData = {
     ...currentData,
-    races: races,
+    races: racesWithResults,
     last_updated: new Date().toISOString()
   };
 
   await fs.writeFile(dataPath, JSON.stringify(updatedData, null, 2));
   console.log('f1_data.json updated successfully');
+  console.log(`Updated ${Object.keys(raceResults).length} race results`);
 }

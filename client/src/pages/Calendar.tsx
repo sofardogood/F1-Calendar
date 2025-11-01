@@ -1,10 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'wouter';
-import { ChevronLeft, ChevronRight, Clock, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock, MapPin, Trophy, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import f1Data from '../f1_data.json';
+
+interface RaceResult {
+  position: number;
+  driver: string;
+  driver_code: string;
+  team: string;
+  points: number;
+  time?: string;
+  status: string;
+}
 
 interface Race {
   round: number;
@@ -20,6 +30,7 @@ interface Race {
     time_utc: string;
     time_jst: string;
   }>;
+  results?: RaceResult[];
 }
 
 const formatDate = (dateStr: string): string => {
@@ -68,6 +79,13 @@ export default function Calendar() {
 
   const selectedRaceData = races.find(r => r.round === selectedRound);
 
+  // レースが過去かどうかをチェック
+  const isRacePast = (race: Race) => {
+    const raceDate = new Date(race.date_end);
+    const now = new Date();
+    return raceDate < now;
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
@@ -113,6 +131,8 @@ export default function Calendar() {
             <div className="space-y-4">
               {racesInMonth.map((race) => {
                 const isSelected = selectedRound === race.round;
+                const isPast = isRacePast(race);
+                const hasResults = race.results && race.results.length > 0;
                 return (
                   <Card
                     key={race.round}
@@ -126,6 +146,12 @@ export default function Calendar() {
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-2">
                             <Badge className="bg-red-600">第{race.round}戦</Badge>
+                            {hasResults && (
+                              <Badge className="bg-green-600 flex items-center gap-1">
+                                <CheckCircle2 className="w-3 h-3" />
+                                終了
+                              </Badge>
+                            )}
                             <span className="text-slate-400 text-sm">
                               {race.date_start === race.date_end
                                 ? formatDate(race.date_start)
@@ -134,6 +160,14 @@ export default function Calendar() {
                             </span>
                           </div>
                           <CardTitle className="text-white text-lg">{race.name_ja || race.name}</CardTitle>
+                          {hasResults && race.results[0] && (
+                            <div className="mt-2 flex items-center gap-2 text-sm">
+                              <Trophy className="w-4 h-4 text-yellow-400" />
+                              <span className="text-slate-300">
+                                優勝: <span className="text-yellow-400 font-semibold">{race.results[0].driver_code}</span>
+                              </span>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </CardHeader>
@@ -212,6 +246,46 @@ export default function Calendar() {
                       {formatDate(selectedRaceData.date_start)} ～ {formatDate(selectedRaceData.date_end)}
                     </p>
                   </div>
+
+                  {selectedRaceData.results && selectedRaceData.results.length > 0 && (
+                    <div>
+                      <h3 className="text-slate-400 text-sm font-semibold mb-3">レース結果</h3>
+                      <div className="space-y-2">
+                        {selectedRaceData.results.slice(0, 10).map((result, idx) => (
+                          <div
+                            key={idx}
+                            className={`flex items-center justify-between p-3 rounded ${
+                              idx === 0 ? 'bg-gradient-to-r from-yellow-900/50 to-slate-700 border border-yellow-600' :
+                              idx === 1 ? 'bg-gradient-to-r from-slate-700 to-slate-700 border border-slate-500' :
+                              idx === 2 ? 'bg-gradient-to-r from-orange-900/30 to-slate-700 border border-orange-700' :
+                              'bg-slate-700'
+                            }`}
+                          >
+                            <div className="flex items-center gap-3 flex-1">
+                              <span className={`text-lg font-bold w-6 ${
+                                idx === 0 ? 'text-yellow-400' :
+                                idx === 1 ? 'text-slate-300' :
+                                idx === 2 ? 'text-orange-400' :
+                                'text-slate-400'
+                              }`}>
+                                {result.position}
+                              </span>
+                              <div className="flex-1">
+                                <p className="text-white font-semibold text-sm">{result.driver_code}</p>
+                                <p className="text-slate-400 text-xs">{result.team}</p>
+                              </div>
+                            </div>
+                            <div className="text-right">
+                              <p className="text-white font-bold text-sm">{result.points}pt</p>
+                              {result.time && (
+                                <p className="text-slate-400 text-xs">{result.time}</p>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ) : (
