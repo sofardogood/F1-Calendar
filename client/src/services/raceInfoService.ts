@@ -69,6 +69,9 @@ const getRoundNumber = (raceName: string): number => {
   return roundMapping[raceName] || 1;
 };
 
+// HTMLキャッシュ（同じHTMLを何度も取得しないように）
+let cachedHTML: string | null = null;
+
 export async function fetchRaceSessionInfo(
   raceName: string,
   circuit: string,
@@ -78,17 +81,22 @@ export async function fetchRaceSessionInfo(
   console.log(`Fetching race info for: ${raceName}`);
 
   try {
-    // F1ProサイトからHTMLを取得
-    const response = await fetch('https://f1pro.sub.jp/2625/', {
-      mode: 'cors',
-    });
+    // HTMLをキャッシュから取得、またはフェッチ
+    if (!cachedHTML) {
+      console.log('Fetching HTML from f1pro.sub.jp (first time)');
+      const response = await fetch('https://f1pro.sub.jp/2625/', {
+        mode: 'cors',
+      });
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      cachedHTML = await response.text();
+      console.log('Fetched and cached HTML from f1pro.sub.jp');
+    } else {
+      console.log('Using cached HTML');
     }
-
-    const html = await response.text();
-    console.log('Fetched HTML from f1pro.sub.jp');
 
     // HTMLからセッション情報を抽出する
     // 実際のHTMLパーシングは複雑なので、OpenAI APIを使って解析
@@ -104,10 +112,10 @@ export async function fetchRaceSessionInfo(
 
     // OpenAI APIでHTMLを解析
     const prompt = `以下は2025年F1カレンダー情報が記載されたHTMLです。
-「${raceName}」のセッション情報（フリー走行1-3、予選、決勝）を抽出して、以下のJSON形式で返してください。
+「${raceName}」（開催期間: ${dateStart}～${dateEnd}）のセッション情報を抽出して、以下のJSON形式で返してください。
 
 HTML:
-${html.substring(0, 10000)}
+${cachedHTML.substring(0, 15000)}
 
 求めるJSON形式:
 {
@@ -146,10 +154,12 @@ ${html.substring(0, 10000)}
   ]
 }
 
-注意：
-- 開催期間は${dateStart}から${dateEnd}です
+重要な指示：
+- HTMLの中から「${raceName}」または日本語訳に該当するレースのセッション情報を見つけてください
+- 開催期間${dateStart}～${dateEnd}に該当する情報を抽出してください
 - time_jstが翌日になる場合は "HH:MM+1" の形式で表記
-- HTMLから正確な時間を抽出してください`;
+- スプリントレースがある場合は追加してください
+- 必ず正確な時間を返してください`;
 
     const aiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -162,7 +172,7 @@ ${html.substring(0, 10000)}
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful assistant that extracts F1 race schedule information from HTML and returns it in JSON format.',
+            content: 'You are a helpful assistant that extracts F1 race schedule information from HTML. You carefully read the HTML to find the exact session times for the requested race.',
           },
           {
             role: 'user',

@@ -58,11 +58,13 @@ export default function Home() {
       setNextRace(race);
     }
 
-    // sessionsがない場合、または強制更新の場合にAPIから取得
-    if (force || !race.sessions || race.sessions.length === 0) {
+    // 常にAPIから最新情報を取得（初回ロード時またはforce時）
+    const shouldFetch = force || nextRace === null || !race.sessions || race.sessions.length === 0;
+
+    if (shouldFetch) {
       setLoadingSessions(true);
       console.log('Starting to fetch race session info...');
-      console.log('Force:', force, 'Sessions:', race.sessions?.length || 0);
+      console.log('Reason: force=', force, 'nextRace is null=', nextRace === null, 'no sessions=', !race.sessions || race.sessions.length === 0);
 
       try {
         const info = await fetchRaceSessionInfo(
@@ -74,13 +76,26 @@ export default function Home() {
 
         console.log('Fetched session info:', info);
 
-        setNextRace({
-          ...race,
-          sessions: info.sessions,
-          name_ja: info.name_ja || race.name_ja,
-        });
+        // セッション情報が取得できた場合のみ更新
+        if (info.sessions && info.sessions.length > 0) {
+          setNextRace({
+            ...race,
+            sessions: info.sessions,
+            name_ja: info.name_ja || race.name_ja,
+          });
+        } else {
+          console.warn('No sessions returned from API');
+          // セッションが取得できなくても、レース情報は表示
+          if (nextRace === null) {
+            setNextRace(race);
+          }
+        }
       } catch (error) {
         console.error('Failed to load race info:', error);
+        // エラーが発生しても、レース情報は表示
+        if (nextRace === null) {
+          setNextRace(race);
+        }
       } finally {
         setLoadingSessions(false);
       }
