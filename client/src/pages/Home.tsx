@@ -1,10 +1,8 @@
 import { Link } from 'wouter';
-import { Calendar, Trophy, TrendingUp, RefreshCw } from 'lucide-react';
+import { Calendar, Trophy, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import f1Data from '../f1_data.json';
-import { fetchRaceSessionInfo } from '@/services/raceInfoService';
-import { useState, useEffect } from 'react';
 
 interface RaceSession {
   name: string;
@@ -30,11 +28,8 @@ export default function Home() {
   const leader = drivers[0];
   const constructorLeader = constructors[0];
 
-  const [nextRace, setNextRace] = useState<ExtendedRace | null>(null);
-  const [loadingSessions, setLoadingSessions] = useState(false);
-
   // 次のレースを取得
-  const getNextRace = () => {
+  const getNextRace = (): ExtendedRace => {
     const now = new Date();
 
     for (const race of f1Data.races) {
@@ -46,81 +41,12 @@ export default function Home() {
     return f1Data.races[0] as ExtendedRace; // すべてのレースが終了している場合は最初のレースを表示
   };
 
-  // レース情報をOpenAI APIで取得
-  const loadRaceInfo = async (force: boolean = false) => {
-    const race = getNextRace();
-
-    console.log('loadRaceInfo called with force:', force);
-    console.log('Current race:', race.name, 'has sessions:', race.sessions?.length || 0);
-
-    // 初回ロード時はまずレース情報をセット
-    if (!force && nextRace === null) {
-      setNextRace(race);
-    }
-
-    // 常にAPIから最新情報を取得（初回ロード時またはforce時）
-    const shouldFetch = force || nextRace === null || !race.sessions || race.sessions.length === 0;
-
-    if (shouldFetch) {
-      setLoadingSessions(true);
-      console.log('Starting to fetch race session info...');
-      console.log('Reason: force=', force, 'nextRace is null=', nextRace === null, 'no sessions=', !race.sessions || race.sessions.length === 0);
-
-      try {
-        const info = await fetchRaceSessionInfo(
-          race.name,
-          race.circuit,
-          race.date_start,
-          race.date_end
-        );
-
-        console.log('Fetched session info:', info);
-
-        // セッション情報が取得できた場合のみ更新
-        if (info.sessions && info.sessions.length > 0) {
-          setNextRace({
-            ...race,
-            sessions: info.sessions,
-            name_ja: info.name_ja || race.name_ja,
-          });
-        } else {
-          console.warn('No sessions returned from API');
-          // セッションが取得できなくても、レース情報は表示
-          if (nextRace === null) {
-            setNextRace(race);
-          }
-        }
-      } catch (error) {
-        console.error('Failed to load race info:', error);
-        // エラーが発生しても、レース情報は表示
-        if (nextRace === null) {
-          setNextRace(race);
-        }
-      } finally {
-        setLoadingSessions(false);
-      }
-    } else {
-      console.log('Skipping API call - race already has sessions');
-    }
-  };
-
-  useEffect(() => {
-    // 必ずページ読み込み時にAPI呼び出しを実行
-    loadRaceInfo(false);
-  }, []);
+  const nextRace = getNextRace();
 
   // 優勝に必要なポイントを計算（最大ポイントは24レース × 25ポイント = 600）
   const maxPoints = 600;
   const pointsNeededDriver = Math.max(0, maxPoints - leader.points);
   const pointsNeededConstructor = Math.max(0, maxPoints - constructorLeader.points);
-
-  if (!nextRace) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
-        <div className="text-white text-xl">読み込み中...</div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -191,12 +117,7 @@ export default function Home() {
               </div>
             </CardHeader>
             <CardContent>
-              {loadingSessions ? (
-                <div className="text-center py-8">
-                  <RefreshCw className="w-8 h-8 text-red-600 animate-spin mx-auto mb-3" />
-                  <p className="text-slate-400">AIでセッション情報を取得中...</p>
-                </div>
-              ) : nextRace.sessions && nextRace.sessions.length > 0 ? (
+              {nextRace.sessions && nextRace.sessions.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
                   {nextRace.sessions.map((session: RaceSession, index: number) => (
                     <div key={index} className="bg-slate-800/80 rounded-lg p-4 border border-slate-700">
@@ -207,20 +128,9 @@ export default function Home() {
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-4 space-y-3">
-                  <p className="text-slate-400">セッション情報を取得できませんでした</p>
-                  <Button
-                    onClick={() => {
-                      console.log('再取得ボタンがクリックされました');
-                      loadRaceInfo(true);
-                    }}
-                    variant="outline"
-                    className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
-                    disabled={loadingSessions}
-                  >
-                    <RefreshCw className={`w-4 h-4 mr-2 ${loadingSessions ? 'animate-spin' : ''}`} />
-                    再取得
-                  </Button>
+                <div className="text-center py-4">
+                  <p className="text-slate-400">セッション情報はまもなく更新されます</p>
+                  <p className="text-slate-500 text-sm mt-2">GitHub Actionsにより毎日自動更新</p>
                 </div>
               )}
             </CardContent>
