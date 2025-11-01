@@ -1,0 +1,163 @@
+import { Link } from 'wouter';
+import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import f1Data from '../f1_data.json';
+
+const COLORS = ['#dc2626', '#2563eb', '#f59e0b', '#10b981', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316', '#06b6d4', '#84cc16'];
+
+export default function Statistics() {
+  const drivers = f1Data.drivers_standings;
+  const constructors = f1Data.constructors_standings;
+
+  const driverChartData = drivers.slice(0, 10).map((d: any) => ({
+    name: d.code,
+    points: d.points
+  }));
+
+  const constructorChartData = constructors.slice(0, 10).map((c: any) => ({
+    name: c.name,
+    points: c.points
+  }));
+
+  const pointsDistribution = [
+    { name: 'トップ3', value: drivers.slice(0, 3).reduce((sum: number, d: any) => sum + d.points, 0) },
+    { name: 'トップ4-10', value: drivers.slice(3, 10).reduce((sum: number, d: any) => sum + d.points, 0) },
+    { name: 'その他', value: drivers.slice(10).reduce((sum: number, d: any) => sum + d.points, 0) }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Link href="/">
+              <Button variant="ghost" className="text-slate-300 hover:text-white">
+                戻る
+              </Button>
+            </Link>
+            <h1 className="text-2xl font-bold text-white">2025 統計情報</h1>
+          </div>
+        </div>
+      </header>
+
+      <main className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          {/* Drivers Points Chart */}
+          <Card className="bg-slate-800 border-slate-700">
+            <CardHeader>
+              <CardTitle className="text-white">トップ10ドライバーのポイント</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={driverChartData}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
+                  <XAxis dataKey="name" stroke="#94a3b8" />
+                  <YAxis stroke="#94a3b8" />
+                  <Tooltip
+                    contentStyle={{ backgroundColor: '#1e293b', border: '1px solid #475569' }}
+                    labelStyle={{ color: '#f1f5f9' }}
+                  />
+                  <Bar dataKey="points" fill="#dc2626" />
+                </BarChart>
+              </ResponsiveContainer>
+            </CardContent>
+          </Card>
+
+          {/* Constructors Points Chart */}
+          <Card className="bg-slate-800 border-slate-700">
+            <CardHeader>
+              <CardTitle className="text-white">トップ10コンストラクターのポイント</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={constructorChartData}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
+                  <XAxis dataKey="name" stroke="#94a3b8" angle={-45} textAnchor="end" height={80} />
+                  <YAxis stroke="#94a3b8" />
+                  <Tooltip
+                    contentStyle={{ backgroundColor: '#1e293b', border: '1px solid #475569' }}
+                    labelStyle={{ color: '#f1f5f9' }}
+                  />
+                  <Bar dataKey="points" fill="#2563eb" />
+                </BarChart>
+              </ResponsiveContainer>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Points Distribution */}
+        <Card className="bg-slate-800 border-slate-700 mb-8">
+          <CardHeader>
+            <CardTitle className="text-white">ドライバーグループ別ポイント分布</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ResponsiveContainer width="100%" height={300}>
+              <PieChart>
+                <Pie
+                  data={pointsDistribution}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  label={({ name, value }) => `${name}: ${value}`}
+                  outerRadius={80}
+                  fill="#8884d8"
+                  dataKey="value"
+                >
+                  {pointsDistribution.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip
+                  contentStyle={{ backgroundColor: '#1e293b', border: '1px solid #475569' }}
+                  labelStyle={{ color: '#f1f5f9' }}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+          </CardContent>
+        </Card>
+
+        {/* Summary Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <Card className="bg-slate-800 border-slate-700">
+            <CardContent className="pt-6">
+              <div className="text-center">
+                <p className="text-slate-400 text-sm mb-2">リーダー（ドライバー）</p>
+                <p className="text-2xl font-bold text-white">{drivers[0].name}</p>
+                <p className="text-red-600 font-semibold">{drivers[0].points} pts</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-slate-800 border-slate-700">
+            <CardContent className="pt-6">
+              <div className="text-center">
+                <p className="text-slate-400 text-sm mb-2">リーダー（コンストラクター）</p>
+                <p className="text-2xl font-bold text-white">{constructors[0].name}</p>
+                <p className="text-blue-600 font-semibold">{constructors[0].points} pts</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-slate-800 border-slate-700">
+            <CardContent className="pt-6">
+              <div className="text-center">
+                <p className="text-slate-400 text-sm mb-2">総レース数</p>
+                <p className="text-2xl font-bold text-white">{f1Data.races.length}</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-slate-800 border-slate-700">
+            <CardContent className="pt-6">
+              <div className="text-center">
+                <p className="text-slate-400 text-sm mb-2">総ドライバー数</p>
+                <p className="text-2xl font-bold text-white">{drivers.length}</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </main>
+    </div>
+  );
+}
