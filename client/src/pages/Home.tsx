@@ -22,23 +22,35 @@ interface ExtendedRace {
   sessions?: RaceSession[];
 }
 
+interface F1Data {
+  races_by_year?: Record<string, ExtendedRace[]>;
+  current_season?: number;
+  races?: ExtendedRace[];
+  drivers_standings: any[];
+  constructors_standings: any[];
+}
+
 export default function Home() {
-  const drivers = f1Data.drivers_standings;
-  const constructors = f1Data.constructors_standings;
+  const data = f1Data as F1Data;
+  const drivers = data.drivers_standings;
+  const constructors = data.constructors_standings;
   const leader = drivers[0];
   const constructorLeader = constructors[0];
+
+  // 現在シーズンのレースデータを取得
+  const currentSeasonRaces = data.races_by_year?.[data.current_season || 2025] || data.races || [];
 
   // 次のレースを取得
   const getNextRace = (): ExtendedRace => {
     const now = new Date();
 
-    for (const race of f1Data.races) {
+    for (const race of currentSeasonRaces) {
       const raceDate = new Date(race.date_end);
       if (raceDate >= now) {
         return race as ExtendedRace;
       }
     }
-    return f1Data.races[0] as ExtendedRace; // すべてのレースが終了している場合は最初のレースを表示
+    return currentSeasonRaces[0] as ExtendedRace; // すべてのレースが終了している場合は最初のレースを表示
   };
 
   const nextRace = getNextRace();

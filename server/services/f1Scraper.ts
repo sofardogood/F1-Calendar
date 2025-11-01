@@ -260,24 +260,52 @@ function parseRaceSection(heading: Element, round: number, raceNameJa: string, d
 }
 
 /**
- * スクレイピング結果をJSONファイルに保存
+ * スクレイピング結果をJSONファイルに保存（年度別）
  */
 export async function updateF1DataFile(): Promise<void> {
-  const races = await scrapeF1Schedule();
+  const races2025 = await scrapeF1Schedule();
 
-  // Jolpica-F1 APIから過去10年間（2015-2024年）とl2025年のレース結果を取得
+  // Jolpica-F1 APIから過去10年間（2015-2024年）と2025年のレース結果を取得
   const { fetchAllRaceResults } = await import('./ergastApi');
   const currentYear = new Date().getFullYear();
 
+  // 年度別のレースデータを格納
+  const racesByYear: Record<number, RaceInfo[]> = {};
+
+  // 2025年のスケジュール（結果は後で追加）
+  racesByYear[2025] = races2025;
+
   // 過去10年間のレース結果を取得
-  const historicalResults: Record<number, Record<number, any>> = {};
   const startYear = 2015;
   const endYear = 2024;
 
   for (let year = startYear; year <= endYear; year++) {
     console.log(`Fetching ${year} race results...`);
-    // 各年のレース数は異なるため、最大24ラウンドを取得
-    historicalResults[year] = await fetchAllRaceResults(year, 24);
+    const results = await fetchAllRaceResults(year, 24);
+
+    // 結果があるラウンドのみレース情報を作成
+    const racesForYear: RaceInfo[] = [];
+    Object.entries(results).forEach(([roundStr, raceResults]) => {
+      const round = parseInt(roundStr);
+      if (raceResults && raceResults.length > 0) {
+        // 基本的なレース情報を作成（過去年度はスケジュール詳細なし）
+        racesForYear.push({
+          round,
+          name: `Round ${round}`,
+          name_ja: `第${round}戦`,
+          circuit: '',
+          location: '',
+          date_start: `${year}-01-01`,
+          date_end: `${year}-12-31`,
+          sessions: [],
+          results: raceResults
+        });
+      }
+    });
+
+    if (racesForYear.length > 0) {
+      racesByYear[year] = racesForYear;
+    }
 
     // API制限を考慮して待つ（3秒）
     if (year < endYear) {
@@ -285,25 +313,12 @@ export async function updateF1DataFile(): Promise<void> {
     }
   }
 
-  // 2025年のレース結果を取得
+  // 2025年のレース結果を取得してマージ
   console.log('Fetching 2025 race results...');
-  const results2025 = await fetchAllRaceResults(currentYear, races.length);
+  const results2025 = await fetchAllRaceResults(currentYear, races2025.length);
 
-  // レース結果をマージ（最新の年のデータから優先的に使用）
-  const racesWithResults = races.map(race => {
-    // まず2025年の結果をチェック
-    let results = results2025[race.round];
-
-    // 2025年の結果がない場合、過去のデータから新しい年から順に探す
-    if (!results) {
-      for (let year = endYear; year >= startYear; year--) {
-        if (historicalResults[year][race.round]) {
-          results = historicalResults[year][race.round];
-          break;
-        }
-      }
-    }
-
+  racesByYear[2025] = races2025.map(race => {
+    const results = results2025[race.round];
     return results ? { ...race, results } : race;
   });
 
@@ -314,19 +329,21 @@ export async function updateF1DataFile(): Promise<void> {
   const dataPath = path.join(process.cwd(), 'client/src/f1_data.json');
   const currentData = JSON.parse(await fs.readFile(dataPath, 'utf-8'));
 
-  // 既存のドライバー/コンストラクター情報は保持
+  // 既存のドライバー/コンストラクター情報は保持し、年度別のレースデータを追加
   const updatedData = {
     ...currentData,
-    races: racesWithResults,
+    races_by_year: racesByYear,
+    current_season: 2025,
     last_updated: new Date().toISOString()
   };
 
   await fs.writeFile(dataPath, JSON.stringify(updatedData, null, 2));
-  console.log('f1_data.json updated successfully');
+  console.log('f1_data.json updated successfully with year-based structure');
 
   // 各年の結果数をログ出力
   for (let year = startYear; year <= endYear; year++) {
-    console.log(`Updated ${Object.keys(historicalResults[year]).length} results from ${year}`);
+    const count = racesByYear[year]?.length || 0;
+    console.log(`Updated ${count} races from ${year}`);
   }
-  console.log(`Updated ${Object.keys(results2025).length} results from 2025`);
+  console.log(`Updated ${racesByYear[2025]?.length || 0} races from 2025`);
 }

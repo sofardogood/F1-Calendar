@@ -33,6 +33,12 @@ interface Race {
   results?: RaceResult[];
 }
 
+interface F1Data {
+  races_by_year?: Record<string, Race[]>;
+  current_season?: number;
+  races?: Race[];
+}
+
 const formatDate = (dateStr: string): string => {
   const date = new Date(dateStr);
   return date.toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric', year: 'numeric' });
@@ -49,9 +55,19 @@ const sessionNameJa: Record<string, string> = {
 };
 
 export default function Calendar() {
+  const data = f1Data as F1Data;
+
+  // 利用可能な年度を取得
+  const availableYears = data.races_by_year
+    ? Object.keys(data.races_by_year).map(Number).sort((a, b) => b - a) // 降順にソート
+    : [data.current_season || 2025];
+
+  const [selectedYear, setSelectedYear] = useState(availableYears[0]);
   const [selectedRound, setSelectedRound] = useState<number | null>(null);
-  const [races] = useState<Race[]>(f1Data.races);
   const [currentMonth, setCurrentMonth] = useState(0);
+
+  // 選択された年度のレースデータを取得
+  const races = (data.races_by_year?.[selectedYear] || data.races || []) as Race[];
 
   const months = [
     '1月', '2月', '3月', '4月', '5月', '6月',
@@ -96,7 +112,27 @@ export default function Calendar() {
                 戻る
               </Button>
             </Link>
-            <h1 className="text-2xl font-bold text-white">2025 レースカレンダー</h1>
+            <h1 className="text-2xl font-bold text-white">{selectedYear} レースカレンダー</h1>
+          </div>
+          <div className="flex items-center gap-2">
+            {availableYears.map(year => (
+              <Button
+                key={year}
+                variant={selectedYear === year ? "default" : "outline"}
+                size="sm"
+                onClick={() => {
+                  setSelectedYear(year);
+                  setCurrentMonth(0);
+                  setSelectedRound(null);
+                }}
+                className={selectedYear === year
+                  ? "bg-red-600 hover:bg-red-700 text-white"
+                  : "border-slate-600 text-white hover:bg-slate-800"
+                }
+              >
+                {year}年
+              </Button>
+            ))}
           </div>
         </div>
       </header>
