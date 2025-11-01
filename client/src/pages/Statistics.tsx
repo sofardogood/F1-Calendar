@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'wouter';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Button } from '@/components/ui/button';
@@ -6,9 +7,89 @@ import f1Data from '../f1_data.json';
 
 const COLORS = ['#dc2626', '#2563eb', '#f59e0b', '#10b981', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316', '#06b6d4', '#84cc16'];
 
+interface F1Data {
+  races_by_year?: Record<string, any[]>;
+  current_season?: number;
+  races?: any[];
+  drivers_standings: any[];
+  constructors_standings: any[];
+}
+
+// レース結果からポイント推移を計算
+function calculatePointsProgression(races: any[]) {
+  const driverPoints: Record<string, number[]> = {};
+  const driverNames: Record<string, string> = {};
+  const roundLabels: string[] = [];
+
+  // 結果があるレースだけを対象
+  const racesWithResults = races.filter(race => race.results && race.results.length > 0);
+
+  racesWithResults.forEach((race, index) => {
+    roundLabels.push(`R${race.round}`);
+
+    race.results.forEach((result: any) => {
+      const code = result.driver_code;
+      const name = result.driver;
+
+      if (!driverPoints[code]) {
+        driverPoints[code] = new Array(index).fill(0);
+        driverNames[code] = name;
+      }
+
+      // 前のレースまでの累積ポイント + 今回のポイント
+      const previousPoints = index > 0 ? driverPoints[code][index - 1] : 0;
+      driverPoints[code].push(previousPoints + result.points);
+    });
+
+    // 今回のレースに出走しなかったドライバーは前回と同じポイント
+    Object.keys(driverPoints).forEach(code => {
+      if (driverPoints[code].length <= index) {
+        const lastPoints = driverPoints[code][driverPoints[code].length - 1] || 0;
+        driverPoints[code].push(lastPoints);
+      }
+    });
+  });
+
+  // 最終ポイントでソートしてトップ10を取得
+  const sortedDrivers = Object.entries(driverPoints)
+    .map(([code, points]) => ({
+      code,
+      name: driverNames[code],
+      finalPoints: points[points.length - 1],
+      progression: points
+    }))
+    .sort((a, b) => b.finalPoints - a.finalPoints)
+    .slice(0, 10);
+
+  // グラフ用のデータを作成
+  const chartData = roundLabels.map((label, index) => {
+    const dataPoint: any = { round: label };
+    sortedDrivers.forEach(driver => {
+      dataPoint[driver.code] = driver.progression[index] || 0;
+    });
+    return dataPoint;
+  });
+
+  return { chartData, drivers: sortedDrivers };
+}
+
 export default function Statistics() {
-  const drivers = f1Data.drivers_standings;
-  const constructors = f1Data.constructors_standings;
+  const data = f1Data as F1Data;
+  const drivers = data.drivers_standings;
+  const constructors = data.constructors_standings;
+
+  // 利用可能な年度を取得
+  const availableYears = data.races_by_year
+    ? Object.keys(data.races_by_year).map(Number).sort((a, b) => b - a)
+    : [data.current_season || 2025];
+
+  const [selectedYear, setSelectedYear] = useState(availableYears[0]);
+
+  // 選択された年度のレースデータを取得
+  const races = (data.races_by_year?.[selectedYear] || data.races || []) as any[];
+
+  // ポイント推移を計算
+  const { chartData: pointsProgressionData, drivers: topDrivers } = calculatePointsProgression(races);
 
   const driverChartData = drivers.slice(0, 10).map((d: any) => ({
     name: d.code,
@@ -36,12 +117,61 @@ export default function Statistics() {
                 戻る
               </Button>
             </Link>
-            <h1 className="text-2xl font-bold text-white">2025 統計情報</h1>
+            <h1 className="text-2xl font-bold text-white">{selectedYear} 統計情報</h1>
+          </div>
+          <div className="flex items-center gap-2">
+            {availableYears.map(year => (
+              <Button
+                key={year}
+                variant={selectedYear === year ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedYear(year)}
+                className={selectedYear === year
+                  ? "bg-red-600 hover:bg-red-700 text-white"
+                  : "border-slate-600 text-white hover:bg-slate-800"
+                }
+              >
+                {year}年
+              </Button>
+            ))}
           </div>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-8">
+        {/* ポイント推移グラフ */}
+        <Card className="bg-slate-800 border-slate-700 mb-8">
+          <CardHeader>
+            <CardTitle className="text-white">トップ10ドライバーのポイント推移</CardTitle>
+            <p className="text-slate-400 text-sm">各レースごとの累積ポイント推移を表示</p>
+          </CardHeader>
+          <CardContent>
+            <ResponsiveContainer width="100%" height={400}>
+              <LineChart data={pointsProgressionData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
+                <XAxis dataKey="round" stroke="#94a3b8" />
+                <YAxis stroke="#94a3b8" />
+                <Tooltip
+                  contentStyle={{ backgroundColor: '#1e293b', border: '1px solid #475569' }}
+                  labelStyle={{ color: '#f1f5f9' }}
+                />
+                <Legend />
+                {topDrivers.map((driver, index) => (
+                  <Line
+                    key={driver.code}
+                    type="monotone"
+                    dataKey={driver.code}
+                    stroke={COLORS[index % COLORS.length]}
+                    strokeWidth={2}
+                    dot={{ r: 3 }}
+                    name={`${driver.code} (${driver.finalPoints}pts)`}
+                  />
+                ))}
+              </LineChart>
+            </ResponsiveContainer>
+          </CardContent>
+        </Card>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           {/* Drivers Points Chart */}
           <Card className="bg-slate-800 border-slate-700">
@@ -143,7 +273,7 @@ export default function Statistics() {
             <CardContent className="pt-6">
               <div className="text-center">
                 <p className="text-slate-400 text-sm mb-2">総レース数</p>
-                <p className="text-2xl font-bold text-white">{f1Data.races.length}</p>
+                <p className="text-2xl font-bold text-white">{races.length}</p>
               </div>
             </CardContent>
           </Card>

@@ -151,35 +151,41 @@ export default function Home() {
 
         {/* フィーチャーグリッド */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <Card className="bg-slate-800 border-slate-700 hover:border-red-600 transition-colors">
-            <CardHeader>
-              <Calendar className="w-8 h-8 text-red-600 mb-2" />
-              <CardTitle className="text-white">レースカレンダー</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-slate-300 text-sm">全24レースの日程、予選、フリー走行を日本時間で表示</p>
-            </CardContent>
-          </Card>
+          <Link href="/calendar">
+            <Card className="bg-slate-800 border-slate-700 hover:border-red-600 transition-colors cursor-pointer">
+              <CardHeader>
+                <Calendar className="w-8 h-8 text-red-600 mb-2" />
+                <CardTitle className="text-white">レースカレンダー</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-300 text-sm">全24レースの日程、予選、フリー走行を日本時間で表示</p>
+              </CardContent>
+            </Card>
+          </Link>
 
-          <Card className="bg-slate-800 border-slate-700 hover:border-red-600 transition-colors">
-            <CardHeader>
-              <Trophy className="w-8 h-8 text-red-600 mb-2" />
-              <CardTitle className="text-white">スタンディングス</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-slate-300 text-sm">ドライバーとコンストラクターの現在の順位とポイント</p>
-            </CardContent>
-          </Card>
+          <Link href="/standings">
+            <Card className="bg-slate-800 border-slate-700 hover:border-red-600 transition-colors cursor-pointer">
+              <CardHeader>
+                <Trophy className="w-8 h-8 text-red-600 mb-2" />
+                <CardTitle className="text-white">スタンディングス</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-300 text-sm">ドライバーとコンストラクターの現在の順位とポイント</p>
+              </CardContent>
+            </Card>
+          </Link>
 
-          <Card className="bg-slate-800 border-slate-700 hover:border-red-600 transition-colors">
-            <CardHeader>
-              <TrendingUp className="w-8 h-8 text-red-600 mb-2" />
-              <CardTitle className="text-white">統計情報</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-slate-300 text-sm">ポイント推移グラフと分析データ</p>
-            </CardContent>
-          </Card>
+          <Link href="/statistics">
+            <Card className="bg-slate-800 border-slate-700 hover:border-red-600 transition-colors cursor-pointer">
+              <CardHeader>
+                <TrendingUp className="w-8 h-8 text-red-600 mb-2" />
+                <CardTitle className="text-white">統計情報</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-300 text-sm">ポイント推移グラフと分析データ</p>
+              </CardContent>
+            </Card>
+          </Link>
         </section>
 
         {/* クイック統計 */}
