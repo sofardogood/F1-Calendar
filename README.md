@@ -8,7 +8,7 @@ F1 2025シーズンのレース日程、ランキング、統計を表示する�
 - 📅 **カレンダービュー** - 全レースの日程表示
 - 🏁 **セッション詳細** - 予選・フリー走行の時間（日本時間対応）
 - 🌍 **サーキット情報** - 場所、国、コース詳細
-- 🤖 **AI自動取得** - OpenAI APIを使って不足しているセッション情報を自動取得
+- 🔄 **自動更新** - GitHub Actionsで毎日自動的に最新情報を取得
 
 ### ランキング
 - 🏆 **ドライバーズスタンディングス** - ポイント表示
@@ -23,30 +23,42 @@ F1 2025シーズンのレース日程、ランキング、統計を表示する�
 
 このアプリケーションは**完全静的サイト**として構築されており、バックエンドサーバーは不要です。
 
-### データソース
-- すべてのF1データは `f1_data.json` から読み込まれます
-- セッション情報がない場合、OpenAI APIを使って自動取得
-- Vercel/Netlify/GitHub Pagesなど、任意の静的ホスティングで動作
+### データ更新システム
 
-### OpenAI API連携
-次のレース情報で、セッション時間が不足している場合、OpenAI APIを使って以下の情報を自動取得します：
-- フリー走行1〜3の日時
-- 予選の日時
-- 決勝の日時
-- スプリントレース（該当する場合）
-- レース名の日本語訳
+#### 1. GitHub Actions による自動更新
+- **頻度**: 毎日午前3時（UTC）に自動実行
+- **手動実行**: GitHub Actionsページから手動実行も可能
+- **処理内容**:
+  1. F1Pro日本語サイト（f1pro.sub.jp）から最新スケジュールをスクレイピング
+  2. `client/src/f1_data.json`を自動更新
+  3. 変更をGitHubリポジトリにコミット
+  4. Vercelが自動的に再デプロイ
+
+#### 2. データソース
+- **メインデータ**: `client/src/f1_data.json`
+- **スクレイピング先**: https://f1pro.sub.jp/2625/
+- **バックアップ**: フォールバック用のハードコードデータ
+
+### 手動でデータを更新する方法
+
+```bash
+# ローカルでスクレイピングを実行
+pnpm tsx server/scripts/updateF1Data.ts
+
+# 変更をコミット
+git add client/src/f1_data.json
+git commit -m "update: F1スケジュールデータを手動更新"
+git push
+```
 
 ### 環境変数設定
 
-#### ローカル開発
-`.env`ファイルに以下を設定：
-```
-VITE_OPENAI_API_KEY=your-openai-api-key
-```
+#### GitHub Secrets（GitHub Actions用）
+リポジトリの Settings > Secrets and variables > Actions で設定：
+- `OPENAI_API_KEY`: OpenAI API キー（HTMLパース用、オプション）
 
-#### Vercel デプロイ
-Vercel ダッシュボードで以下の環境変数を設定：
-- `VITE_OPENAI_API_KEY`: OpenAI API キー
+#### Vercel環境変数（フロントエンド用）
+- `VITE_OPENAI_API_KEY`: OpenAI API キー（クライアントサイドで使用、現在は非推奨）
 
 ## 技術スタック
 

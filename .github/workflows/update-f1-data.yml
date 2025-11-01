@@ -1,0 +1,45 @@
+name: Update F1 Schedule Data
+
+on:
+  # 毎日午前3時（UTC）に実行
+  schedule:
+    - cron: '0 3 * * *'
+
+  # 手動実行も可能
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run scraper to update F1 data
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: pnpm tsx server/scripts/updateF1Data.ts
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add client/src/f1_data.json
+          git diff --staged --quiet || git commit -m "chore: 自動更新 - F1スケジュールデータ $(date +'%Y-%m-%d')"
+          git push
