@@ -47,13 +47,14 @@ export default function Home() {
   };
 
   // レース情報をOpenAI APIで取得
-  const loadRaceInfo = async () => {
+  const loadRaceInfo = async (force: boolean = false) => {
     const race = getNextRace();
     setNextRace(race);
 
-    // sessionsがない場合のみAPIから取得
-    if (!race.sessions || race.sessions.length === 0) {
+    // sessionsがない場合、または強制更新の場合にAPIから取得
+    if (force || !race.sessions || race.sessions.length === 0) {
       setLoadingSessions(true);
+      console.log('Starting to fetch race session info...');
       try {
         const info = await fetchRaceSessionInfo(
           race.name,
@@ -61,6 +62,8 @@ export default function Home() {
           race.date_start,
           race.date_end
         );
+
+        console.log('Fetched session info:', info);
 
         setNextRace({
           ...race,
@@ -76,7 +79,8 @@ export default function Home() {
   };
 
   useEffect(() => {
-    loadRaceInfo();
+    // 必ずページ読み込み時にAPI呼び出しを実行
+    loadRaceInfo(false);
   }, []);
 
   // 優勝に必要なポイントを計算（最大ポイントは24レース × 25ポイント = 600）
@@ -178,14 +182,15 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="text-center py-4 space-y-3">
-                  <p className="text-slate-400">セッション情報がありません</p>
+                  <p className="text-slate-400">セッション情報を取得できませんでした</p>
                   <Button
-                    onClick={loadRaceInfo}
+                    onClick={() => loadRaceInfo(true)}
                     variant="outline"
                     className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
+                    disabled={loadingSessions}
                   >
-                    <RefreshCw className="w-4 h-4 mr-2" />
-                    AIで情報を取得
+                    <RefreshCw className={`w-4 h-4 mr-2 ${loadingSessions ? 'animate-spin' : ''}`} />
+                    再取得
                   </Button>
                 </div>
               )}
