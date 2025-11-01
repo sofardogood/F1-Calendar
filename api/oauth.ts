@@ -1,18 +1,7 @@
-import "dotenv/config";
-import express from "express";
-import type { Request, Response } from "express";
-import { registerOAuthRoutes } from "../server/_core/oauth";
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-const app = express();
-
-// Configure body parser
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// Register OAuth routes
-registerOAuthRoutes(app);
-
-// Export as Vercel serverless function
-export default async (req: Request, res: Response) => {
-  return app(req, res);
-};
+export default async function handler(req: VercelRequest, res: VercelResponse) {
+  // OAuth callback endpoint
+  // This is a placeholder - implement OAuth logic as needed
+  res.status(200).json({ message: 'OAuth endpoint' });
+}

@@ -1,34 +1,40 @@
-import "dotenv/config";
-import { createExpressMiddleware } from "@trpc/server/adapters/express";
-import express from "express";
-import type { Request, Response } from "express";
-import { appRouter } from "../server/routers";
-import { createContext } from "../server/_core/context";
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { fetchRequestHandler } from '@trpc/server/adapters/fetch';
+import { appRouter } from '../server/routers';
+import { createContext } from '../server/_core/context';
 
-const app = express();
-
-// Configure body parser with larger size limit
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ limit: "50mb", extended: true }));
-
-// Create tRPC middleware
-const trpcMiddleware = createExpressMiddleware({
-  router: appRouter,
-  createContext,
-});
-
-// Export as Vercel serverless function
-export default async (req: Request, res: Response) => {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Set CORS headers
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
-  if (req.method === "OPTIONS") {
+  if (req.method === 'OPTIONS') {
     res.status(200).end();
     return;
   }
 
-  // Handle tRPC request
-  return trpcMiddleware(req, res);
-};
+  // Convert VercelRequest to standard Request
+  const url = `https://${req.headers.host}${req.url}`;
+  const fetchRequest = new Request(url, {
+    method: req.method || 'GET',
+    headers: req.headers as HeadersInit,
+    body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined,
+  });
+
+  const response = await fetchRequestHandler({
+    endpoint: '/api/trpc',
+    req: fetchRequest,
+    router: appRouter,
+    createContext: () => createContext({ req: req as any, res: res as any }),
+  });
+
+  // Convert Response to VercelResponse
+  res.status(response.status);
+  response.headers.forEach((value, key) => {
+    res.setHeader(key, value);
+  });
+
+  const body = await response.text();
+  res.send(body);
+}

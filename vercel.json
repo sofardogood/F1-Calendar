@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "pnpm build",
   "outputDirectory": "dist/public",
+  "installCommand": "pnpm install",
   "rewrites": [
     {
       "source": "/api/trpc/:path*",
@@ -16,12 +17,9 @@
     }
   ],
   "functions": {
-    "api/**/*.js": {
+    "api/**/*.ts": {
       "memory": 1024,
       "maxDuration": 10
     }
-  },
-  "env": {
-    "NODE_ENV": "production"
   }
 }
