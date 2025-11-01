@@ -1,25 +1,5 @@
 {
   "buildCommand": "pnpm build",
   "outputDirectory": "dist/public",
-  "installCommand": "pnpm install --no-frozen-lockfile",
-  "rewrites": [
-    {
-      "source": "/api/trpc/:path*",
-      "destination": "/api/trpc"
-    },
-    {
-      "source": "/api/oauth/:path*",
-      "destination": "/api/oauth"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "functions": {
-    "api/**/*.ts": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  }
+  "installCommand": "pnpm install --no-frozen-lockfile"
 }
