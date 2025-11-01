@@ -1,6 +1,7 @@
 /**
- * Ergast API を使用してF1レース結果を取得
- * API: http://ergast.com/mrd/
+ * Jolpica-F1 API を使用してF1レース結果を取得
+ * API: https://api.jolpi.ca/ergast/f1/
+ * (Ergast APIの後継として、Ergast互換のエンドポイントを提供)
  */
 
 interface ErgastDriver {
@@ -47,8 +48,8 @@ export interface RaceResult {
  */
 export async function fetchRaceResults(season: number, round: number): Promise<RaceResult[] | null> {
   try {
-    // HTTPを使用（HTTPSに問題がある場合のフォールバック）
-    const url = `http://ergast.com/api/f1/${season}/${round}/results.json`;
+    // Jolpica-F1 API (Ergast互換)を使用
+    const url = `https://api.jolpi.ca/ergast/f1/${season}/${round}/results.json`;
     console.log(`Fetching race results from: ${url}`);
 
     const response = await fetch(url);
