@@ -265,14 +265,28 @@ function parseRaceSection(heading: Element, round: number, raceNameJa: string, d
 export async function updateF1DataFile(): Promise<void> {
   const races = await scrapeF1Schedule();
 
-  // Ergast APIからレース結果を取得
+  // Jolpica-F1 APIからレース結果を取得（2024年と2025年）
   const { fetchAllRaceResults } = await import('./ergastApi');
-  const season = new Date().getFullYear();
-  const raceResults = await fetchAllRaceResults(season, races.length);
+  const currentYear = new Date().getFullYear();
 
-  // レース結果をマージ
+  // 2024年の全レース結果を取得（24レース）
+  console.log('Fetching 2024 race results...');
+  const results2024 = await fetchAllRaceResults(2024, 24);
+
+  // 2025年のレース結果を取得
+  console.log('Fetching 2025 race results...');
+  const results2025 = await fetchAllRaceResults(currentYear, races.length);
+
+  // レース結果をマージ（2024年のデータを優先的に使用し、2025年も追加）
   const racesWithResults = races.map(race => {
-    const results = raceResults[race.round];
+    // まず2025年の結果をチェック
+    let results = results2025[race.round];
+
+    // 2025年の結果がない場合、2024年の同じラウンドを試す
+    if (!results && results2024[race.round]) {
+      results = results2024[race.round];
+    }
+
     return results ? { ...race, results } : race;
   });
 
@@ -292,5 +306,6 @@ export async function updateF1DataFile(): Promise<void> {
 
   await fs.writeFile(dataPath, JSON.stringify(updatedData, null, 2));
   console.log('f1_data.json updated successfully');
-  console.log(`Updated ${Object.keys(raceResults).length} race results`);
+  console.log(`Updated ${Object.keys(results2024).length} results from 2024`);
+  console.log(`Updated ${Object.keys(results2025).length} results from 2025`);
 }

@@ -171,20 +171,21 @@ export default function Calendar() {
 
                       {hasResults && (
                         <div className="pt-2 border-t border-slate-700">
-                          <div className="space-y-1">
-                            {race.results.slice(0, 3).map((result, idx) => (
+                          <div className="space-y-1 max-h-96 overflow-y-auto">
+                            {race.results.map((result, idx) => (
                               <div key={idx} className="flex items-center justify-between text-sm">
                                 <div className="flex items-center gap-2">
-                                  <span className={`font-bold w-4 ${
+                                  <span className={`font-bold w-5 text-right ${
                                     idx === 0 ? 'text-yellow-400' :
                                     idx === 1 ? 'text-slate-300' :
-                                    'text-orange-400'
+                                    idx === 2 ? 'text-orange-400' :
+                                    'text-slate-500'
                                   }`}>
                                     {result.position}
                                   </span>
                                   <span className="text-white font-medium">{result.driver_code}</span>
                                 </div>
-                                <span className="text-slate-400 text-xs">{result.team}</span>
+                                <span className="text-slate-400 text-xs truncate ml-2">{result.team}</span>
                               </div>
                             ))}
                           </div>
