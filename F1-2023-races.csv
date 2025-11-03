@@ -1,0 +1,29 @@
+round,race_name,race_name_ja,circuit,location,date_start,date_end
+1,Bahrain Grand Prix,バーレーンGP,Bahrain International Circuit,,2023/03/05,2023/03/05
+2,Saudi Arabian Grand Prix,サウジアラビアGP,Jeddah Corniche Circuit,,2023/03/19,2023/03/19
+3,Australian Grand Prix,オーストラリアGP,Albert Park Circuit,,2023/04/02,2023/04/02
+4,Azerbaijan Grand Prix,アゼルバイジャンGP,Baku City Circuit,,2023/04/30,2023/04/30
+4-S,Azerbaijan GP Sprint,アゼルバイジャンGPスプリント,Baku City Circuit,,2023/04/29,2023/04/29
+5,Miami Grand Prix,マイアミGP,Miami International Autodrome,,2023/05/07,2023/05/07
+6,Monaco Grand Prix,モナコGP,Circuit de Monaco,,2023/05/28,2023/05/28
+7,Spanish Grand Prix,スペインGP,Circuit de Barcelona-Catalunya,,2023/06/04,2023/06/04
+8,Canadian Grand Prix,カナダGP,Circuit Gilles-Villeneuve,,2023/06/18,2023/06/18
+9,Austrian Grand Prix,オーストリアGP,Red Bull Ring,,2023/07/02,2023/07/02
+9-S,Austrian GP Sprint,オーストリアGPスプリント,Red Bull Ring,,2023/07/01,2023/07/01
+10,British Grand Prix,イギリスGP,Silverstone Circuit,,2023/07/09,2023/07/09
+11,Hungarian Grand Prix,ハンガリーGP,Hungaroring,,2023/07/23,2023/07/23
+11-S,Belgian GP Sprint,ベルギーGPスプリント,Circuit de Spa-Francorchamps,,2023/07/29,2023/07/29
+12,Belgian Grand Prix,ベルギーGP,Circuit de Spa-Francorchamps,,2023/07/30,2023/07/30
+13,Dutch Grand Prix,オランダGP,Circuit Zandvoort,,2023/08/27,2023/08/27
+14,Italian Grand Prix,イタリアGP,Autodromo Nazionale Monza,,2023/09/03,2023/09/03
+15,Singapore Grand Prix,シンガポールGP,Marina Bay Street Circuit,,2023/09/17,2023/09/17
+16,Japanese Grand Prix,日本GP,Suzuka Circuit,,2023/09/24,2023/09/24
+17,Qatar Grand Prix,カタールGP,Lusail International Circuit,,2023/10/08,2023/10/08
+17-S,Qatar GP Sprint,カタールGPスプリント,Lusail International Circuit,,2023/10/07,2023/10/07
+18,United States Grand Prix,アメリカGP,Circuit of the Americas,,2023/10/22,2023/10/22
+19-S,United States GP Sprint,アメリカGPスプリント,Circuit of the Americas,,2023/10/21,2023/10/21
+19,Mexico City Grand Prix,メキシコシティGP,Autódromo Hermanos Rodríguez,,2023/10/29,2023/10/29
+20,São Paulo Grand Prix,サンパウロGP,Autódromo José Carlos Pace,,2023/11/05,2023/11/05
+20-S,Brazilian GP Sprint,ブラジルGPスプリント,Autódromo José Carlos Pace,,2023/11/04,2023/11/04
+21,Las Vegas Grand Prix,ラスベガスGP,Las Vegas Strip Circuit,,2023/11/18,2023/11/18
+22,Abu Dhabi Grand Prix,アブダビGP,Yas Marina Circuit,,2023/11/26,2023/11/26

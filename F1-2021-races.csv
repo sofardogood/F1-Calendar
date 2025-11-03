@@ -1,0 +1,25 @@
+round,race_name,race_name_ja,circuit,location,date_start,date_end
+1,Bahrain Grand Prix,バーレーンGP,Bahrain International Circuit,"Sakhir, Bahrain",2021-03-28,2021-03-28
+2,Emilia Romagna Grand Prix,エミリア・ロマーニャGP,Autodromo Internazionale Enzo e Dino Ferrari,"Imola, Italy",2021-04-18,2021-04-18
+3,Portuguese Grand Prix,ポルトガルGP,Algarve International Circuit,"Portimão, Portugal",2021-05-02,2021-05-02
+4,Spanish Grand Prix,スペインGP,Circuit de Barcelona-Catalunya,"Barcelona, Spain",2021-05-09,2021-05-09
+5,Monaco Grand Prix,モナコGP,Circuit de Monaco,"Monte Carlo, Monaco",2021-05-23,2021-05-23
+6,Azerbaijan Grand Prix,アゼルバイジャンGP,Baku City Circuit,"Baku, Azerbaijan",2021-06-06,2021-06-06
+7,French Grand Prix,フランスGP,Circuit Paul Ricard,"Le Castellet, France",2021-06-20,2021-06-20
+8,Styrian Grand Prix,シュタイアーマルクGP,Red Bull Ring,"Spielberg, Austria",2021-06-27,2021-06-27
+9,Austrian Grand Prix,オーストリアGP,Red Bull Ring,"Spielberg, Austria",2021-07-04,2021-07-04
+10,British Grand Prix,イギリスGP,Silverstone Circuit,"Silverstone, UK",2021-07-18,2021-07-18
+10-S,British Grand Prix (Sprint),イギリスGP(スプリント),Silverstone Circuit,"Silverstone, UK",2021-07-17,2021-07-17
+11,Hungarian Grand Prix,ハンガリーGP,Hungaroring,"Budapest, Hungary",2021-08-01,2021-08-01
+13,Dutch Grand Prix,オランダGP,Circuit Zandvoort,"Zandvoort, Netherlands",2021-09-05,2021-09-05
+14,Italian Grand Prix,イタリアGP,Autodromo Nazionale Monza,"Monza, Italy",2021-09-12,2021-09-12
+14-S,Italian Grand Prix (Sprint),イタリアGP(スプリント),Autodromo Nazionale di Monza,"Monza, Italy",2021-09-11,2021-09-11
+15,Russian Grand Prix,ロシアGP,Sochi Autodrom,"Sochi, Russia",2021-09-26,2021-09-26
+16,Turkish Grand Prix,トルコGP,Intercity Istanbul Park,"Istanbul, Turkey",2021-10-10,2021-10-10
+17,United States Grand Prix,アメリカGP,Circuit of The Americas,"Austin, USA",2021-10-24,2021-10-24
+18,Mexico City Grand Prix,メキシコGP,Autódromo Hermanos Rodríguez,"Mexico City, Mexico",2021-11-07,2021-11-07
+19,Brazilian Grand Prix,サンパウロGP,Autódromo José Carlos Pace,"São Paulo, Brazil",2021-11-14,2021-11-14
+19-S,Brazilian Grand Prix (Sprint),サンパウロGP(スプリント),Autódromo José Carlos Pace,"São Paulo, Brazil",2021-11-13,2021-11-13
+20,Qatar Grand Prix,カタールGP,Losail International Circuit,"Lusail, Qatar",2021-11-21,2021-11-21
+21,Saudi Arabian Grand Prix,サウジアラビアGP,Jeddah Corniche Circuit,"Jeddah, Saudi Arabia",2021-12-05,2021-12-05
+22,Abu Dhabi Grand Prix,アブダビGP,Yas Marina Circuit,"Abu Dhabi, UAE",2021-12-12,2021-12-12
