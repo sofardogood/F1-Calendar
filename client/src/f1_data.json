@@ -31544,5 +31544,20 @@
       }
     ]
   },
-  "current_season": 2025
+  "current_season": 2025,
+  "sprint_points_2024": {
+    "VER": 38,
+    "NOR": 30,
+    "LEC": 29,
+    "SAI": 28,
+    "PIA": 27,
+    "RUS": 19,
+    "HAM": 16,
+    "PER": 14,
+    "RIC": 5,
+    "HUL": 5,
+    "MAG": 2,
+    "GAS": 2,
+    "TSU": 1
+  }
 }
