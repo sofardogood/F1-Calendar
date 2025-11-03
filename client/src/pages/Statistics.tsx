@@ -17,19 +17,38 @@ interface F1Data {
 
 // レース結果から順位表を計算
 function calculateStandings(races: any[]) {
-  const driverPoints: Record<string, { name: string; code: string; team: string; points: number }> = {};
+  const driverPoints: Record<string, { name: string; code: string; points: number }> = {};
   const constructorPoints: Record<string, { name: string; points: number }> = {};
+  const latestTeam: Record<string, string> = {};
 
   // 結果があるレースだけを対象
   const racesWithResults = races.filter(race => race.results && race.results.length > 0);
 
-  racesWithResults.forEach(race => {
+  // レースを時系列順にソート（スプリント含む）
+  const sortedRaces = [...racesWithResults].sort((a, b) => {
+    const aDate = a.date_start || a.date_end;
+    const bDate = b.date_start || b.date_end;
+    const dateCompare = aDate.localeCompare(bDate);
+    if (dateCompare !== 0) return dateCompare;
+
+    // 同じ日付の場合、メインレースを先に
+    const aIsMain = typeof a.round === 'number' || !String(a.round).includes('-S');
+    const bIsMain = typeof b.round === 'number' || !String(b.round).includes('-S');
+    if (aIsMain && !bIsMain) return -1;
+    if (!aIsMain && bIsMain) return 1;
+    return 0;
+  });
+
+  sortedRaces.forEach(race => {
     race.results.forEach((result: any) => {
       const { driver, driver_code, team, points } = result;
 
+      // 最新チームを記録
+      latestTeam[driver_code] = team;
+
       // ドライバーポイント
       if (!driverPoints[driver_code]) {
-        driverPoints[driver_code] = { name: driver, code: driver_code, team, points: 0 };
+        driverPoints[driver_code] = { name: driver, code: driver_code, points: 0 };
       }
       driverPoints[driver_code].points += points;
 
@@ -41,8 +60,12 @@ function calculateStandings(races: any[]) {
     });
   });
 
-  // ランキング順にソート
+  // ランキング順にソート（最新チームを使用）
   const driversStandings = Object.values(driverPoints)
+    .map(driver => ({
+      ...driver,
+      team: latestTeam[driver.code]
+    }))
     .sort((a, b) => b.points - a.points)
     .map((driver, index) => ({
       position: index + 1,
