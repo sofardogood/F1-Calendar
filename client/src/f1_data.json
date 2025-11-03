@@ -6211,148 +6211,148 @@
       "position": 1,
       "name": "Lando Norris",
       "code": "NOR",
-      "team": "McLaren",
-      "points": 357
+      "points": 357,
+      "team": "McLaren"
     },
     {
       "position": 2,
       "name": "Oscar Piastri",
       "code": "PIA",
-      "team": "McLaren",
-      "points": 356
+      "points": 356,
+      "team": "McLaren"
     },
     {
       "position": 3,
       "name": "Max Verstappen",
       "code": "VER",
-      "team": "Red Bull",
-      "points": 321
+      "points": 321,
+      "team": "Red Bull"
     },
     {
       "position": 4,
       "name": "George Russell",
       "code": "RUS",
-      "team": "Mercedes",
-      "points": 258
+      "points": 258,
+      "team": "Mercedes"
     },
     {
       "position": 5,
       "name": "Charles Leclerc",
       "code": "LEC",
-      "team": "Ferrari",
-      "points": 210
+      "points": 210,
+      "team": "Ferrari"
     },
     {
       "position": 6,
       "name": "Lewis Hamilton",
       "code": "HAM",
-      "team": "Ferrari",
-      "points": 146
+      "points": 146,
+      "team": "Ferrari"
     },
     {
       "position": 7,
       "name": "Andrea Kimi Antonelli",
       "code": "ANT",
-      "team": "Mercedes",
-      "points": 97
+      "points": 97,
+      "team": "Mercedes"
     },
     {
       "position": 8,
       "name": "Alexander Albon",
       "code": "ALB",
-      "team": "Williams",
-      "points": 73
+      "points": 73,
+      "team": "Williams"
     },
     {
       "position": 9,
       "name": "Nico Hülkenberg",
       "code": "HUL",
-      "team": "Sauber",
-      "points": 41
+      "points": 41,
+      "team": "Sauber"
     },
     {
       "position": 10,
       "name": "Isack Hadjar",
       "code": "HAD",
-      "team": "RB F1 Team",
-      "points": 39
+      "points": 39,
+      "team": "RB F1 Team"
     },
     {
       "position": 11,
       "name": "Carlos Sainz",
       "code": "SAI",
-      "team": "Williams",
-      "points": 38
+      "points": 38,
+      "team": "Williams"
     },
     {
       "position": 12,
       "name": "Fernando Alonso",
       "code": "ALO",
-      "team": "Aston Martin",
-      "points": 37
+      "points": 37,
+      "team": "Aston Martin"
     },
     {
       "position": 13,
       "name": "Lance Stroll",
       "code": "STR",
-      "team": "Aston Martin",
-      "points": 32
+      "points": 32,
+      "team": "Aston Martin"
     },
     {
       "position": 14,
       "name": "Oliver Bearman",
       "code": "BEA",
-      "team": "Haas F1 Team",
-      "points": 32
+      "points": 32,
+      "team": "Haas F1 Team"
     },
     {
       "position": 15,
       "name": "Esteban Ocon",
       "code": "OCO",
-      "team": "Haas F1 Team",
-      "points": 30
+      "points": 30,
+      "team": "Haas F1 Team"
     },
     {
       "position": 16,
       "name": "Liam Lawson",
       "code": "LAW",
-      "team": "Red Bull",
-      "points": 30
+      "points": 30,
+      "team": "RB F1 Team"
     },
     {
       "position": 17,
       "name": "Yuki Tsunoda",
       "code": "TSU",
-      "team": "RB F1 Team",
-      "points": 28
+      "points": 28,
+      "team": "Red Bull"
     },
     {
       "position": 18,
       "name": "Pierre Gasly",
       "code": "GAS",
-      "team": "Alpine F1 Team",
-      "points": 20
+      "points": 20,
+      "team": "Alpine F1 Team"
     },
     {
       "position": 19,
       "name": "Gabriel Bortoleto",
       "code": "BOR",
-      "team": "Sauber",
-      "points": 19
+      "points": 19,
+      "team": "Sauber"
     },
     {
       "position": 20,
       "name": "Jack Doohan",
       "code": "DOO",
-      "team": "Alpine F1 Team",
-      "points": 0
+      "points": 0,
+      "team": "Alpine F1 Team"
     },
     {
       "position": 21,
       "name": "Franco Colapinto",
       "code": "COL",
-      "team": "Alpine F1 Team",
-      "points": 0
+      "points": 0,
+      "team": "Alpine F1 Team"
     }
   ],
   "constructors_standings": [
