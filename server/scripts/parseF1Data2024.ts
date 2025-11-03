@@ -187,13 +187,17 @@ async function parseF1Data2024() {
       // Skip empty or malformed lines
       if (parts.length < 7) continue;
 
+      // Check if this is a retirement line (has "Ret" in position field)
+      const hasRet = parts[1] === 'Ret';
+      const offset = hasRet ? 1 : 0;
+
       const position = parts[0].replace(/Ret/, '');
-      const driverNameJa = parts[2];
-      const teamJa = parts[3];
-      const laps = parts[4];
-      const time = parts[5];
-      const grid = parts[6];
-      const points = parts[7] || '0';
+      const driverNameJa = parts[2 + offset];
+      const teamJa = parts[3 + offset];
+      const laps = parts[4 + offset];
+      const time = parts[5 + offset];
+      const grid = parts[6 + offset];
+      const points = parts[7 + offset] || '0';
 
       // Skip lines without driver names
       if (!driverNameJa) continue;

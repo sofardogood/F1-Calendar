@@ -75,9 +75,9 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 4,15,OCO,Esteban Ocon,Alpine,0,15,52,+1 lap,Finished
 4,16,GAS,Pierre Gasly,Alpine,0,17,52,+1 lap,Finished
 4,17,SAR,Logan Sargeant,Williams,0,19,52,+1 lap,Finished
-4,18,,24,周冠宇,20,リタイア (ギアボックス),Kick Sauber-Ferrari,12,Finished
-4,19,,3,ダニエル・リカルド,11,リタイア (接触),RB Honda RBPT,0,Finished
-4,20,,23,アレクサンダー・アルボン,14,リタイア (接触),Williams Mercedes,0,Finished
+4,18,ZHO,Zhou Guanyu,Kick Sauber,0,20,12,リタイア (ギアボックス),Retired (ギアボックス)
+4,19,RIC,Daniel Ricciardo,RB,0,11,0,リタイア (接触),Retired (接触)
+4,20,ALB,Alexander Albon,Williams,0,14,0,リタイア (接触),Retired (接触)
 5,1,VER,Max Verstappen,Red Bull Racing,25,1,56,1:40:52.554,Finished
 5,2,NOR,Lando Norris,McLaren,18,4,56,+13.773s,Finished
 5,3,PER,Sergio Perez,Red Bull Racing,15,2,56,+19.160s,Finished
@@ -95,9 +95,9 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 5,15,STR,Lance Stroll,Aston Martin,0,11,56,+1:22.786s,Finished
 5,16,MAG,Kevin Magnussen,Haas,0,17,56,+1:27.533s,Finished
 5,17,SAR,Logan Sargeant,Williams,0,19,56,+1:35.110s,Finished
-5,18,,3,ダニエル・リカルド,12,リタイア (接触ダメージ),RB Honda RBPT,33,Finished
-5,19,,22,角田裕毅,19,リタイア (接触),RB Honda RBPT,26,Finished
-5,20,,77,バルテリ・ボッタス,10,リタイア (エンジン),Kick Sauber-Ferrari,19,Finished
+5,18,RIC,Daniel Ricciardo,RB,0,12,33,リタイア (接触ダメージ),Retired (接触ダメージ)
+5,19,TSU,Yuki Tsunoda,RB,0,19,26,リタイア (接触),Retired (接触)
+5,20,BOT,Valtteri Bottas,Kick Sauber,0,10,19,リタイア (エンジン),Retired (エンジン)
 6,1,NOR,Lando Norris,McLaren,25,5,57,1:30:49.876,Finished
 6,2,VER,Max Verstappen,Red Bull Racing,18,1,57,+7.612s,Finished
 6,3,LEC,Charles Leclerc,Ferrari,15,2,57,+9.920s,Finished
@@ -117,7 +117,7 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 6,17,STR,Lance Stroll,Aston Martin,0,11,57,+55.173s,Finished
 6,18,ALB,Alexander Albon,Williams,0,14,57,+1:16.091,Finished
 6,19,MAG,Kevin Magnussen,Haas,0,18,57,+1:24.683s,Finished
-6,20,,2,ローガン・サージェント,17,リタイア (接触),Williams Mercedes,27,Finished
+6,20,SAR,Logan Sargeant,Williams,0,17,27,リタイア (接触),Retired (接触)
 7,1,VER,Max Verstappen,Red Bull Racing,25,1,63,1:25:25.252,Finished
 7,2,NOR,Lando Norris,McLaren,18,2,63,+0.725s,Finished
 7,3,LEC,Charles Leclerc,Ferrari,15,3,63,+7.916s,Finished
@@ -137,7 +137,7 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 7,17,SAR,Logan Sargeant,Williams,0,19,62,+1 lap,Finished
 7,18,BOT,Valtteri Bottas,Kick Sauber,0,16,62,+1 lap,Finished
 7,19,ALO,Fernando Alonso,Aston Martin,0,PL,62,+1 lap,Finished
-7,20,,23,アレクサンダー・アルボン,14,リタイア (撤退),Williams Mercedes,51,Finished
+7,20,ALB,Alexander Albon,Williams,0,14,51,リタイア (撤退),Retired (撤退)
 8,1,LEC,Charles Leclerc,Ferrari,25,1,78,2:23:15.554,Finished
 8,2,PIA,Oscar Piastri,McLaren,18,2,78,+7.152s,Finished
 8,3,SAI,Carlos Sainz,Ferrari,15,3,78,+7.585s,Finished

@@ -22529,36 +22529,36 @@
           },
           {
             "position": 18,
-            "driver": "24",
-            "driver_code": "",
-            "team": "周冠宇",
-            "points": 20,
-            "grid": 0,
-            "laps": "Kick Sauber-Ferrari",
-            "time": "12",
-            "status": "Finished"
+            "driver": "Zhou Guanyu",
+            "driver_code": "ZHO",
+            "team": "Kick Sauber",
+            "points": 0,
+            "grid": 20,
+            "laps": "12",
+            "time": "リタイア (ギアボックス)",
+            "status": "Retired (ギアボックス)"
           },
           {
             "position": 19,
-            "driver": "3",
-            "driver_code": "",
-            "team": "ダニエル・リカルド",
-            "points": 11,
-            "grid": 0,
-            "laps": "RB Honda RBPT",
-            "time": "0",
-            "status": "Finished"
+            "driver": "Daniel Ricciardo",
+            "driver_code": "RIC",
+            "team": "RB",
+            "points": 0,
+            "grid": 11,
+            "laps": "0",
+            "time": "リタイア (接触)",
+            "status": "Retired (接触)"
           },
           {
             "position": 20,
-            "driver": "23",
-            "driver_code": "",
-            "team": "アレクサンダー・アルボン",
-            "points": 14,
-            "grid": 0,
-            "laps": "Williams Mercedes",
-            "time": "0",
-            "status": "Finished"
+            "driver": "Alexander Albon",
+            "driver_code": "ALB",
+            "team": "Williams",
+            "points": 0,
+            "grid": 14,
+            "laps": "0",
+            "time": "リタイア (接触)",
+            "status": "Retired (接触)"
           }
         ]
       },
@@ -22761,36 +22761,36 @@
           },
           {
             "position": 18,
-            "driver": "3",
-            "driver_code": "",
-            "team": "ダニエル・リカルド",
-            "points": 12,
-            "grid": 0,
-            "laps": "RB Honda RBPT",
-            "time": "33",
-            "status": "Finished"
+            "driver": "Daniel Ricciardo",
+            "driver_code": "RIC",
+            "team": "RB",
+            "points": 0,
+            "grid": 12,
+            "laps": "33",
+            "time": "リタイア (接触ダメージ)",
+            "status": "Retired (接触ダメージ)"
           },
           {
             "position": 19,
-            "driver": "22",
-            "driver_code": "",
-            "team": "角田裕毅",
-            "points": 19,
-            "grid": 0,
-            "laps": "RB Honda RBPT",
-            "time": "26",
-            "status": "Finished"
+            "driver": "Yuki Tsunoda",
+            "driver_code": "TSU",
+            "team": "RB",
+            "points": 0,
+            "grid": 19,
+            "laps": "26",
+            "time": "リタイア (接触)",
+            "status": "Retired (接触)"
           },
           {
             "position": 20,
-            "driver": "77",
-            "driver_code": "",
-            "team": "バルテリ・ボッタス",
-            "points": 10,
-            "grid": 0,
-            "laps": "Kick Sauber-Ferrari",
-            "time": "19",
-            "status": "Finished"
+            "driver": "Valtteri Bottas",
+            "driver_code": "BOT",
+            "team": "Kick Sauber",
+            "points": 0,
+            "grid": 10,
+            "laps": "19",
+            "time": "リタイア (エンジン)",
+            "status": "Retired (エンジン)"
           }
         ]
       },
@@ -23015,14 +23015,14 @@
           },
           {
             "position": 20,
-            "driver": "2",
-            "driver_code": "",
-            "team": "ローガン・サージェント",
-            "points": 17,
-            "grid": 0,
-            "laps": "Williams Mercedes",
-            "time": "27",
-            "status": "Finished"
+            "driver": "Logan Sargeant",
+            "driver_code": "SAR",
+            "team": "Williams",
+            "points": 0,
+            "grid": 17,
+            "laps": "27",
+            "time": "リタイア (接触)",
+            "status": "Retired (接触)"
           }
         ]
       },
@@ -23247,14 +23247,14 @@
           },
           {
             "position": 20,
-            "driver": "23",
-            "driver_code": "",
-            "team": "アレクサンダー・アルボン",
-            "points": 14,
-            "grid": 0,
-            "laps": "Williams Mercedes",
-            "time": "51",
-            "status": "Finished"
+            "driver": "Alexander Albon",
+            "driver_code": "ALB",
+            "team": "Williams",
+            "points": 0,
+            "grid": 14,
+            "laps": "51",
+            "time": "リタイア (撤退)",
+            "status": "Retired (撤退)"
           }
         ]
       },
