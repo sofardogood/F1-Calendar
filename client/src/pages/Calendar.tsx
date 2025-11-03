@@ -17,7 +17,7 @@ interface RaceResult {
 }
 
 interface Race {
-  round: number;
+  round: number | string;
   name: string;
   name_ja?: string;
   circuit: string;
@@ -63,7 +63,7 @@ export default function Calendar() {
     : [data.current_season || 2025];
 
   const [selectedYear, setSelectedYear] = useState(availableYears[0]);
-  const [selectedRound, setSelectedRound] = useState<number | null>(null);
+  const [selectedRound, setSelectedRound] = useState<number | string | null>(null);
   const [currentMonth, setCurrentMonth] = useState(0);
 
   // 選択された年度のレースデータを取得
@@ -213,7 +213,7 @@ export default function Calendar() {
                       {hasResults && (
                         <div className="pt-2 border-t border-slate-700">
                           <div className="space-y-1 max-h-96 overflow-y-auto">
-                            {race.results.map((result, idx) => (
+                            {race.results!.map((result, idx) => (
                               <div key={idx} className="flex items-center justify-between text-sm">
                                 <div className="flex items-center gap-2">
                                   <span className={`font-bold w-5 text-right ${

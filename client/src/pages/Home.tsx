@@ -12,7 +12,7 @@ interface RaceSession {
 }
 
 interface ExtendedRace {
-  round: number;
+  round: number | string;
   name: string;
   circuit: string;
   location: string;
