@@ -110,8 +110,8 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 8,14,MSC,Mick Schumacher,Haas,0,20,50,+1 lap,Finished
 8,15,LAT,Nicholas Latifi,Williams,0,18,50,+1 lap,Finished
 8,16,STR,Lance Stroll,Aston Martin,0,19,46,Vibration,Finished
-9,1,VER,Max Verstappen,Red Bull Racing,26,1,70,1:36:21.757,Finished
-9,2,SAI,Carlos Sainz,Ferrari,18,3,70,+0.993s,Finished
+9,1,VER,Max Verstappen,Red Bull Racing,25,1,70,1:36:21.757,Finished
+9,2,SAI,Carlos Sainz,Ferrari,19,3,70,+0.993s,Finished
 9,3,HAM,Lewis Hamilton,Mercedes,15,4,70,+7.006s,Finished
 9,4,RUS,George Russell,Mercedes,12,8,70,+12.313s,Finished
 9,5,LEC,Charles Leclerc,Ferrari,10,19,70,+15.168s,Finished
@@ -182,8 +182,8 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 12,14,BOT,Valtteri Bottas,Alfa Romeo,0,11,53,+1:16.666,Finished
 12,15,MSC,Mick Schumacher,Haas,0,17,53,+1:20.394,Finished
 12,16,ZHO,Zhou Guanyu,Alfa Romeo,0,16,47,Power unit,Finished
-13,1,VER,Max Verstappen,Red Bull Racing,26,10,70,1:39:35.912,Finished
-13,2,HAM,Lewis Hamilton,Mercedes,18,7,70,+7.834s,Finished
+13,1,VER,Max Verstappen,Red Bull Racing,25,10,70,1:39:35.912,Finished
+13,2,HAM,Lewis Hamilton,Mercedes,19,7,70,+7.834s,Finished
 13,3,RUS,George Russell,Mercedes,15,1,70,+12.337s,Finished
 13,4,SAI,Carlos Sainz,Ferrari,12,2,70,+14.579s,Finished
 13,5,PER,Sergio Perez,Red Bull Racing,10,11,70,+15.688s,Finished
@@ -267,7 +267,7 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 17,12,MAG,Kevin Magnussen,Haas,0,9,59,+1:32.610,Finished
 17,13,MSC,Mick Schumacher,Haas,0,12,58,+1 lap,Finished
 17,14,RUS,George Russell,Mercedes,0,PL,57,+2 laps,Finished
-18,1,VER,Max Verstappen,Red Bull Racing,26,1,28,3:01:44.004,Finished
+18,1,VER,Max Verstappen,Red Bull Racing,25,1,28,3:01:44.004,Finished
 18,2,PER,Sergio Perez,Red Bull Racing,18,4,28,+27.066s,Finished
 18,3,LEC,Charles Leclerc,Ferrari,15,2,28,+31.763s,Finished
 18,4,OCO,Esteban Ocon,Alpine,12,5,28,+39.685s,Finished
@@ -285,11 +285,11 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 18,16,ZHO,Zhou Guanyu,Alfa Romeo,0,14,28,+1:27.043,Finished
 18,17,MSC,Mick Schumacher,Haas,0,15,28,+1:32.523,Finished
 18,18,GAS,Pierre Gasly,AlphaTauri,0,PL,28,+1:48.091,Finished
-19,1,VER,Max Verstappen,Red Bull Racing,26,2,56,1:42:11.687,Finished
+19,1,VER,Max Verstappen,Red Bull Racing,25,2,56,1:42:11.687,Finished
 19,2,HAM,Lewis Hamilton,Mercedes,18,3,56,+5.023s,Finished
 19,3,LEC,Charles Leclerc,Ferrari,15,12,56,+7.501s,Finished
 19,4,PER,Sergio Perez,Red Bull Racing,12,9,56,+8.293s,Finished
-19,5,RUS,George Russell,Mercedes,10,4,56,+44.815s,Finished
+19,5,RUS,George Russell,Mercedes,11,4,56,+44.815s,Finished
 19,6,NOR,Lando Norris,McLaren,8,6,56,+53.785s,Finished
 19,7,ALO,Fernando Alonso,Alpine,6,14,56,+55.078s,Finished
 19,8,VET,Sebastian Vettel,Aston Martin,4,10,56,+1:05.354,Finished
@@ -302,10 +302,10 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 19,15,MSC,Mick Schumacher,Haas,0,16,56,+1:24.490,Finished
 19,16,RIC,Daniel Ricciardo,McLaren,0,15,56,+1:30.487,Finished
 19,17,LAT,Nicholas Latifi,Williams,0,17,56,+1:43.588,Finished
-20,1,VER,Max Verstappen,Red Bull Racing,26,1,71,1:38:36.729,Finished
+20,1,VER,Max Verstappen,Red Bull Racing,25,1,71,1:38:36.729,Finished
 20,2,HAM,Lewis Hamilton,Mercedes,18,3,71,+15.186s,Finished
 20,3,PER,Sergio Perez,Red Bull Racing,15,4,71,+18.097s,Finished
-20,4,RUS,George Russell,Mercedes,12,2,71,+49.431s,Finished
+20,4,RUS,George Russell,Mercedes,13,2,71,+49.431s,Finished
 20,5,SAI,Carlos Sainz,Ferrari,10,5,71,+58.123s,Finished
 20,6,LEC,Charles Leclerc,Ferrari,8,7,71,+1:08.774,Finished
 20,7,RIC,Daniel Ricciardo,McLaren,6,11,70,+1 lap,Finished
@@ -346,12 +346,12 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 21-S,6,OCO,Esteban Ocon,Alpine,3,5,24,+17.100s,Finished
 21-S,7,BOT,Valtteri Bottas,Alfa Romeo,2,13,24,+18.260s,Finished
 21-S,8,NOR,Lando Norris,McLaren,1,11,24,+25.007s,Finished
-22,1,VER,Max Verstappen,Red Bull Racing,26,1,58,1:27:45.914,Finished
+22,1,VER,Max Verstappen,Red Bull Racing,25,1,58,1:27:45.914,Finished
 22,2,LEC,Charles Leclerc,Ferrari,18,3,58,+8.771s,Finished
 22,3,PER,Sergio Perez,Red Bull Racing,15,2,58,+10.093s,Finished
 22,4,SAI,Carlos Sainz,Ferrari,12,4,58,+24.892s,Finished
 22,5,RUS,George Russell,Mercedes,10,6,58,+35.888s,Finished
-22,6,NOR,Lando Norris,McLaren,8,7,58,+56.234s,Finished
+22,6,NOR,Lando Norris,McLaren,9,7,58,+56.234s,Finished
 22,7,OCO,Esteban Ocon,Alpine,6,8,58,+57.240s,Finished
 22,8,STR,Lance Stroll,Aston Martin,4,14,58,+1:16.931,Finished
 22,9,RIC,Daniel Ricciardo,McLaren,2,13,58,+1:23.268,Finished

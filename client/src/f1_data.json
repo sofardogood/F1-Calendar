@@ -15211,6 +15211,17 @@
             "status": "Finished"
           },
           {
+            "position": 2,
+            "driver": "Max Verstappen",
+            "driver_code": "VER",
+            "team": "Red Bull Racing",
+            "points": 18,
+            "grid": 2,
+            "laps": "54",
+            "time": "Fuel problem",
+            "status": "Finished"
+          },
+          {
             "position": 3,
             "driver": "Lewis Hamilton",
             "driver_code": "HAM",
@@ -15383,17 +15394,6 @@
             "points": 0,
             "grid": 4,
             "laps": "56",
-            "time": "Fuel problem",
-            "status": "Finished"
-          },
-          {
-            "position": 19,
-            "driver": "Max Verstappen",
-            "driver_code": "VER",
-            "team": "Red Bull Racing",
-            "points": 0,
-            "grid": 2,
-            "laps": "54",
             "time": "Fuel problem",
             "status": "Finished"
           }
