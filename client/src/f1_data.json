@@ -534,7 +534,15 @@
       "circuit": "Shanghai International Circuit",
       "location": "Shanghai, China",
       "date_start": "2025-03-21",
-      "date_end": "2025-03-21"
+      "date_end": "2025-03-21",
+      "sessions": [
+        {
+          "name": "Sprint",
+          "date": "2025-03-22",
+          "time_utc": "03:00",
+          "time_jst": "12:00"
+        }
+      ]
     },
     {
       "round": 3,
@@ -1595,7 +1603,15 @@
       "circuit": "Miami International Autodrome",
       "location": "Miami, USA",
       "date_start": "2025-05-02",
-      "date_end": "2025-05-02"
+      "date_end": "2025-05-02",
+      "sessions": [
+        {
+          "name": "Sprint",
+          "date": "2025-05-04",
+          "time_utc": "16:00",
+          "time_jst": "01:00"
+        }
+      ]
     },
     {
       "round": 7,
@@ -3434,7 +3450,15 @@
       "circuit": "Circuit de Spa-Francorchamps",
       "location": "Spa, Belgium",
       "date_start": "2025-07-25",
-      "date_end": "2025-07-25"
+      "date_end": "2025-07-25",
+      "sessions": [
+        {
+          "name": "Sprint",
+          "date": "2025-07-26",
+          "time_utc": "10:30",
+          "time_jst": "19:30"
+        }
+      ]
     },
     {
       "round": 14,
@@ -5021,7 +5045,15 @@
       "circuit": "Circuit of the Americas",
       "location": "Austin, USA",
       "date_start": "2025-10-17",
-      "date_end": "2025-10-17"
+      "date_end": "2025-10-17",
+      "sessions": [
+        {
+          "name": "Sprint",
+          "date": "2025-10-19",
+          "time_utc": "17:00",
+          "time_jst": "02:00"
+        }
+      ]
     },
     {
       "round": 20,
@@ -34121,7 +34153,15 @@
         "circuit": "Shanghai International Circuit",
         "location": "Shanghai, China",
         "date_start": "2025-03-21",
-        "date_end": "2025-03-21"
+        "date_end": "2025-03-21",
+        "sessions": [
+          {
+            "name": "Sprint",
+            "date": "2025-03-22",
+            "time_utc": "03:00",
+            "time_jst": "12:00"
+          }
+        ]
       },
       {
         "round": 3,
@@ -35182,7 +35222,15 @@
         "circuit": "Miami International Autodrome",
         "location": "Miami, USA",
         "date_start": "2025-05-02",
-        "date_end": "2025-05-02"
+        "date_end": "2025-05-02",
+        "sessions": [
+          {
+            "name": "Sprint",
+            "date": "2025-05-04",
+            "time_utc": "16:00",
+            "time_jst": "01:00"
+          }
+        ]
       },
       {
         "round": 7,
@@ -37021,7 +37069,15 @@
         "circuit": "Circuit de Spa-Francorchamps",
         "location": "Spa, Belgium",
         "date_start": "2025-07-25",
-        "date_end": "2025-07-25"
+        "date_end": "2025-07-25",
+        "sessions": [
+          {
+            "name": "Sprint",
+            "date": "2025-07-26",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          }
+        ]
       },
       {
         "round": 14,
@@ -38608,7 +38664,15 @@
         "circuit": "Circuit of the Americas",
         "location": "Austin, USA",
         "date_start": "2025-10-17",
-        "date_end": "2025-10-17"
+        "date_end": "2025-10-17",
+        "sessions": [
+          {
+            "name": "Sprint",
+            "date": "2025-10-19",
+            "time_utc": "17:00",
+            "time_jst": "02:00"
+          }
+        ]
       },
       {
         "round": 20,
