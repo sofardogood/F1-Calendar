@@ -55,6 +55,10 @@ export default function Home() {
 
   const nextRace = getNextRace();
 
+  // レース統計を計算
+  const mainRaces = currentSeasonRaces.filter(r => !String(r.round).includes('-S'));
+  const sprintRaces = currentSeasonRaces.filter(r => String(r.round).includes('-S'));
+
   // 優勝に必要なポイントを計算（最大ポイントは24レース × 25ポイント = 600）
   const maxPoints = 600;
   const pointsNeededDriver = Math.max(0, maxPoints - leader.points);
@@ -194,11 +198,11 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <div>
               <p className="text-slate-400 text-xs md:text-sm">総レース数</p>
-              <p className="text-2xl md:text-3xl font-bold text-white">24</p>
+              <p className="text-2xl md:text-3xl font-bold text-white">{mainRaces.length}</p>
             </div>
             <div>
               <p className="text-slate-400 text-xs md:text-sm">スプリント</p>
-              <p className="text-2xl md:text-3xl font-bold text-white">6</p>
+              <p className="text-2xl md:text-3xl font-bold text-white">{sprintRaces.length}</p>
             </div>
             <div>
               <p className="text-slate-400 text-xs md:text-sm">チーム数</p>
