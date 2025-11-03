@@ -1,0 +1,400 @@
+round,position,driver_code,driver_name,team,points,grid,laps,time,status
+1,1,NOR,Lando Norris,McLaren,25,0,,1:42:06.304,Finished
+1,2,VER,Max Verstappen,Red Bull,18,0,,+0.895,Finished
+1,3,RUS,George Russell,Mercedes,15,0,,+8.481,Finished
+1,4,ANT,Andrea Kimi Antonelli,Mercedes,12,0,,+10.135,Finished
+1,5,ALB,Alexander Albon,Williams,10,0,,+12.773,Finished
+1,6,STR,Lance Stroll,Aston Martin,8,0,,+17.413,Finished
+1,7,HUL,Nico Hülkenberg,Sauber,6,0,,+18.423,Finished
+1,8,LEC,Charles Leclerc,Ferrari,4,0,,+19.826,Finished
+1,9,PIA,Oscar Piastri,McLaren,2,0,,+20.448,Finished
+1,10,HAM,Lewis Hamilton,Ferrari,1,0,,+22.473,Finished
+1,11,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+26.502,Finished
+1,12,TSU,Yuki Tsunoda,RB F1 Team,0,0,,+29.884,Finished
+1,13,OCO,Esteban Ocon,Haas F1 Team,0,0,,+33.161,Finished
+1,14,BEA,Oliver Bearman,Haas F1 Team,0,0,,+40.351,Finished
+1,15,LAW,Liam Lawson,Red Bull,0,0,,,Retired
+1,16,BOR,Gabriel Bortoleto,Sauber,0,0,,,Retired
+1,17,ALO,Fernando Alonso,Aston Martin,0,0,,,Retired
+1,18,SAI,Carlos Sainz,Williams,0,0,,,Retired
+1,19,DOO,Jack Doohan,Alpine F1 Team,0,0,,,Retired
+1,20,HAD,Isack Hadjar,RB F1 Team,0,0,,,Retired
+2,1,PIA,Oscar Piastri,McLaren,25,0,,1:30:55.026,Finished
+2,2,NOR,Lando Norris,McLaren,18,0,,+9.748,Finished
+2,3,RUS,George Russell,Mercedes,15,0,,+11.097,Finished
+2,4,VER,Max Verstappen,Red Bull,12,0,,+16.656,Finished
+2,5,OCO,Esteban Ocon,Haas F1 Team,10,0,,+49.969,Finished
+2,6,ANT,Andrea Kimi Antonelli,Mercedes,8,0,,+53.748,Finished
+2,7,ALB,Alexander Albon,Williams,6,0,,+56.321,Finished
+2,8,BEA,Oliver Bearman,Haas F1 Team,4,0,,+1:01.303,Finished
+2,9,STR,Lance Stroll,Aston Martin,2,0,,+1:10.204,Finished
+2,10,SAI,Carlos Sainz,Williams,1,0,,+1:16.387,Finished
+2,11,HAD,Isack Hadjar,RB F1 Team,0,0,,+1:18.875,Finished
+2,12,LAW,Liam Lawson,Red Bull,0,0,,+1:21.147,Finished
+2,13,DOO,Jack Doohan,Alpine F1 Team,0,0,,+1:28.401,Finished
+2,14,BOR,Gabriel Bortoleto,Sauber,0,0,,+10.756,Lapped
+2,15,HUL,Nico Hülkenberg,Sauber,0,0,,+20.226,Lapped
+2,16,TSU,Yuki Tsunoda,RB F1 Team,0,0,,+23.511,Lapped
+2,17,ALO,Fernando Alonso,Aston Martin,0,0,,,Retired
+2,18,LEC,Charles Leclerc,Ferrari,0,0,,,Disqualified
+2,19,HAM,Lewis Hamilton,Ferrari,0,0,,,Disqualified
+2,20,GAS,Pierre Gasly,Alpine F1 Team,0,0,,,Disqualified
+3,1,VER,Max Verstappen,Red Bull,25,0,,1:22:06.983,Finished
+3,2,NOR,Lando Norris,McLaren,18,0,,+1.423,Finished
+3,3,PIA,Oscar Piastri,McLaren,15,0,,+2.129,Finished
+3,4,LEC,Charles Leclerc,Ferrari,12,0,,+16.097,Finished
+3,5,RUS,George Russell,Mercedes,10,0,,+17.362,Finished
+3,6,ANT,Andrea Kimi Antonelli,Mercedes,8,0,,+18.671,Finished
+3,7,HAM,Lewis Hamilton,Ferrari,6,0,,+29.182,Finished
+3,8,HAD,Isack Hadjar,RB F1 Team,4,0,,+37.134,Finished
+3,9,ALB,Alexander Albon,Williams,2,0,,+40.367,Finished
+3,10,BEA,Oliver Bearman,Haas F1 Team,1,0,,+54.529,Finished
+3,11,ALO,Fernando Alonso,Aston Martin,0,0,,+57.333,Finished
+3,12,TSU,Yuki Tsunoda,Red Bull,0,0,,+58.401,Finished
+3,13,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+1:02.122,Finished
+3,14,SAI,Carlos Sainz,Williams,0,0,,+1:14.129,Finished
+3,15,DOO,Jack Doohan,Alpine F1 Team,0,0,,+1:21.314,Finished
+3,16,HUL,Nico Hülkenberg,Sauber,0,0,,+1:21.957,Finished
+3,17,LAW,Liam Lawson,RB F1 Team,0,0,,+1:22.734,Finished
+3,18,OCO,Esteban Ocon,Haas F1 Team,0,0,,+1:23.438,Finished
+3,19,BOR,Gabriel Bortoleto,Sauber,0,0,,+1:23.897,Finished
+3,20,STR,Lance Stroll,Aston Martin,0,0,,+12.929,Lapped
+4,1,PIA,Oscar Piastri,McLaren,25,0,,1:35:39.435,Finished
+4,2,RUS,George Russell,Mercedes,18,0,,+15.499,Finished
+4,3,NOR,Lando Norris,McLaren,15,0,,+16.273,Finished
+4,4,LEC,Charles Leclerc,Ferrari,12,0,,+19.679,Finished
+4,5,HAM,Lewis Hamilton,Ferrari,10,0,,+27.993,Finished
+4,6,VER,Max Verstappen,Red Bull,8,0,,+34.395,Finished
+4,7,GAS,Pierre Gasly,Alpine F1 Team,6,0,,+36.002,Finished
+4,8,OCO,Esteban Ocon,Haas F1 Team,4,0,,+44.244,Finished
+4,9,TSU,Yuki Tsunoda,Red Bull,2,0,,+45.061,Finished
+4,10,BEA,Oliver Bearman,Haas F1 Team,1,0,,+47.594,Finished
+4,11,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,+48.016,Finished
+4,12,ALB,Alexander Albon,Williams,0,0,,+48.839,Finished
+4,13,HAD,Isack Hadjar,RB F1 Team,0,0,,+56.314,Finished
+4,14,DOO,Jack Doohan,Alpine F1 Team,0,0,,+57.806,Finished
+4,15,ALO,Fernando Alonso,Aston Martin,0,0,,+1:00.340,Finished
+4,16,LAW,Liam Lawson,RB F1 Team,0,0,,+1:04.435,Finished
+4,17,STR,Lance Stroll,Aston Martin,0,0,,+1:05.489,Finished
+4,18,BOR,Gabriel Bortoleto,Sauber,0,0,,+1:06.872,Finished
+4,19,SAI,Carlos Sainz,Williams,0,0,,,Retired
+4,20,HUL,Nico Hülkenberg,Sauber,0,0,,,Disqualified
+5,1,PIA,Oscar Piastri,McLaren,25,0,,1:21:06.758,Finished
+5,2,VER,Max Verstappen,Red Bull,18,0,,+2.843,Finished
+5,3,LEC,Charles Leclerc,Ferrari,15,0,,+8.104,Finished
+5,4,NOR,Lando Norris,McLaren,12,0,,+9.196,Finished
+5,5,RUS,George Russell,Mercedes,10,0,,+27.236,Finished
+5,6,ANT,Andrea Kimi Antonelli,Mercedes,8,0,,+34.688,Finished
+5,7,HAM,Lewis Hamilton,Ferrari,6,0,,+39.073,Finished
+5,8,SAI,Carlos Sainz,Williams,4,0,,+1:04.630,Finished
+5,9,ALB,Alexander Albon,Williams,2,0,,+1:06.515,Finished
+5,10,HAD,Isack Hadjar,RB F1 Team,1,0,,+1:07.091,Finished
+5,11,ALO,Fernando Alonso,Aston Martin,0,0,,+1:15.917,Finished
+5,12,LAW,Liam Lawson,RB F1 Team,0,0,,+1:18.451,Finished
+5,13,BEA,Oliver Bearman,Haas F1 Team,0,0,,+1:19.194,Finished
+5,14,OCO,Esteban Ocon,Haas F1 Team,0,0,,+1:39.723,Finished
+5,15,HUL,Nico Hülkenberg,Sauber,0,0,,+4.609,Lapped
+5,16,STR,Lance Stroll,Aston Martin,0,0,,+5.527,Lapped
+5,17,DOO,Jack Doohan,Alpine F1 Team,0,0,,+19.264,Lapped
+5,18,BOR,Gabriel Bortoleto,Sauber,0,0,,+19.306,Lapped
+5,19,TSU,Yuki Tsunoda,Red Bull,0,0,,,Retired
+5,20,GAS,Pierre Gasly,Alpine F1 Team,0,0,,,Retired
+6,1,PIA,Oscar Piastri,McLaren,25,0,,1:28:51.587,Finished
+6,2,NOR,Lando Norris,McLaren,18,0,,+4.630,Finished
+6,3,RUS,George Russell,Mercedes,15,0,,+37.644,Finished
+6,4,VER,Max Verstappen,Red Bull,12,0,,+39.956,Finished
+6,5,ALB,Alexander Albon,Williams,10,0,,+48.067,Finished
+6,6,ANT,Andrea Kimi Antonelli,Mercedes,8,0,,+55.502,Finished
+6,7,LEC,Charles Leclerc,Ferrari,6,0,,+57.036,Finished
+6,8,HAM,Lewis Hamilton,Ferrari,4,0,,+1:00.186,Finished
+6,9,SAI,Carlos Sainz,Williams,2,0,,+1:00.577,Finished
+6,10,TSU,Yuki Tsunoda,Red Bull,1,0,,+1:14.434,Finished
+6,11,HAD,Isack Hadjar,RB F1 Team,0,0,,+1:14.602,Finished
+6,12,OCO,Esteban Ocon,Haas F1 Team,0,0,,+1:22.006,Finished
+6,13,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+1:30.445,Finished
+6,14,HUL,Nico Hülkenberg,Sauber,0,0,,+1.155,Lapped
+6,15,ALO,Fernando Alonso,Aston Martin,0,0,,+20.979,Lapped
+6,16,STR,Lance Stroll,Aston Martin,0,0,,+25.162,Lapped
+6,17,LAW,Liam Lawson,RB F1 Team,0,0,,,Retired
+6,18,BOR,Gabriel Bortoleto,Sauber,0,0,,,Retired
+6,19,BEA,Oliver Bearman,Haas F1 Team,0,0,,,Retired
+6,20,DOO,Jack Doohan,Alpine F1 Team,0,0,,,Retired
+7,1,VER,Max Verstappen,Red Bull,25,0,,1:31:33.199,Finished
+7,2,NOR,Lando Norris,McLaren,18,0,,+6.109,Finished
+7,3,PIA,Oscar Piastri,McLaren,15,0,,+12.956,Finished
+7,4,HAM,Lewis Hamilton,Ferrari,12,0,,+14.356,Finished
+7,5,ALB,Alexander Albon,Williams,10,0,,+17.945,Finished
+7,6,LEC,Charles Leclerc,Ferrari,8,0,,+20.774,Finished
+7,7,RUS,George Russell,Mercedes,6,0,,+22.034,Finished
+7,8,SAI,Carlos Sainz,Williams,4,0,,+22.898,Finished
+7,9,HAD,Isack Hadjar,RB F1 Team,2,0,,+23.586,Finished
+7,10,TSU,Yuki Tsunoda,Red Bull,1,0,,+26.446,Finished
+7,11,ALO,Fernando Alonso,Aston Martin,0,0,,+27.250,Finished
+7,12,HUL,Nico Hülkenberg,Sauber,0,0,,+30.296,Finished
+7,13,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+31.424,Finished
+7,14,LAW,Liam Lawson,RB F1 Team,0,0,,+32.511,Finished
+7,15,STR,Lance Stroll,Aston Martin,0,0,,+32.993,Finished
+7,16,COL,Franco Colapinto,Alpine F1 Team,0,0,,+33.411,Finished
+7,17,BEA,Oliver Bearman,Haas F1 Team,0,0,,+33.808,Finished
+7,18,BOR,Gabriel Bortoleto,Sauber,0,0,,+38.572,Finished
+7,19,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,,Retired
+7,20,OCO,Esteban Ocon,Haas F1 Team,0,0,,,Retired
+8,1,NOR,Lando Norris,McLaren,25,0,,1:40:33.843,Finished
+8,2,LEC,Charles Leclerc,Ferrari,18,0,,+3.131,Finished
+8,3,PIA,Oscar Piastri,McLaren,15,0,,+3.658,Finished
+8,4,VER,Max Verstappen,Red Bull,12,0,,+20.572,Finished
+8,5,HAM,Lewis Hamilton,Ferrari,10,0,,+51.387,Finished
+8,6,HAD,Isack Hadjar,RB F1 Team,8,0,,+1:05.082,Lapped
+8,7,OCO,Esteban Ocon,Haas F1 Team,6,0,,+1:06.029,Lapped
+8,8,LAW,Liam Lawson,RB F1 Team,4,0,,+1:06.746,Lapped
+8,9,ALB,Alexander Albon,Williams,2,0,,+11.869,Lapped
+8,10,SAI,Carlos Sainz,Williams,1,0,,+15.232,Lapped
+8,11,RUS,George Russell,Mercedes,0,0,,+33.844,Lapped
+8,12,BEA,Oliver Bearman,Haas F1 Team,0,0,,+54.693,Lapped
+8,13,COL,Franco Colapinto,Alpine F1 Team,0,0,,+57.114,Lapped
+8,14,BOR,Gabriel Bortoleto,Sauber,0,0,,+1:08.424,Lapped
+8,15,STR,Lance Stroll,Aston Martin,0,0,,+1:10.395,Lapped
+8,16,HUL,Nico Hülkenberg,Sauber,0,0,,+1:11.544,Lapped
+8,17,TSU,Yuki Tsunoda,Red Bull,0,0,,+1:11.849,Lapped
+8,18,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,+8.409,Lapped
+8,19,ALO,Fernando Alonso,Aston Martin,0,0,,,Retired
+8,20,GAS,Pierre Gasly,Alpine F1 Team,0,0,,,Retired
+9,1,PIA,Oscar Piastri,McLaren,25,0,,1:32:57.375,Finished
+9,2,NOR,Lando Norris,McLaren,18,0,,+2.471,Finished
+9,3,LEC,Charles Leclerc,Ferrari,15,0,,+10.455,Finished
+9,4,RUS,George Russell,Mercedes,12,0,,+11.359,Finished
+9,5,HUL,Nico Hülkenberg,Sauber,10,0,,+13.648,Finished
+9,6,HAM,Lewis Hamilton,Ferrari,8,0,,+15.508,Finished
+9,7,HAD,Isack Hadjar,RB F1 Team,6,0,,+16.022,Finished
+9,8,GAS,Pierre Gasly,Alpine F1 Team,4,0,,+17.882,Finished
+9,9,ALO,Fernando Alonso,Aston Martin,2,0,,+21.564,Finished
+9,10,VER,Max Verstappen,Red Bull,1,0,,+21.826,Finished
+9,11,LAW,Liam Lawson,RB F1 Team,0,0,,+25.532,Finished
+9,12,BOR,Gabriel Bortoleto,Sauber,0,0,,+25.996,Finished
+9,13,TSU,Yuki Tsunoda,Red Bull,0,0,,+28.822,Finished
+9,14,SAI,Carlos Sainz,Williams,0,0,,+29.309,Finished
+9,15,COL,Franco Colapinto,Alpine F1 Team,0,0,,+31.381,Finished
+9,16,OCO,Esteban Ocon,Haas F1 Team,0,0,,+32.197,Finished
+9,17,BEA,Oliver Bearman,Haas F1 Team,0,0,,+37.065,Finished
+9,18,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,,Retired
+9,19,ALB,Alexander Albon,Williams,0,0,,,Retired
+10,1,RUS,George Russell,Mercedes,25,0,,1:31:52.688,Finished
+10,2,VER,Max Verstappen,Red Bull,18,0,,+0.228,Finished
+10,3,ANT,Andrea Kimi Antonelli,Mercedes,15,0,,+1.014,Finished
+10,4,PIA,Oscar Piastri,McLaren,12,0,,+2.109,Finished
+10,5,LEC,Charles Leclerc,Ferrari,10,0,,+3.442,Finished
+10,6,HAM,Lewis Hamilton,Ferrari,8,0,,+10.713,Finished
+10,7,ALO,Fernando Alonso,Aston Martin,6,0,,+10.972,Finished
+10,8,HUL,Nico Hülkenberg,Sauber,4,0,,+15.364,Finished
+10,9,OCO,Esteban Ocon,Haas F1 Team,2,0,,+1.473,Lapped
+10,10,SAI,Carlos Sainz,Williams,1,0,,+1.886,Lapped
+10,11,BEA,Oliver Bearman,Haas F1 Team,0,0,,+3.717,Lapped
+10,12,TSU,Yuki Tsunoda,Red Bull,0,0,,+5.456,Lapped
+10,13,COL,Franco Colapinto,Alpine F1 Team,0,0,,+7.018,Lapped
+10,14,BOR,Gabriel Bortoleto,Sauber,0,0,,+7.879,Lapped
+10,15,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+7.950,Lapped
+10,16,HAD,Isack Hadjar,RB F1 Team,0,0,,+8.737,Lapped
+10,17,STR,Lance Stroll,Aston Martin,0,0,,+9.063,Lapped
+10,18,NOR,Lando Norris,McLaren,0,0,,+-1:52:09.782,Retired
+10,19,LAW,Liam Lawson,RB F1 Team,0,0,,,Retired
+10,20,ALB,Alexander Albon,Williams,0,0,,,Retired
+11,1,NOR,Lando Norris,McLaren,25,0,,1:23:47.693,Finished
+11,2,PIA,Oscar Piastri,McLaren,18,0,,+2.695,Finished
+11,3,LEC,Charles Leclerc,Ferrari,15,0,,+19.820,Finished
+11,4,HAM,Lewis Hamilton,Ferrari,12,0,,+29.020,Finished
+11,5,RUS,George Russell,Mercedes,10,0,,+1:02.396,Finished
+11,6,LAW,Liam Lawson,RB F1 Team,8,0,,+1:07.754,Finished
+11,7,ALO,Fernando Alonso,Aston Martin,6,0,,+1.437,Lapped
+11,8,BOR,Gabriel Bortoleto,Sauber,4,0,,+1.952,Lapped
+11,9,HUL,Nico Hülkenberg,Sauber,2,0,,+7.720,Lapped
+11,10,OCO,Esteban Ocon,Haas F1 Team,1,0,,+9.986,Lapped
+11,11,BEA,Oliver Bearman,Haas F1 Team,0,0,,+24.854,Lapped
+11,12,HAD,Isack Hadjar,RB F1 Team,0,0,,+27.957,Lapped
+11,13,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+33.055,Lapped
+11,14,STR,Lance Stroll,Aston Martin,0,0,,+34.462,Lapped
+11,15,COL,Franco Colapinto,Alpine F1 Team,0,0,,+42.692,Lapped
+11,16,TSU,Yuki Tsunoda,Red Bull,0,0,,+2.979,Lapped
+11,17,ALB,Alexander Albon,Williams,0,0,,,Retired
+11,18,VER,Max Verstappen,Red Bull,0,0,,,Retired
+11,19,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,,Retired
+11,20,SAI,Carlos Sainz,Williams,0,0,,,Did not start
+12,1,NOR,Lando Norris,McLaren,25,0,,1:37:15.735,Finished
+12,2,PIA,Oscar Piastri,McLaren,18,0,,+6.812,Finished
+12,3,HUL,Nico Hülkenberg,Sauber,15,0,,+34.742,Finished
+12,4,HAM,Lewis Hamilton,Ferrari,12,0,,+39.812,Finished
+12,5,VER,Max Verstappen,Red Bull,10,0,,+56.781,Finished
+12,6,GAS,Pierre Gasly,Alpine F1 Team,8,0,,+59.857,Finished
+12,7,STR,Lance Stroll,Aston Martin,6,0,,+1:00.603,Finished
+12,8,ALB,Alexander Albon,Williams,4,0,,+1:04.135,Finished
+12,9,ALO,Fernando Alonso,Aston Martin,2,0,,+1:05.858,Finished
+12,10,RUS,George Russell,Mercedes,1,0,,+1:10.674,Finished
+12,11,BEA,Oliver Bearman,Haas F1 Team,0,0,,+1:12.095,Finished
+12,12,SAI,Carlos Sainz,Williams,0,0,,+1:16.592,Finished
+12,13,OCO,Esteban Ocon,Haas F1 Team,0,0,,+1:17.301,Finished
+12,14,LEC,Charles Leclerc,Ferrari,0,0,,+1:24.477,Finished
+12,15,TSU,Yuki Tsunoda,Red Bull,0,0,,+32.250,Lapped
+12,16,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,,Retired
+12,17,HAD,Isack Hadjar,RB F1 Team,0,0,,,Retired
+12,18,BOR,Gabriel Bortoleto,Sauber,0,0,,,Retired
+12,19,LAW,Liam Lawson,RB F1 Team,0,0,,,Retired
+12,20,COL,Franco Colapinto,Alpine F1 Team,0,0,,,Did not start
+13,1,PIA,Oscar Piastri,McLaren,25,0,,1:25:22.601,Finished
+13,2,NOR,Lando Norris,McLaren,18,0,,+3.415,Finished
+13,3,LEC,Charles Leclerc,Ferrari,15,0,,+20.185,Finished
+13,4,VER,Max Verstappen,Red Bull,12,0,,+21.731,Finished
+13,5,RUS,George Russell,Mercedes,10,0,,+34.863,Finished
+13,6,ALB,Alexander Albon,Williams,8,0,,+39.926,Finished
+13,7,HAM,Lewis Hamilton,Ferrari,6,0,,+40.679,Finished
+13,8,LAW,Liam Lawson,RB F1 Team,4,0,,+52.033,Finished
+13,9,BOR,Gabriel Bortoleto,Sauber,2,0,,+56.434,Finished
+13,10,GAS,Pierre Gasly,Alpine F1 Team,1,0,,+1:12.714,Finished
+13,11,BEA,Oliver Bearman,Haas F1 Team,0,0,,+1:13.145,Finished
+13,12,HUL,Nico Hülkenberg,Sauber,0,0,,+1:13.628,Finished
+13,13,TSU,Yuki Tsunoda,Red Bull,0,0,,+1:15.395,Finished
+13,14,STR,Lance Stroll,Aston Martin,0,0,,+1:19.831,Finished
+13,15,OCO,Esteban Ocon,Haas F1 Team,0,0,,+1:26.063,Finished
+13,16,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,+1:26.721,Finished
+13,17,ALO,Fernando Alonso,Aston Martin,0,0,,+1:27.924,Finished
+13,18,SAI,Carlos Sainz,Williams,0,0,,+1:32.024,Finished
+13,19,COL,Franco Colapinto,Alpine F1 Team,0,0,,+1:35.250,Finished
+13,20,HAD,Isack Hadjar,RB F1 Team,0,0,,+12.942,Lapped
+14,1,NOR,Lando Norris,McLaren,25,0,,1:35:21.231,Finished
+14,2,PIA,Oscar Piastri,McLaren,18,0,,+0.698,Finished
+14,3,RUS,George Russell,Mercedes,15,0,,+21.916,Finished
+14,4,LEC,Charles Leclerc,Ferrari,12,0,,+42.560,Finished
+14,5,ALO,Fernando Alonso,Aston Martin,10,0,,+59.040,Finished
+14,6,BOR,Gabriel Bortoleto,Sauber,8,0,,+1:06.169,Finished
+14,7,STR,Lance Stroll,Aston Martin,6,0,,+1:08.174,Finished
+14,8,LAW,Liam Lawson,RB F1 Team,4,0,,+1:09.451,Finished
+14,9,VER,Max Verstappen,Red Bull,2,0,,+1:12.645,Finished
+14,10,ANT,Andrea Kimi Antonelli,Mercedes,1,0,,+7.649,Lapped
+14,11,HAD,Isack Hadjar,RB F1 Team,0,0,,+8.500,Lapped
+14,12,HAM,Lewis Hamilton,Ferrari,0,0,,+9.861,Lapped
+14,13,HUL,Nico Hülkenberg,Sauber,0,0,,+31.268,Lapped
+14,14,SAI,Carlos Sainz,Williams,0,0,,+33.326,Lapped
+14,15,ALB,Alexander Albon,Williams,0,0,,+38.111,Lapped
+14,16,OCO,Esteban Ocon,Haas F1 Team,0,0,,+45.258,Lapped
+14,17,TSU,Yuki Tsunoda,Red Bull,0,0,,+46.943,Lapped
+14,18,COL,Franco Colapinto,Alpine F1 Team,0,0,,+47.370,Lapped
+14,19,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+56.344,Lapped
+14,20,BEA,Oliver Bearman,Haas F1 Team,0,0,,,Retired
+15,1,PIA,Oscar Piastri,McLaren,25,0,,1:38:29.849,Finished
+15,2,VER,Max Verstappen,Red Bull,18,0,,+1.271,Finished
+15,3,HAD,Isack Hadjar,RB F1 Team,15,0,,+3.233,Finished
+15,4,RUS,George Russell,Mercedes,12,0,,+5.654,Finished
+15,5,ALB,Alexander Albon,Williams,10,0,,+6.327,Finished
+15,6,BEA,Oliver Bearman,Haas F1 Team,8,0,,+9.044,Finished
+15,7,STR,Lance Stroll,Aston Martin,6,0,,+9.497,Finished
+15,8,ALO,Fernando Alonso,Aston Martin,4,0,,+11.709,Finished
+15,9,TSU,Yuki Tsunoda,Red Bull,2,0,,+13.597,Finished
+15,10,OCO,Esteban Ocon,Haas F1 Team,1,0,,+14.063,Finished
+15,11,COL,Franco Colapinto,Alpine F1 Team,0,0,,+14.511,Finished
+15,12,LAW,Liam Lawson,RB F1 Team,0,0,,+17.063,Finished
+15,13,SAI,Carlos Sainz,Williams,0,0,,+17.376,Finished
+15,14,HUL,Nico Hülkenberg,Sauber,0,0,,+19.725,Finished
+15,15,BOR,Gabriel Bortoleto,Sauber,0,0,,+21.565,Finished
+15,16,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,+22.029,Finished
+15,17,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+23.629,Finished
+15,18,NOR,Lando Norris,McLaren,0,0,,+-1:47:38.638,Retired
+15,19,LEC,Charles Leclerc,Ferrari,0,0,,,Retired
+15,20,HAM,Lewis Hamilton,Ferrari,0,0,,,Retired
+16,1,VER,Max Verstappen,Red Bull,25,0,,1:13:24.325,Finished
+16,2,NOR,Lando Norris,McLaren,18,0,,+19.207,Finished
+16,3,PIA,Oscar Piastri,McLaren,15,0,,+21.351,Finished
+16,4,LEC,Charles Leclerc,Ferrari,12,0,,+25.624,Finished
+16,5,RUS,George Russell,Mercedes,10,0,,+32.881,Finished
+16,6,HAM,Lewis Hamilton,Ferrari,8,0,,+37.449,Finished
+16,7,ALB,Alexander Albon,Williams,6,0,,+50.537,Finished
+16,8,BOR,Gabriel Bortoleto,Sauber,4,0,,+58.484,Finished
+16,9,ANT,Andrea Kimi Antonelli,Mercedes,2,0,,+59.762,Finished
+16,10,HAD,Isack Hadjar,RB F1 Team,1,0,,+1:03.891,Finished
+16,11,SAI,Carlos Sainz,Williams,0,0,,+1:04.469,Finished
+16,12,BEA,Oliver Bearman,Haas F1 Team,0,0,,+1:19.288,Finished
+16,13,TSU,Yuki Tsunoda,Red Bull,0,0,,+1:20.701,Finished
+16,14,LAW,Liam Lawson,RB F1 Team,0,0,,+1:22.351,Finished
+16,15,OCO,Esteban Ocon,Haas F1 Team,0,0,,+2.135,Lapped
+16,16,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+5.837,Lapped
+16,17,COL,Franco Colapinto,Alpine F1 Team,0,0,,+7.448,Lapped
+16,18,STR,Lance Stroll,Aston Martin,0,0,,+9.301,Lapped
+16,19,ALO,Fernando Alonso,Aston Martin,0,0,,,Retired
+16,20,HUL,Nico Hülkenberg,Sauber,0,0,,,Did not start
+17,1,VER,Max Verstappen,Red Bull,25,0,,1:33:26.408,Finished
+17,2,RUS,George Russell,Mercedes,18,0,,+14.609,Finished
+17,3,SAI,Carlos Sainz,Williams,15,0,,+19.199,Finished
+17,4,ANT,Andrea Kimi Antonelli,Mercedes,12,0,,+21.760,Finished
+17,5,LAW,Liam Lawson,RB F1 Team,10,0,,+33.290,Finished
+17,6,TSU,Yuki Tsunoda,Red Bull,8,0,,+33.808,Finished
+17,7,NOR,Lando Norris,McLaren,6,0,,+34.227,Finished
+17,8,HAM,Lewis Hamilton,Ferrari,4,0,,+36.310,Finished
+17,9,LEC,Charles Leclerc,Ferrari,2,0,,+36.774,Finished
+17,10,HAD,Isack Hadjar,RB F1 Team,1,0,,+38.982,Finished
+17,11,BOR,Gabriel Bortoleto,Sauber,0,0,,+1:07.606,Finished
+17,12,BEA,Oliver Bearman,Haas F1 Team,0,0,,+1:08.262,Finished
+17,13,ALB,Alexander Albon,Williams,0,0,,+1:12.870,Finished
+17,14,OCO,Esteban Ocon,Haas F1 Team,0,0,,+1:17.580,Finished
+17,15,ALO,Fernando Alonso,Aston Martin,0,0,,+1:18.707,Finished
+17,16,HUL,Nico Hülkenberg,Sauber,0,0,,+1:20.237,Finished
+17,17,STR,Lance Stroll,Aston Martin,0,0,,+1:36.392,Finished
+17,18,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+3.865,Lapped
+17,19,COL,Franco Colapinto,Alpine F1 Team,0,0,,+6.325,Lapped
+17,20,PIA,Oscar Piastri,McLaren,0,0,,,Retired
+18,1,RUS,George Russell,Mercedes,25,0,,1:40:22.367,Finished
+18,2,VER,Max Verstappen,Red Bull,18,0,,+5.430,Finished
+18,3,NOR,Lando Norris,McLaren,15,0,,+6.066,Finished
+18,4,PIA,Oscar Piastri,McLaren,12,0,,+8.146,Finished
+18,5,ANT,Andrea Kimi Antonelli,Mercedes,10,0,,+33.681,Finished
+18,6,LEC,Charles Leclerc,Ferrari,8,0,,+45.996,Finished
+18,7,ALO,Fernando Alonso,Aston Martin,6,0,,+1:20.667,Finished
+18,8,HAM,Lewis Hamilton,Ferrari,4,0,,+1:25.251,Finished
+18,9,BEA,Oliver Bearman,Haas F1 Team,2,0,,+1:33.527,Finished
+18,10,SAI,Carlos Sainz,Williams,1,0,,+10.754,Lapped
+18,11,HAD,Isack Hadjar,RB F1 Team,0,0,,+17.335,Lapped
+18,12,TSU,Yuki Tsunoda,Red Bull,0,0,,+19.269,Lapped
+18,13,STR,Lance Stroll,Aston Martin,0,0,,+24.490,Lapped
+18,14,ALB,Alexander Albon,Williams,0,0,,+25.320,Lapped
+18,15,LAW,Liam Lawson,RB F1 Team,0,0,,+27.145,Lapped
+18,16,COL,Franco Colapinto,Alpine F1 Team,0,0,,+42.890,Lapped
+18,17,BOR,Gabriel Bortoleto,Sauber,0,0,,+46.753,Lapped
+18,18,OCO,Esteban Ocon,Haas F1 Team,0,0,,+47.133,Lapped
+18,19,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+47.461,Lapped
+18,20,HUL,Nico Hülkenberg,Sauber,0,0,,+49.040,Lapped
+19,1,VER,Max Verstappen,Red Bull,25,0,,1:34:00.161,Finished
+19,2,NOR,Lando Norris,McLaren,18,0,,+7.959,Finished
+19,3,LEC,Charles Leclerc,Ferrari,15,0,,+15.373,Finished
+19,4,HAM,Lewis Hamilton,Ferrari,12,0,,+28.536,Finished
+19,5,PIA,Oscar Piastri,McLaren,10,0,,+29.678,Finished
+19,6,RUS,George Russell,Mercedes,8,0,,+33.456,Finished
+19,7,TSU,Yuki Tsunoda,Red Bull,6,0,,+52.714,Finished
+19,8,HUL,Nico Hülkenberg,Sauber,4,0,,+57.249,Finished
+19,9,BEA,Oliver Bearman,Haas F1 Team,2,0,,+1:04.722,Finished
+19,10,ALO,Fernando Alonso,Aston Martin,1,0,,+1:10.001,Finished
+19,11,LAW,Liam Lawson,RB F1 Team,0,0,,+1:13.209,Finished
+19,12,STR,Lance Stroll,Aston Martin,0,0,,+1:14.778,Finished
+19,13,ANT,Andrea Kimi Antonelli,Mercedes,0,0,,+1:15.746,Finished
+19,14,ALB,Alexander Albon,Williams,0,0,,+1:20.000,Finished
+19,15,OCO,Esteban Ocon,Haas F1 Team,0,0,,+1:23.043,Finished
+19,16,HAD,Isack Hadjar,RB F1 Team,0,0,,+1:32.807,Finished
+19,17,COL,Franco Colapinto,Alpine F1 Team,0,0,,+2.307,Lapped
+19,18,BOR,Gabriel Bortoleto,Sauber,0,0,,+3.557,Lapped
+19,19,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+6.155,Lapped
+19,20,SAI,Carlos Sainz,Williams,0,0,,,Retired
+20,1,NOR,Lando Norris,McLaren,25,0,,1:37:58.574,Finished
+20,2,LEC,Charles Leclerc,Ferrari,18,0,,+30.324,Finished
+20,3,VER,Max Verstappen,Red Bull,15,0,,+31.049,Finished
+20,4,BEA,Oliver Bearman,Haas F1 Team,12,0,,+40.955,Finished
+20,5,PIA,Oscar Piastri,McLaren,10,0,,+42.065,Finished
+20,6,ANT,Andrea Kimi Antonelli,Mercedes,8,0,,+47.837,Finished
+20,7,RUS,George Russell,Mercedes,6,0,,+50.287,Finished
+20,8,HAM,Lewis Hamilton,Ferrari,4,0,,+56.446,Finished
+20,9,OCO,Esteban Ocon,Haas F1 Team,2,0,,+1:15.464,Finished
+20,10,BOR,Gabriel Bortoleto,Sauber,1,0,,+1:16.863,Finished
+20,11,TSU,Yuki Tsunoda,Red Bull,0,0,,+1:19.048,Finished
+20,12,ALB,Alexander Albon,Williams,0,0,,+2.450,Lapped
+20,13,HAD,Isack Hadjar,RB F1 Team,0,0,,+6.656,Lapped
+20,14,STR,Lance Stroll,Aston Martin,0,0,,+7.035,Lapped
+20,15,GAS,Pierre Gasly,Alpine F1 Team,0,0,,+44.080,Lapped
+20,16,COL,Franco Colapinto,Alpine F1 Team,0,0,,+44.376,Lapped
+20,17,SAI,Carlos Sainz,Williams,0,0,,+-1:55:35.558,Retired
+20,18,ALO,Fernando Alonso,Aston Martin,0,0,,,Retired
+20,19,HUL,Nico Hülkenberg,Sauber,0,0,,,Retired
+20,20,LAW,Liam Lawson,RB F1 Team,0,0,,,Retired

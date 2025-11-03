@@ -55,49 +55,96 @@ git push
 
 シーズン終了時に、現在のシーズンデータをCSV形式で保存します。
 
-#### 1. 現在シーズンをCSVにエクスポート
+#### 1. CSVファイル形式
 
-```bash
-# 例: 2025年シーズンが終了したら
-pnpm tsx server/scripts/exportCurrentSeasonToCSV.ts
-# → F1-Data-2025.csv が生成される
+各年度のデータは3つのCSVファイルに分割されます：
+
+```
+F1-2025-races.csv      # レース基本情報（名前、サーキット、日程）
+F1-2025-sessions.csv   # セッション情報（FP1, FP2, 予選, レース）
+F1-2025-results.csv    # レース結果（順位、ドライバー、ポイント）
 ```
 
-#### 2. CSVから過去データをインポート
-
-```bash
-# 例: 2020年のデータをインポート
-pnpm tsx server/scripts/parseF1Data2020CSV.ts
-# → client/src/f1_data.json の races_by_year に追加される
+**races.csv の形式:**
+```csv
+round,race_name,race_name_ja,circuit,location,date_start,date_end
+1,Australian Grand Prix,オーストラリアGP,Albert Park Circuit,"Melbourne, Australia",2025-03-14,2025-03-16
 ```
 
-#### 3. データ構造
+**sessions.csv の形式:**
+```csv
+round,session_name,session_date,time_utc,time_jst
+1,Free Practice 1,2025-03-14,01:30,10:30
+1,Qualifying,2025-03-15,05:00,14:00
+1,Race,2025-03-16,04:00,13:00
+```
+
+**results.csv の形式:**
+```csv
+round,position,driver_code,driver_name,team,points,grid,laps,time,status
+1,1,VER,Max Verstappen,Red Bull,25,1,58,1:42:06.304,Finished
+1,2,NOR,Lando Norris,McLaren,18,2,58,+2.500,Finished
+```
+
+#### 2. 年度データのエクスポート
+
+```bash
+# 例: 2025年シーズンのデータをCSVにエクスポート
+pnpm tsx server/scripts/exportYearToCSV.ts 2025
+
+# → 以下の3ファイルが生成される
+# F1-2025-races.csv
+# F1-2025-sessions.csv
+# F1-2025-results.csv
+```
+
+#### 3. CSVからデータをインポート
+
+```bash
+# 例: 2020年のCSVデータをインポート
+pnpm tsx server/scripts/parseYearlyCSV.ts 2020
+
+# → client/src/f1_data.json の races_by_year[2020] に追加される
+```
+
+#### 4. データ構造
 
 アプリケーションは年度別にデータを管理します:
 - `races_by_year[2025]`: 2025年のレースデータ
 - `races_by_year[2024]`: 2024年のレースデータ
 - `races_by_year[2020]`: 2020年のレースデータ
 
-#### 4. 来年（2026年）への移行手順
+#### 5. 来年（2026年）への移行手順
 
 2025年シーズン終了後、2026年に移行する手順:
 
 ```bash
 # 1. 2025年のデータをCSVにエクスポート
-pnpm tsx server/scripts/exportCurrentSeasonToCSV.ts
+pnpm tsx server/scripts/exportYearToCSV.ts 2025
 
 # 2. CSVファイルをリポジトリに追加
-git add F1-Data-2025.csv
-git commit -m "archive: 2025シーズンデータをアーカイブ"
+git add F1-2025-*.csv
+git commit -m "archive: 2025シーズンデータをCSVアーカイブ"
 
 # 3. f1_data.json の current_season を 2026 に更新
-# (手動で編集するか、新しいスクリプトを作成)
+# (手動で編集)
 
 # 4. 2026年の新しいデータをスクレイピング
 pnpm tsx server/scripts/updateF1Data.ts
 
 git push
 ```
+
+#### 6. 手動でのデータ編集
+
+CSVファイルはExcelやGoogle Sheetsで直接編集できます：
+
+1. CSVファイルを編集（例: F1-2025-results.csv）
+2. 保存
+3. インポートコマンドで反映:
+   ```bash
+   pnpm tsx server/scripts/parseYearlyCSV.ts 2025
+   ```
 
 これにより、過去のデータ(2020, 2024, 2025など)を保持しながら、新しいシーズン(2026)のデータを追加できます。
 

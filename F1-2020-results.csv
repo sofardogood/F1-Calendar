@@ -1,0 +1,343 @@
+round,position,driver_code,driver_name,team,points,grid,laps,time,status
+1,1,BOT,Valtteri Bottas,Mercedes,25,1,71,30:55.7,Finished
+1,2,LEC,Charles Leclerc,Ferrari,18,7,71,2.7,Finished
+1,3,NOR,Lando Norris,McLaren,16,3,71,5.491,Finished
+1,4,HAM,Lewis Hamilton,Mercedes,12,5,71,+5.689 1,Finished
+1,5,SAI,Carlos Sainz,McLaren,10,8,71,8.903,Finished
+1,6,PER,Sergio Perez,Racing Point,8,6,71,+15.092 2,Finished
+1,7,GAS,Pierre Gasly,AlphaTauri,6,12,71,16.682,Finished
+1,8,OCO,Esteban Ocon,Renault,4,14,71,17.456,Finished
+1,9,GIO,Antonio Giovinazzi,Alfa Romeo,2,18,71,21.146,Finished
+1,10,VET,Sebastian Vettel,Ferrari,1,11,71,24.545,Finished
+1,11,LAT,Nicholas Latifi,Williams,0,20,71,31.65,Finished
+1,12,KVY,Daniil Kvyat,AlphaTauri,0,13,69,サスペンション,Finished
+1,13,ALB,Alexander Albon,Red Bull,0,4,69,電気系統,Finished
+1,0,RAI,Kimi Raikkonen,Alfa Romeo,0,19,53,ホイール,Retired
+1,0,RUS,George Russell,Williams,0,18,49,燃圧,Retired
+1,0,GRO,Romain Grosjean,Haas,0,15,49,ブレーキ,Retired
+1,0,MAG,Kevin Magnussen,Haas,0,16,24,ブレーキ,Retired
+1,0,STR,Lance Stroll,Racing Point,0,9,20,パワーユニット,Retired
+1,0,RIC,Daniel Ricciardo,Renault,0,10,17,オーバーヒート,Retired
+1,0,VER,Max Verstappen,Red Bull,0,2,11,電気系統,Retired
+2,1,HAM,Lewis Hamilton,Mercedes,25,1,71,22:50.7,Finished
+2,2,BOT,Valtteri Bottas,Mercedes,18,4,71,13.719,Finished
+2,3,VER,Max Verstappen,Red Bull,15,2,71,33.698,Finished
+2,4,ALB,Alexander Albon,Red Bull,12,6,71,44.4,Finished
+2,5,NOR,Lando Norris,McLaren,10,9,71,+1:01.470,Finished
+2,6,PER,Sergio Perez,Racing Point,8,17,71,+1:02.387,Finished
+2,7,STR,Lance Stroll,Racing Point,6,12,71,+1:02.453,Finished
+2,8,RIC,Daniel Ricciardo,Renault,4,8,71,+1:02.591,Finished
+2,9,SAI,Carlos Sainz,McLaren,3,3,70,+1 Lap,Finished
+2,10,KVY,Daniil Kvyat,AlphaTauri,1,13,70,+1 Lap,Finished
+2,11,RAI,Kimi Raikkonen,Alfa Romeo,0,16,70,+1 Lap,Finished
+2,12,MAG,Kevin Magnussen,Haas,0,15,70,+1 Lap,Finished
+2,13,GRO,Romain Grosjean,Haas,0,0,70,+1 Lap,Finished
+2,14,GIO,Antonio Giovinazzi,Alfa Romeo,0,19,70,+1 Lap,Finished
+2,15,GAS,Pierre Gasly,AlphaTauri,0,7,70,+1 Lap,Finished
+2,16,RUS,George Russell,Williams,0,11,69,+2 Laps,Finished
+2,17,LAT,Nicholas Latifi,Williams,0,18,69,+2 Laps,Finished
+2,0,OCO,Esteban Ocon,Renault,0,5,25,オーバーヒート,Retired
+2,0,LEC,Charles Leclerc,Ferrari,0,14,4,接触ダメージ,Retired
+2,0,VET,Sebastian Vettel,Ferrari,0,10,1,接触,Retired
+3,1,HAM,Lewis Hamilton,Mercedes,26,1,70,36:12.5,Finished
+3,2,VER,Max Verstappen,Red Bull,18,7,70,8.702,Finished
+3,3,BOT,Valtteri Bottas,Mercedes,15,2,70,9.452,Finished
+3,4,STR,Lance Stroll,Racing Point,12,3,70,57.579,Finished
+3,5,ALB,Alexander Albon,Red Bull,10,13,70,+1:18.316,Finished
+3,6,VET,Sebastian Vettel,Ferrari,8,5,69,+1 Lap,Finished
+3,7,PER,Sergio Perez,Racing Point,6,4,69,+1 Lap,Finished
+3,8,RIC,Daniel Ricciardo,Renault,4,11,69,+1 Lap,Finished
+3,9,SAI,Carlos Sainz,McLaren,2,9,69,+1 Lap,Finished
+3,10,MAG,Kevin Magnussen,Haas,1,16,69,+1 Lap 1,Finished
+3,11,LEC,Charles Leclerc,Ferrari,0,6,69,+1 Lap,Finished
+3,12,KVY,Daniil Kvyat,AlphaTauri,0,17,69,+1 Lap,Finished
+3,13,NOR,Lando Norris,McLaren,0,8,69,+1 Lap,Finished
+3,14,OCO,Esteban Ocon,Renault,0,14,69,+1 Lap,Finished
+3,15,RAI,Kimi Raikkonen,Alfa Romeo,0,20,69,+1 Lap,Finished
+3,16,GRO,Romain Grosjean,Haas,0,18,69,+1 Lap 1,Finished
+3,17,GIO,Antonio Giovinazzi,Alfa Romeo,0,19,69,+1 Lap,Finished
+3,18,RUS,George Russell,Williams,0,12,69,+1 Lap,Finished
+3,19,LAT,Nicholas Latifi,Williams,0,15,65,+5 Laps,Finished
+3,0,GAS,Pierre Gasly,AlphaTauri,0,10,15,ギアボックス[28],Retired
+4,1,HAM,Lewis Hamilton,Mercedes,25,1,52,28:01.3,Finished
+4,2,VER,Max Verstappen,Red Bull,19,3,52,5.856,Finished
+4,3,LEC,Charles Leclerc,Ferrari,15,4,52,18.474,Finished
+4,4,RIC,Daniel Ricciardo,Renault,12,8,52,19.65,Finished
+4,5,NOR,Lando Norris,McLaren,10,5,52,22.277,Finished
+4,6,OCO,Esteban Ocon,Renault,8,9,52,26.937,Finished
+4,7,GAS,Pierre Gasly,AlphaTauri,6,11,52,31.188,Finished
+4,8,ALB,Alexander Albon,Red Bull,4,12,52,32.67,Finished
+4,9,STR,Lance Stroll,Racing Point,2,6,52,37.311,Finished
+4,10,VET,Sebastian Vettel,Ferrari,1,10,52,41.857,Finished
+4,11,BOT,Valtteri Bottas,Mercedes,0,2,52,42.167,Finished
+4,12,RUS,George Russell,Williams,0,20,52,52.004,Finished
+4,13,SAI,Carlos Sainz,McLaren,0,7,52,53.37,Finished
+4,14,GIO,Antonio Giovinazzi,Alfa Romeo,0,15,52,+54.205 2,Finished
+4,15,LAT,Nicholas Latifi,Williams,0,18,52,54.549,Finished
+4,16,GRO,Romain Grosjean,Haas,0,17,52,55.05,Finished
+4,17,RAI,Kimi Raikkonen,Alfa Romeo,0,16,51,+1 Lap,Finished
+4,0,KVY,Daniil Kvyat,AlphaTauri,0,19,11,スピンオフ,Retired
+4,0,MAG,Kevin Magnussen,Haas,0,14,1,接触,Retired
+4,0,HUL,Nico Hulkenberg,Racing Point,0,-13,,パワーユニット,Retired
+5,1,VER,Max Verstappen,Red Bull,25,4,52,19:42.0,Finished
+5,2,HAM,Lewis Hamilton,Mercedes,19,2,52,11.326,Finished
+5,3,BOT,Valtteri Bottas,Mercedes,15,1,52,19.231,Finished
+5,4,LEC,Charles Leclerc,Ferrari,12,8,52,29.289,Finished
+5,5,ALB,Alexander Albon,Red Bull,10,9,52,39.146,Finished
+5,6,STR,Lance Stroll,Racing Point,8,6,52,42.538,Finished
+5,7,HUL,Nico Hulkenberg,Racing Point,6,3,52,55.951,Finished
+5,8,OCO,Esteban Ocon,Renault,4,14,52,+1:04.773,Finished
+5,9,NOR,Lando Norris,McLaren,2,10,52,+1:05.544,Finished
+5,10,KVY,Daniil Kvyat,AlphaTauri,1,16,52,+1:09.669,Finished
+5,11,GAS,Pierre Gasly,AlphaTauri,0,7,52,+1:10.642,Finished
+5,12,VET,Sebastian Vettel,Ferrari,0,11,52,+1:13.370,Finished
+5,13,SAI,Carlos Sainz,McLaren,0,12,52,+1:14.070,Finished
+5,14,RIC,Daniel Ricciardo,Renault,0,5,51,+1 Lap,Finished
+5,15,RAI,Kimi Raikkonen,Alfa Romeo,0,20,51,+1 Lap,Finished
+5,16,GRO,Romain Grosjean,Haas,0,13,51,+1 Lap,Finished
+5,17,GIO,Antonio Giovinazzi,Alfa Romeo,0,19,51,+1 Lap,Finished
+5,18,RUS,George Russell,Williams,0,15,51,+1 Lap,Finished
+5,19,LAT,Nicholas Latifi,Williams,0,18,51,+1 Lap,Finished
+5,0,MAG,Kevin Magnussen,Haas,0,17,43,,Retired
+6,1,HAM,Lewis Hamilton,Mercedes,25,1,66,31:45.3,Finished
+6,2,VER,Max Verstappen,Red Bull,18,3,66,24.177,Finished
+6,3,BOT,Valtteri Bottas,Mercedes,16,2,66,44.752,Finished
+6,4,STR,Lance Stroll,Racing Point,12,5,65,+1 Lap,Finished
+6,5,PER,Sergio Perez,Racing Point,10,4,65,+1 Lap 1,Finished
+6,6,SAI,Carlos Sainz,McLaren,8,7,65,+1 Lap,Finished
+6,7,VET,Sebastian Vettel,Ferrari,6,11,65,+1 Lap,Finished
+6,8,ALB,Alexander Albon,Red Bull,4,6,65,+1 Lap,Finished
+6,9,GAS,Pierre Gasly,AlphaTauri,2,10,65,+1 Lap,Finished
+6,10,NOR,Lando Norris,McLaren,1,8,65,+1 Lap,Finished
+6,11,RIC,Daniel Ricciardo,Renault,0,12,65,+1 Lap,Finished
+6,12,KVY,Daniil Kvyat,AlphaTauri,0,12,65,+1 Lap 2,Finished
+6,13,OCO,Esteban Ocon,Renault,0,15,65,+1 Lap,Finished
+6,14,RAI,Kimi Raikkonen,Alfa Romeo,0,14,65,+1 Lap,Finished
+6,15,MAG,Kevin Magnussen,Haas,0,16,65,+1 Lap,Finished
+6,16,GIO,Antonio Giovinazzi,Alfa Romeo,0,20,65,+1 Lap,Finished
+6,17,RUS,George Russell,Williams,0,18,65,+1 Lap,Finished
+6,18,LAT,Nicholas Latifi,Williams,0,19,64,+2 Laps,Finished
+6,19,GRO,Romain Grosjean,Haas,0,17,64,+2 Laps,Finished
+6,0,LEC,Charles Leclerc,Ferrari,0,9,38,電気系統,Retired
+7,1,HAM,Lewis Hamilton,Mercedes,25,1,44,24:08.8,Finished
+7,2,BOT,Valtteri Bottas,Mercedes,18,2,44,8.448,Finished
+7,3,VER,Max Verstappen,Red Bull,15,3,44,15.455,Finished
+7,4,RIC,Daniel Ricciardo,Renault,13,4,44,18.877,Finished
+7,5,OCO,Esteban Ocon,Renault,10,6,44,40.65,Finished
+7,6,ALB,Alexander Albon,Red Bull,8,5,44,42.712,Finished
+7,7,NOR,Lando Norris,McLaren,6,10,44,43.774,Finished
+7,8,GAS,Pierre Gasly,AlphaTauri,4,12,44,47.371,Finished
+7,9,STR,Lance Stroll,Racing Point,2,9,44,52.603,Finished
+7,10,PER,Sergio Perez,Racing Point,1,8,44,53.179,Finished
+7,11,KVY,Daniil Kvyat,AlphaTauri,0,11,44,+1:10.200,Finished
+7,12,RAI,Kimi Raikkonen,Alfa Romeo,0,16,44,+1:11.504,Finished
+7,13,VET,Sebastian Vettel,Ferrari,0,14,44,+1:12.894,Finished
+7,14,LEC,Charles Leclerc,Ferrari,0,13,44,+1:14.920,Finished
+7,15,GRO,Romain Grosjean,Haas,0,17,44,+1:16.793,Finished
+7,16,LAT,Nicholas Latifi,Williams,0,19,44,+1:17.795,Finished
+7,17,MAG,Kevin Magnussen,Haas,0,20,44,+1:25.540,Finished
+7,0,GIO,Antonio Giovinazzi,Alfa Romeo,0,18,9,アクシデント,Retired
+7,0,RUS,George Russell,Williams,0,15,9,アクシデント,Retired
+7,0,SAI,Carlos Sainz,McLaren,0,7,,エキゾースト[23],Retired
+8,1,GAS,Pierre Gasly,AlphaTauri,25,10,53,47:06.1,Finished
+8,2,SAI,Carlos Sainz,McLaren,18,3,53,0.415,Finished
+8,3,STR,Lance Stroll,Racing Point,15,8,53,3.358,Finished
+8,4,NOR,Lando Norris,McLaren,12,6,53,6,Finished
+8,5,BOT,Valtteri Bottas,Mercedes,10,2,53,7.108,Finished
+8,6,RIC,Daniel Ricciardo,Renault,8,7,53,8.391,Finished
+8,7,HAM,Lewis Hamilton,Mercedes,7,1,53,17.245,Finished
+8,8,OCO,Esteban Ocon,Renault,4,12,53,18.691,Finished
+8,9,KVY,Daniil Kvyat,AlphaTauri,2,11,53,22.208,Finished
+8,10,PER,Sergio Perez,Racing Point,1,4,53,23.224,Finished
+8,11,LAT,Nicholas Latifi,Williams,0,20,53,32.876,Finished
+8,12,GRO,Romain Grosjean,Haas,0,16,53,35.164,Finished
+8,13,RAI,Kimi Raikkonen,Alfa Romeo,0,14,53,36.312,Finished
+8,14,RUS,George Russell,Williams,0,19,53,36.593,Finished
+8,15,ALB,Alexander Albon,Red Bull,0,9,53,37.533,Finished
+8,16,GIO,Antonio Giovinazzi,Alfa Romeo,0,18,53,55.199,Finished
+8,0,VER,Max Verstappen,Red Bull,0,5,30,パワーユニット,Retired
+8,0,LEC,Charles Leclerc,Ferrari,0,13,23,アクシデント,Retired
+8,0,MAG,Kevin Magnussen,Haas,0,15,17,パワーロス,Retired
+8,0,VET,Sebastian Vettel,Ferrari,0,17,6,ブレーキ,Retired
+9,1,HAM,Lewis Hamilton,Mercedes,25,2,60,35:49.6,Finished
+9,2,VER,Max Verstappen,Red Bull,19,3,60,4.47,Finished
+9,3,RIC,Daniel Ricciardo,Renault,15,6,60,14.613,Finished
+9,4,PER,Sergio Perez,Racing Point,12,9,60,16.07,Finished
+9,5,SAI,Carlos Sainz,McLaren,10,10,60,21.905,Finished
+9,6,GAS,Pierre Gasly,AlphaTauri,8,12,60,22.766,Finished
+9,7,LEC,Charles Leclerc,Ferrari,6,4,60,30.814,Finished
+9,8,HUL,Nico Hulkenberg,Racing Point,4,20,60,32.596,Finished
+9,9,GRO,Romain Grosjean,Haas,2,16,60,39.081,Finished
+9,10,GIO,Antonio Giovinazzi,Alfa Romeo,1,14,60,40.035,Finished
+9,11,VET,Sebastian Vettel,Ferrari,0,11,60,40.81,Finished
+9,12,RAI,Kimi Raikkonen,Alfa Romeo,0,19,60,41.476,Finished
+9,13,MAG,Kevin Magnussen,Haas,0,15,60,49.585,Finished
+9,14,LAT,Nicholas Latifi,Williams,0,18,60,54.449,Finished
+9,15,KVY,Daniil Kvyat,AlphaTauri,0,13,60,55.588,Finished
+9,0,NOR,Lando Norris,McLaren,0,8,42,パワーユニット[21],Retired
+9,0,ALB,Alexander Albon,Red Bull,0,5,23,ラジエーター[22] 2,Retired
+9,0,OCO,Esteban Ocon,Renault,0,7,22,油圧システム[23],Retired
+9,0,BOT,Valtteri Bottas,Mercedes,0,1,18,パワーユニット[21],Retired
+9,0,RUS,George Russell,Williams,0,17,12,接触[21],Retired
+9,0,STR,Lance Stroll,Racing Point,0,0,,体調不良（ヒュルケンベルグに交代）,Retired
+10,1,BOT,Valtteri Bottas,Mercedes,26,3,53,34:00.4,Finished
+10,2,VER,Max Verstappen,Red Bull,18,2,53,7.729,Finished
+10,3,HAM,Lewis Hamilton,Mercedes,15,1,53,22.729,Finished
+10,4,PER,Sergio Perez,Racing Point,12,4,53,30.558,Finished
+10,5,RIC,Daniel Ricciardo,Renault,10,5,53,+52.065 2,Finished
+10,6,LEC,Charles Leclerc,Ferrari,8,10,53,+1:02.186,Finished
+10,7,OCO,Esteban Ocon,Renault,6,7,53,+1:08.006,Finished
+10,8,KVY,Daniil Kvyat,AlphaTauri,4,11,53,+1:08.740,Finished
+10,9,GAS,Pierre Gasly,AlphaTauri,2,9,53,+1:29.766,Finished
+10,10,ALB,Alexander Albon,Red Bull,1,15,53,+1:37.860 3,Finished
+10,11,GIO,Antonio Giovinazzi,Alfa Romeo,0,17,52,+1 Lap,Finished
+10,12,MAG,Kevin Magnussen,Haas,0,18,52,+1 Lap,Finished
+10,13,VET,Sebastian Vettel,Ferrari,0,14,52,+1 Lap,Finished
+10,14,RAI,Kimi Raikkonen,Alfa Romeo,0,19,52,+1 Lap,Finished
+10,15,NOR,Lando Norris,McLaren,0,8,52,+1 Lap,Finished
+10,16,LAT,Nicholas Latifi,Williams,0,20,52,+1 Lap,Finished
+10,17,GRO,Romain Grosjean,Haas,0,16,52,+1 Lap,Finished
+10,18,RUS,George Russell,Williams,0,13,52,+1 Lap,Finished
+10,0,SAI,Carlos Sainz,McLaren,0,6,0,アクシデント,Retired
+10,0,STR,Lance Stroll,Racing Point,0,12,0,アクシデント,Retired
+11,1,HAM,Lewis Hamilton,Mercedes,25,2,60,35:49.6,Finished
+11,2,VER,Max Verstappen,Red Bull,19,3,60,4.47,Finished
+11,3,RIC,Daniel Ricciardo,Renault,15,6,60,14.613,Finished
+11,4,PER,Sergio Perez,Racing Point,12,9,60,16.07,Finished
+11,5,SAI,Carlos Sainz,McLaren,10,10,60,21.905,Finished
+11,6,GAS,Pierre Gasly,AlphaTauri,8,12,60,22.766,Finished
+11,7,LEC,Charles Leclerc,Ferrari,6,4,60,30.814,Finished
+11,8,HUL,Nico Hulkenberg,Racing Point,4,20,60,32.596,Finished
+11,9,GRO,Romain Grosjean,Haas,2,16,60,39.081,Finished
+11,10,GIO,Antonio Giovinazzi,Alfa Romeo,1,14,60,40.035,Finished
+11,11,VET,Sebastian Vettel,Ferrari,0,11,60,40.81,Finished
+11,12,RAI,Kimi Raikkonen,Alfa Romeo,0,19,60,41.476,Finished
+11,13,MAG,Kevin Magnussen,Haas,0,15,60,49.585,Finished
+11,14,LAT,Nicholas Latifi,Williams,0,18,60,54.449,Finished
+11,15,KVY,Daniil Kvyat,AlphaTauri,0,13,60,55.588,Finished
+11,0,NOR,Lando Norris,McLaren,0,8,42,パワーユニット[21],Retired
+11,0,ALB,Alexander Albon,Red Bull,0,5,23,ラジエーター[22] 2,Retired
+11,0,OCO,Esteban Ocon,Renault,0,7,22,油圧システム[23],Retired
+11,0,BOT,Valtteri Bottas,Mercedes,0,1,18,パワーユニット[21],Retired
+11,0,RUS,George Russell,Williams,0,17,12,接触[21],Retired
+11,0,STR,Lance Stroll,Racing Point,0,0,,体調不良（ヒュルケンベルグに交代）,Retired
+12,1,HAM,Lewis Hamilton,Mercedes,26,1,66,29:56.8,Finished
+12,2,BOT,Valtteri Bottas,Mercedes,18,2,66,25.592,Finished
+12,3,VER,Max Verstappen,Red Bull,15,3,66,34.508,Finished
+12,4,LEC,Charles Leclerc,Ferrari,12,4,66,+1:05.312,Finished
+12,5,GAS,Pierre Gasly,AlphaTauri,10,9,65,+1 Lap,Finished
+12,6,SAI,Carlos Sainz,McLaren,8,7,65,+1 Lap,Finished
+12,7,PER,Sergio Perez,Racing Point,6,5,65,+1 Lap,Finished
+12,8,OCO,Esteban Ocon,Renault,4,11,65,+1 Lap,Finished
+12,9,RIC,Daniel Ricciardo,Renault,2,10,65,+1 Lap,Finished
+12,10,VET,Sebastian Vettel,Ferrari,1,15,65,+1 Lap,Finished
+12,11,RAI,Kimi Raikkonen,Alfa Romeo,0,16,65,+1 Lap,Finished
+12,12,ALB,Alexander Albon,Red Bull,0,6,65,+1 Lap,Finished
+12,13,NOR,Lando Norris,McLaren,0,8,65,+1 Lap,Finished
+12,14,RUS,George Russell,Williams,0,14,65,+1 Lap,Finished
+12,15,GIO,Antonio Giovinazzi,Alfa Romeo,0,17,65,+1 Lap,Finished
+12,16,MAG,Kevin Magnussen,Haas,0,19,65,+1 Lap,Finished
+12,17,GRO,Romain Grosjean,Haas,0,18,65,+1 Lap 1,Finished
+12,18,LAT,Nicholas Latifi,Williams,0,20,64,+2 Laps,Finished
+12,19,KVY,Daniil Kvyat,AlphaTauri,0,13,64,+2 Laps,Finished
+12,0,STR,Lance Stroll,Racing Point,0,12,51,接触ダメージ[23],Retired
+13,1,HAM,Lewis Hamilton,Mercedes,26,2,63,28:32.4,Finished
+13,2,BOT,Valtteri Bottas,Mercedes,18,1,63,5.783,Finished
+13,3,RIC,Daniel Ricciardo,Renault,15,5,63,14.32,Finished
+13,4,KVY,Daniil Kvyat,AlphaTauri,12,8,63,15.141,Finished
+13,5,LEC,Charles Leclerc,Ferrari,10,7,63,19.111,Finished
+13,6,PER,Sergio Perez,Racing Point,8,11,63,19.652,Finished
+13,7,SAI,Carlos Sainz,McLaren,6,10,63,20.23,Finished
+13,8,NOR,Lando Norris,McLaren,4,9,63,21.131,Finished
+13,9,RAI,Kimi Raikkonen,Alfa Romeo,2,18,63,22.224,Finished
+13,10,GIO,Antonio Giovinazzi,Alfa Romeo,1,20,63,26.398,Finished
+13,11,LAT,Nicholas Latifi,Williams,0,19,63,27.135,Finished
+13,12,VET,Sebastian Vettel,Ferrari,0,14,63,28.453,Finished
+13,13,STR,Lance Stroll,Racing Point,0,15,63,29.163,Finished
+13,14,GRO,Romain Grosjean,Haas,0,16,63,+32.935 1,Finished
+13,15,ALB,Alexander Albon,Red Bull,0,6,63,57.284,Finished
+13,0,RUS,George Russell,Williams,0,13,51,アクシデント,Retired
+13,0,VER,Max Verstappen,Red Bull,0,3,50,タイヤ,Retired
+13,0,MAG,Kevin Magnussen,Haas,0,17,47,ギアボックス[23],Retired
+13,0,OCO,Esteban Ocon,Renault,0,12,27,ギアボックス[24],Retired
+13,0,GAS,Pierre Gasly,AlphaTauri,0,4,8,水圧減少[25],Retired
+14,1,HAM,Lewis Hamilton,Mercedes,25,6,58,42:19.3,Finished
+14,2,PER,Sergio Perez,Racing Point,18,3,58,31.633,Finished
+14,3,VET,Sebastian Vettel,Ferrari,15,11,58,31.96,Finished
+14,4,LEC,Charles Leclerc,Ferrari,12,12,58,33.858,Finished
+14,5,SAI,Carlos Sainz,McLaren,10,15,58,34.363,Finished
+14,6,VER,Max Verstappen,Red Bull,8,2,58,44.873,Finished
+14,7,ALB,Alexander Albon,Red Bull,6,4,58,46.484,Finished
+14,8,NOR,Lando Norris,McLaren,5,9,58,+1:01.259,Finished
+14,9,STR,Lance Stroll,Racing Point,2,1,58,+1:12.353,Finished
+14,10,RIC,Daniel Ricciardo,Renault,1,5,58,+1:35.460,Finished
+14,11,OCO,Esteban Ocon,Renault,0,7,57,+1 Lap,Finished
+14,12,KVY,Daniil Kvyat,AlphaTauri,0,16,57,+1 Lap,Finished
+14,13,GAS,Pierre Gasly,AlphaTauri,0,0,57,+1 Lap,Finished
+14,14,BOT,Valtteri Bottas,Mercedes,0,9,57,+1 Lap,Finished
+14,15,RAI,Kimi Raikkonen,Alfa Romeo,0,8,57,+1 Lap,Finished
+14,16,RUS,George Russell,Williams,0,0,57,+1 Lap,Finished
+14,17,MAG,Kevin Magnussen,Haas,0,13,55,撤退[27],Finished
+14,0,GRO,Romain Grosjean,Haas,0,17,49,接触ダメージ[27],Retired
+14,0,LAT,Nicholas Latifi,Williams,0,0,39,接触ダメージ,Retired
+14,0,GIO,Antonio Giovinazzi,Alfa Romeo,0,10,11,ギアボックス,Retired
+15,1,HAM,Lewis Hamilton,Mercedes,25,1,57,59:47.5,Finished
+15,2,VER,Max Verstappen,Red Bull,19,3,57,1.254,Finished
+15,3,ALB,Alexander Albon,Red Bull,15,4,57,8.005,Finished
+15,4,NOR,Lando Norris,McLaren,12,9,57,11.337,Finished
+15,5,SAI,Carlos Sainz,McLaren,10,15,57,11.787,Finished
+15,6,GAS,Pierre Gasly,AlphaTauri,8,8,57,11.942,Finished
+15,7,RIC,Daniel Ricciardo,Renault,6,6,57,19.368,Finished
+15,8,BOT,Valtteri Bottas,Mercedes,4,2,57,19.68,Finished
+15,9,OCO,Esteban Ocon,Renault,2,7,57,22.803,Finished
+15,10,LEC,Charles Leclerc,Ferrari,1,12,56,+1 Lap,Finished
+15,11,KVY,Daniil Kvyat,AlphaTauri,0,10,56,+1 Lap,Finished
+15,12,RUS,George Russell,Williams,0,14,56,+1 Lap,Finished
+15,13,VET,Sebastian Vettel,Ferrari,0,11,56,+1 Lap,Finished
+15,14,LAT,Nicholas Latifi,Williams,0,20,56,+1 Lap,Finished
+15,15,RAI,Kimi Raikkonen,Alfa Romeo,0,17,56,+1 Lap,Finished
+15,16,GIO,Antonio Giovinazzi,Alfa Romeo,0,16,56,+1 Lap,Finished
+15,17,MAG,Kevin Magnussen,Haas,0,18,56,+1 Lap,Finished
+15,18,PER,Sergio Perez,Racing Point,0,5,53,パワーユニット,Finished
+15,0,STR,Lance Stroll,Racing Point,0,13,2,接触,Retired
+15,0,GRO,Romain Grosjean,Haas,0,19,0,アクシデント[28],Retired
+16,1,PER,Sergio Perez,Racing Point,25,5,87,31:15.1,Finished
+16,2,OCO,Esteban Ocon,Renault,18,11,87,10.518,Finished
+16,3,STR,Lance Stroll,Racing Point,15,10,87,11.869,Finished
+16,4,SAI,Carlos Sainz,McLaren,12,8,87,12.58,Finished
+16,5,RIC,Daniel Ricciardo,Renault,10,7,87,13.33,Finished
+16,6,ALB,Alexander Albon,Red Bull,8,12,87,13.842,Finished
+16,7,KVY,Daniil Kvyat,AlphaTauri,6,6,87,14.534,Finished
+16,8,BOT,Valtteri Bottas,Mercedes,4,1,87,15.389,Finished
+16,9,RUS,George Russell,Mercedes,3,2,87,18.556,Finished
+16,10,NOR,Lando Norris,McLaren,1,19,87,19.541,Finished
+16,11,GAS,Pierre Gasly,AlphaTauri,0,9,87,20.527,Finished
+16,12,VET,Sebastian Vettel,Ferrari,0,11,87,22.611,Finished
+16,13,GIO,Antonio Giovinazzi,Alfa Romeo,0,14,87,24.111,Finished
+16,14,RAI,Kimi Raikkonen,Alfa Romeo,0,18,87,26.153,Finished
+16,15,MAG,Kevin Magnussen,Haas,0,15,87,32.37,Finished
+16,16,AIT,Jack Aitken,Williams,0,17,87,33.674,Finished
+16,17,FIT,Pietro Fittipaldi,Haas,0,20,87,36.858,Finished
+16,0,LAT,Nicholas Latifi,Williams,0,16,52,オイル漏れ[39],Retired
+16,0,VER,Max Verstappen,Red Bull,0,3,0,アクシデント[36],Retired
+16,0,LEC,Charles Leclerc,Ferrari,0,4,0,接触[36],Retired
+17,1,VER,Max Verstappen,Red Bull,25,1,55,36:28.6,Finished
+17,2,BOT,Valtteri Bottas,Mercedes,18,2,55,15.976,Finished
+17,3,HAM,Lewis Hamilton,Mercedes,15,3,55,18.415,Finished
+17,4,ALB,Alexander Albon,Red Bull,12,5,55,19.987,Finished
+17,5,NOR,Lando Norris,McLaren,10,4,55,+1:00.729,Finished
+17,6,SAI,Carlos Sainz,McLaren,8,6,55,+1:05.662,Finished
+17,7,RIC,Daniel Ricciardo,Renault,7,11,55,+1:13.748,Finished
+17,8,GAS,Pierre Gasly,AlphaTauri,4,9,55,+1:29.718,Finished
+17,9,OCO,Esteban Ocon,Renault,2,10,55,+1:41.069,Finished
+17,10,STR,Lance Stroll,Racing Point,1,8,55,+1:42.738,Finished
+17,11,KVY,Daniil Kvyat,AlphaTauri,0,7,54,+1 Lap,Finished
+17,12,RAI,Kimi Raikkonen,Alfa Romeo,0,15,54,+1 Lap,Finished
+17,13,LEC,Charles Leclerc,Ferrari,0,12,54,+1 Lap,Finished
+17,14,VET,Sebastian Vettel,Ferrari,0,13,54,+1 Lap,Finished
+17,15,RUS,George Russell,Williams,0,16,54,+1 Lap,Finished
+17,16,GIO,Antonio Giovinazzi,Alfa Romeo,0,14,54,+1 Lap,Finished
+17,17,LAT,Nicholas Latifi,Williams,0,18,54,+1 Lap,Finished
+17,18,MAG,Kevin Magnussen,Haas,0,20,54,+1 Lap,Finished
+17,19,FIT,Pietro Fittipaldi,Haas,0,17,53,+2 Laps,Finished
+17,0,PER,Sergio Perez,Racing Point,0,19,8,トランスミッション[28],Retired

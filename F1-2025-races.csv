@@ -1,0 +1,25 @@
+round,race_name,race_name_ja,circuit,location,date_start,date_end
+1,Australian Grand Prix,オーストラリアGP,Albert Park Circuit,"Melbourne, Australia",2025-03-14,2025-03-16
+2,Chinese Grand Prix,中国GP,Shanghai International Circuit,"Shanghai, China",2025-03-21,2025-03-23
+3,Japanese Grand Prix,日本GP,Suzuka Circuit,"Suzuka, Japan",2025-04-04,2025-04-06
+4,Bahrain Grand Prix,バーレーンGP,Bahrain International Circuit,"Sakhir, Bahrain",2025-04-11,2025-04-13
+5,Saudi Arabian Grand Prix,サウジアラビアGP,Jeddah Corniche Circuit,"Jeddah, Saudi Arabia",2025-04-18,2025-04-20
+6,Miami Grand Prix,マイアミGP,Miami International Autodrome,"Miami, USA",2025-05-02,2025-05-04
+7,Emilia-Romagna Grand Prix,エミリア・ロマーニャGP,Autodromo Enzo e Dino Ferrari,"Imola, Italy",2025-05-16,2025-05-18
+8,Monaco Grand Prix,モナコGP,Circuit de Monaco,"Monte Carlo, Monaco",2025-05-23,2025-05-25
+9,Spanish Grand Prix,スペインGP,Circuit de Barcelona-Catalunya,"Barcelona, Spain",2025-05-30,2025-06-01
+10,Canadian Grand Prix,カナダGP,Circuit Gilles Villeneuve,"Montreal, Canada",2025-06-13,2025-06-15
+11,Austrian Grand Prix,オーストリアGP,Red Bull Ring,"Spielberg, Austria",2025-06-27,2025-06-29
+12,British Grand Prix,イギリスGP,Silverstone Circuit,"Silverstone, UK",2025-07-04,2025-07-06
+13,Belgian Grand Prix,ベルギーGP,Circuit de Spa-Francorchamps,"Spa, Belgium",2025-07-25,2025-07-27
+14,Hungarian Grand Prix,ハンガリーGP,Hungaroring,"Budapest, Hungary",2025-08-01,2025-08-03
+15,Dutch Grand Prix,オランダGP,Circuit Zandvoort,"Zandvoort, Netherlands",2025-08-29,2025-08-31
+16,Italian Grand Prix,イタリアGP,Autodromo Nazionale di Monza,"Monza, Italy",2025-09-05,2025-09-07
+17,Azerbaijan Grand Prix,アゼルバイジャンGP,Baku City Circuit,"Baku, Azerbaijan",2025-09-19,2025-09-21
+18,Singapore Grand Prix,シンガポールGP,Marina Bay Street Circuit,Singapore,2025-10-03,2025-10-05
+19,United States Grand Prix,アメリカGP,Circuit of the Americas,"Austin, USA",2025-10-17,2025-10-19
+20,Mexico City Grand Prix,メキシコGP,Autódromo Hermanos Rodríguez,"Mexico City, Mexico",2025-10-24,2025-10-26
+21,São Paulo Grand Prix,サンパウロGP,Autódromo José Carlos Pace,"São Paulo, Brazil",2025-11-07,2025-11-09
+22,Las Vegas Grand Prix,ラスベガスGP,Las Vegas Street Circuit,"Las Vegas, USA",2025-11-20,2025-11-22
+23,Qatar Grand Prix,カタールGP,Losail International Circuit,"Lusail, Qatar",2025-11-28,2025-11-30
+24,Abu Dhabi Grand Prix,アブダビGP,Yas Marina Circuit,"Abu Dhabi, UAE",2025-12-05,2025-12-07
