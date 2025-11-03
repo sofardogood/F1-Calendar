@@ -58,6 +58,48 @@ const driverCodeMap: Record<string, string> = {
   'ピエトロ・フィッティパルディ': 'FIT'
 };
 
+// ドライバー名の日本語→英語マッピング
+const driverNameMap: Record<string, string> = {
+  'ルイス・ハミルトン': 'Lewis Hamilton',
+  ' ルイス・ハミルトン': 'Lewis Hamilton',
+  'バルテリ・ボッタス': 'Valtteri Bottas',
+  'マックス・フェルスタッペン': 'Max Verstappen',
+  'シャルル・ルクレール': 'Charles Leclerc',
+  'ランド・ノリス': 'Lando Norris',
+  'カルロス・サインツ': 'Carlos Sainz',
+  'セルジオ・ペレス': 'Sergio Perez',
+  'ダニエル・リカルド': 'Daniel Ricciardo',
+  'ピエール・ガスリー': 'Pierre Gasly',
+  'エステバン・オコン': 'Esteban Ocon',
+  'アレクサンダー・アルボン': 'Alexander Albon',
+  'セバスチャン・ベッテル': 'Sebastian Vettel',
+  'アントニオ・ジョヴィナッツィ': 'Antonio Giovinazzi',
+  'ダニール・クビアト': 'Daniil Kvyat',
+  'ニコラス・ラティフィ': 'Nicholas Latifi',
+  'キミ・ライコネン': 'Kimi Raikkonen',
+  'ケビン・マグヌッセン': 'Kevin Magnussen',
+  'ロマン・グロージャン': 'Romain Grosjean',
+  'ジョージ・ラッセル': 'George Russell',
+  'ランス・ストロール': 'Lance Stroll',
+  'ニコ・ヒュルケンベルグ': 'Nico Hulkenberg',
+  'ジャック・エイトケン': 'Jack Aitken',
+  'ピエトロ・フィッティパルディ': 'Pietro Fittipaldi'
+};
+
+// チーム名の日本語→英語マッピング
+const teamNameMap: Record<string, string> = {
+  'メルセデス': 'Mercedes',
+  'フェラーリ': 'Ferrari',
+  'マクラーレン-ルノー': 'McLaren',
+  'レッドブル-ホンダ': 'Red Bull',
+  'ルノー': 'Renault',
+  'アルファタウリ-ホンダ': 'AlphaTauri',
+  'レーシング・ポイント-BWTメルセデス': 'Racing Point',
+  'アルファロメオ-フェラーリ': 'Alfa Romeo',
+  'ウィリアムズ-メルセデス': 'Williams',
+  'ハース-フェラーリ': 'Haas'
+};
+
 // レース名のマッピング
 const raceNameMap: Record<string, { name: string; name_ja: string; location: string }> = {
   'オーストリア': { name: 'Austrian Grand Prix', name_ja: 'オーストリアGP', location: 'Spielberg, Austria' },
@@ -201,7 +243,7 @@ function parseCSV(): RaceInfo[] {
       // フラグアイコンや余分なスペースを削除
       driverName = driverName.replace(/の旗/g, '').replace(/^\s+/g, '').trim();
 
-      const team = cells[6]?.trim() || '';
+      let team = cells[6]?.trim() || '';
       const laps = cells[7]?.trim() || '';
       const time = cells[8]?.trim() || '';
       const gridStr = cells[9]?.trim() || '0';
@@ -219,14 +261,20 @@ function parseCSV(): RaceInfo[] {
         points = parseFloat(pointsStr) || 0;
       }
 
+      // ドライバー名を英語に変換
+      const englishDriverName = driverNameMap[driverName] || driverName;
+
+      // チーム名を英語に変換
+      const englishTeamName = teamNameMap[team] || team;
+
       const driverCode = driverCodeMap[driverName] || driverName.substring(0, 3).toUpperCase();
 
       currentRace.results!.push({
         position,
         driver_number: driverNumber,
-        driver: driverName,
+        driver: englishDriverName,
         driver_code: driverCode,
-        team,
+        team: englishTeamName,
         laps,
         time,
         grid,

@@ -101,7 +101,6 @@ export default function Standings() {
 
   const getTeamColor = (team: string): string => {
     const colors: Record<string, string> = {
-      // 英語表記
       'McLaren': 'bg-orange-600',
       'Red Bull Racing': 'bg-blue-600',
       'Red Bull': 'bg-blue-600',
@@ -121,24 +120,6 @@ export default function Standings() {
       'Racing Point': 'bg-pink-500',
       'AlphaTauri': 'bg-indigo-600',
       'Alfa Romeo': 'bg-red-800',
-      // 日本語表記（2020年データ用）
-      'メルセデス': 'bg-cyan-600',
-      'フェラーリ': 'bg-red-600',
-      'マクラーレン': 'bg-orange-600',
-      'マクラーレン-ルノー': 'bg-orange-600',
-      'レッドブル': 'bg-blue-600',
-      'レッドブル-ホンダ': 'bg-blue-600',
-      'ルノー': 'bg-yellow-500',
-      'アルファタウリ': 'bg-indigo-600',
-      'アルファタウリ-ホンダ': 'bg-indigo-600',
-      'レーシング・ポイント': 'bg-pink-500',
-      'レーシング・ポイント-BWTメルセデス': 'bg-pink-500',
-      'アルファロメオ': 'bg-red-800',
-      'アルファロメオ-フェラーリ': 'bg-red-800',
-      'ウィリアムズ': 'bg-blue-400',
-      'ウィリアムズ-メルセデス': 'bg-blue-400',
-      'ハース': 'bg-red-700',
-      'ハース-フェラーリ': 'bg-red-700',
     };
     return colors[team] || 'bg-slate-600';
   };

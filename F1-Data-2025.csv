@@ -1,0 +1,485 @@
+ラウンド,レース名,空白列,レース情報,日付,サーキット名
+1,オーストラリアGP,,Rd.1,2025/03/16,Albert Park Circuit
+2,中国GP,,Rd.2,2025/03/23,Shanghai International Circuit
+3,日本GP,,Rd.3,2025/04/06,Suzuka Circuit
+4,バーレーンGP,,Rd.4,2025/04/13,Bahrain International Circuit
+5,サウジアラビアGP,,Rd.5,2025/04/20,Jeddah Corniche Circuit
+6,マイアミGP,,Rd.6,2025/05/04,Miami International Autodrome
+7,エミリア・ロマーニャGP,,Rd.7,2025/05/18,Autodromo Enzo e Dino Ferrari
+8,モナコGP,,Rd.8,2025/05/25,Circuit de Monaco
+9,スペインGP,,Rd.9,2025/06/01,Circuit de Barcelona-Catalunya
+10,カナダGP,,Rd.10,2025/06/15,Circuit Gilles Villeneuve
+11,オーストリアGP,,Rd.11,2025/06/29,Red Bull Ring
+12,イギリスGP,,Rd.12,2025/07/06,Silverstone Circuit
+13,ベルギーGP,,Rd.13,2025/07/27,Circuit de Spa-Francorchamps
+14,ハンガリーGP,,Rd.14,2025/08/03,Hungaroring
+15,オランダGP,,Rd.15,2025/08/31,Circuit Zandvoort
+16,イタリアGP,,Rd.16,2025/09/07,Autodromo Nazionale di Monza
+17,アゼルバイジャンGP,,Rd.17,2025/09/21,Baku City Circuit
+18,シンガポールGP,,Rd.18,2025/10/05,Marina Bay Street Circuit
+19,アメリカGP,,Rd.19,2025/10/19,Circuit of the Americas
+20,メキシコGP,,Rd.20,2025/10/26,Autódromo Hermanos Rodríguez
+21,サンパウロGP,,Rd.21,2025/11/09,Autódromo José Carlos Pace
+22,ラスベガスGP,,Rd.22,2025/11/22,Las Vegas Street Circuit
+23,カタールGP,,Rd.23,2025/11/30,Losail International Circuit
+24,アブダビGP,,Rd.24,2025/12/07,Yas Marina Circuit
+
+
+,,,Rd.1,2025/03/16,Albert Park Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Lando Norris,McLaren,,1:42:06.304,,25
+,,,2,,Max Verstappen,Red Bull,,+0.895,,18
+,,,3,,George Russell,Mercedes,,+8.481,,15
+,,,4,,Andrea Kimi Antonelli,Mercedes,,+10.135,,12
+,,,5,,Alexander Albon,Williams,,+12.773,,10
+,,,6,,Lance Stroll,Aston Martin,,+17.413,,8
+,,,7,,Nico Hülkenberg,Sauber,,+18.423,,6
+,,,8,,Charles Leclerc,Ferrari,,+19.826,,4
+,,,9,,Oscar Piastri,McLaren,,+20.448,,2
+,,,10,,Lewis Hamilton,Ferrari,,+22.473,,1
+,,,11,,Pierre Gasly,Alpine F1 Team,,+26.502,,0
+,,,12,,Yuki Tsunoda,RB F1 Team,,+29.884,,0
+,,,13,,Esteban Ocon,Haas F1 Team,,+33.161,,0
+,,,14,,Oliver Bearman,Haas F1 Team,,+40.351,,0
+,,,Ret,,Liam Lawson,Red Bull,,,,0
+,,,Ret,,Gabriel Bortoleto,Sauber,,,,0
+,,,Ret,,Fernando Alonso,Aston Martin,,,,0
+,,,Ret,,Carlos Sainz,Williams,,,,0
+,,,Ret,,Jack Doohan,Alpine F1 Team,,,,0
+,,,Ret,,Isack Hadjar,RB F1 Team,,,,0
+
+,,,Rd.2,2025/03/23,Shanghai International Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Oscar Piastri,McLaren,,1:30:55.026,,25
+,,,2,,Lando Norris,McLaren,,+9.748,,18
+,,,3,,George Russell,Mercedes,,+11.097,,15
+,,,4,,Max Verstappen,Red Bull,,+16.656,,12
+,,,5,,Esteban Ocon,Haas F1 Team,,+49.969,,10
+,,,6,,Andrea Kimi Antonelli,Mercedes,,+53.748,,8
+,,,7,,Alexander Albon,Williams,,+56.321,,6
+,,,8,,Oliver Bearman,Haas F1 Team,,+1:01.303,,4
+,,,9,,Lance Stroll,Aston Martin,,+1:10.204,,2
+,,,10,,Carlos Sainz,Williams,,+1:16.387,,1
+,,,11,,Isack Hadjar,RB F1 Team,,+1:18.875,,0
+,,,12,,Liam Lawson,Red Bull,,+1:21.147,,0
+,,,13,,Jack Doohan,Alpine F1 Team,,+1:28.401,,0
+,,,14,,Gabriel Bortoleto,Sauber,,+10.756,,0
+,,,15,,Nico Hülkenberg,Sauber,,+20.226,,0
+,,,16,,Yuki Tsunoda,RB F1 Team,,+23.511,,0
+,,,Ret,,Fernando Alonso,Aston Martin,,,,0
+,,,18,,Charles Leclerc,Ferrari,,,,0
+,,,19,,Lewis Hamilton,Ferrari,,,,0
+,,,20,,Pierre Gasly,Alpine F1 Team,,,,0
+
+,,,Rd.3,2025/04/06,Suzuka Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Max Verstappen,Red Bull,,1:22:06.983,,25
+,,,2,,Lando Norris,McLaren,,+1.423,,18
+,,,3,,Oscar Piastri,McLaren,,+2.129,,15
+,,,4,,Charles Leclerc,Ferrari,,+16.097,,12
+,,,5,,George Russell,Mercedes,,+17.362,,10
+,,,6,,Andrea Kimi Antonelli,Mercedes,,+18.671,,8
+,,,7,,Lewis Hamilton,Ferrari,,+29.182,,6
+,,,8,,Isack Hadjar,RB F1 Team,,+37.134,,4
+,,,9,,Alexander Albon,Williams,,+40.367,,2
+,,,10,,Oliver Bearman,Haas F1 Team,,+54.529,,1
+,,,11,,Fernando Alonso,Aston Martin,,+57.333,,0
+,,,12,,Yuki Tsunoda,Red Bull,,+58.401,,0
+,,,13,,Pierre Gasly,Alpine F1 Team,,+1:02.122,,0
+,,,14,,Carlos Sainz,Williams,,+1:14.129,,0
+,,,15,,Jack Doohan,Alpine F1 Team,,+1:21.314,,0
+,,,16,,Nico Hülkenberg,Sauber,,+1:21.957,,0
+,,,17,,Liam Lawson,RB F1 Team,,+1:22.734,,0
+,,,18,,Esteban Ocon,Haas F1 Team,,+1:23.438,,0
+,,,19,,Gabriel Bortoleto,Sauber,,+1:23.897,,0
+,,,20,,Lance Stroll,Aston Martin,,+12.929,,0
+
+,,,Rd.4,2025/04/13,Bahrain International Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Oscar Piastri,McLaren,,1:35:39.435,,25
+,,,2,,George Russell,Mercedes,,+15.499,,18
+,,,3,,Lando Norris,McLaren,,+16.273,,15
+,,,4,,Charles Leclerc,Ferrari,,+19.679,,12
+,,,5,,Lewis Hamilton,Ferrari,,+27.993,,10
+,,,6,,Max Verstappen,Red Bull,,+34.395,,8
+,,,7,,Pierre Gasly,Alpine F1 Team,,+36.002,,6
+,,,8,,Esteban Ocon,Haas F1 Team,,+44.244,,4
+,,,9,,Yuki Tsunoda,Red Bull,,+45.061,,2
+,,,10,,Oliver Bearman,Haas F1 Team,,+47.594,,1
+,,,11,,Andrea Kimi Antonelli,Mercedes,,+48.016,,0
+,,,12,,Alexander Albon,Williams,,+48.839,,0
+,,,13,,Isack Hadjar,RB F1 Team,,+56.314,,0
+,,,14,,Jack Doohan,Alpine F1 Team,,+57.806,,0
+,,,15,,Fernando Alonso,Aston Martin,,+1:00.340,,0
+,,,16,,Liam Lawson,RB F1 Team,,+1:04.435,,0
+,,,17,,Lance Stroll,Aston Martin,,+1:05.489,,0
+,,,18,,Gabriel Bortoleto,Sauber,,+1:06.872,,0
+,,,Ret,,Carlos Sainz,Williams,,,,0
+,,,20,,Nico Hülkenberg,Sauber,,,,0
+
+,,,Rd.5,2025/04/20,Jeddah Corniche Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Oscar Piastri,McLaren,,1:21:06.758,,25
+,,,2,,Max Verstappen,Red Bull,,+2.843,,18
+,,,3,,Charles Leclerc,Ferrari,,+8.104,,15
+,,,4,,Lando Norris,McLaren,,+9.196,,12
+,,,5,,George Russell,Mercedes,,+27.236,,10
+,,,6,,Andrea Kimi Antonelli,Mercedes,,+34.688,,8
+,,,7,,Lewis Hamilton,Ferrari,,+39.073,,6
+,,,8,,Carlos Sainz,Williams,,+1:04.630,,4
+,,,9,,Alexander Albon,Williams,,+1:06.515,,2
+,,,10,,Isack Hadjar,RB F1 Team,,+1:07.091,,1
+,,,11,,Fernando Alonso,Aston Martin,,+1:15.917,,0
+,,,12,,Liam Lawson,RB F1 Team,,+1:18.451,,0
+,,,13,,Oliver Bearman,Haas F1 Team,,+1:19.194,,0
+,,,14,,Esteban Ocon,Haas F1 Team,,+1:39.723,,0
+,,,15,,Nico Hülkenberg,Sauber,,+4.609,,0
+,,,16,,Lance Stroll,Aston Martin,,+5.527,,0
+,,,17,,Jack Doohan,Alpine F1 Team,,+19.264,,0
+,,,18,,Gabriel Bortoleto,Sauber,,+19.306,,0
+,,,Ret,,Yuki Tsunoda,Red Bull,,,,0
+,,,Ret,,Pierre Gasly,Alpine F1 Team,,,,0
+
+,,,Rd.6,2025/05/04,Miami International Autodrome
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Oscar Piastri,McLaren,,1:28:51.587,,25
+,,,2,,Lando Norris,McLaren,,+4.630,,18
+,,,3,,George Russell,Mercedes,,+37.644,,15
+,,,4,,Max Verstappen,Red Bull,,+39.956,,12
+,,,5,,Alexander Albon,Williams,,+48.067,,10
+,,,6,,Andrea Kimi Antonelli,Mercedes,,+55.502,,8
+,,,7,,Charles Leclerc,Ferrari,,+57.036,,6
+,,,8,,Lewis Hamilton,Ferrari,,+1:00.186,,4
+,,,9,,Carlos Sainz,Williams,,+1:00.577,,2
+,,,10,,Yuki Tsunoda,Red Bull,,+1:14.434,,1
+,,,11,,Isack Hadjar,RB F1 Team,,+1:14.602,,0
+,,,12,,Esteban Ocon,Haas F1 Team,,+1:22.006,,0
+,,,13,,Pierre Gasly,Alpine F1 Team,,+1:30.445,,0
+,,,14,,Nico Hülkenberg,Sauber,,+1.155,,0
+,,,15,,Fernando Alonso,Aston Martin,,+20.979,,0
+,,,16,,Lance Stroll,Aston Martin,,+25.162,,0
+,,,Ret,,Liam Lawson,RB F1 Team,,,,0
+,,,Ret,,Gabriel Bortoleto,Sauber,,,,0
+,,,Ret,,Oliver Bearman,Haas F1 Team,,,,0
+,,,Ret,,Jack Doohan,Alpine F1 Team,,,,0
+
+,,,Rd.7,2025/05/18,Autodromo Enzo e Dino Ferrari
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Max Verstappen,Red Bull,,1:31:33.199,,25
+,,,2,,Lando Norris,McLaren,,+6.109,,18
+,,,3,,Oscar Piastri,McLaren,,+12.956,,15
+,,,4,,Lewis Hamilton,Ferrari,,+14.356,,12
+,,,5,,Alexander Albon,Williams,,+17.945,,10
+,,,6,,Charles Leclerc,Ferrari,,+20.774,,8
+,,,7,,George Russell,Mercedes,,+22.034,,6
+,,,8,,Carlos Sainz,Williams,,+22.898,,4
+,,,9,,Isack Hadjar,RB F1 Team,,+23.586,,2
+,,,10,,Yuki Tsunoda,Red Bull,,+26.446,,1
+,,,11,,Fernando Alonso,Aston Martin,,+27.250,,0
+,,,12,,Nico Hülkenberg,Sauber,,+30.296,,0
+,,,13,,Pierre Gasly,Alpine F1 Team,,+31.424,,0
+,,,14,,Liam Lawson,RB F1 Team,,+32.511,,0
+,,,15,,Lance Stroll,Aston Martin,,+32.993,,0
+,,,16,,Franco Colapinto,Alpine F1 Team,,+33.411,,0
+,,,17,,Oliver Bearman,Haas F1 Team,,+33.808,,0
+,,,18,,Gabriel Bortoleto,Sauber,,+38.572,,0
+,,,Ret,,Andrea Kimi Antonelli,Mercedes,,,,0
+,,,Ret,,Esteban Ocon,Haas F1 Team,,,,0
+
+,,,Rd.8,2025/05/25,Circuit de Monaco
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Lando Norris,McLaren,,1:40:33.843,,25
+,,,2,,Charles Leclerc,Ferrari,,+3.131,,18
+,,,3,,Oscar Piastri,McLaren,,+3.658,,15
+,,,4,,Max Verstappen,Red Bull,,+20.572,,12
+,,,5,,Lewis Hamilton,Ferrari,,+51.387,,10
+,,,6,,Isack Hadjar,RB F1 Team,,+1:05.082,,8
+,,,7,,Esteban Ocon,Haas F1 Team,,+1:06.029,,6
+,,,8,,Liam Lawson,RB F1 Team,,+1:06.746,,4
+,,,9,,Alexander Albon,Williams,,+11.869,,2
+,,,10,,Carlos Sainz,Williams,,+15.232,,1
+,,,11,,George Russell,Mercedes,,+33.844,,0
+,,,12,,Oliver Bearman,Haas F1 Team,,+54.693,,0
+,,,13,,Franco Colapinto,Alpine F1 Team,,+57.114,,0
+,,,14,,Gabriel Bortoleto,Sauber,,+1:08.424,,0
+,,,15,,Lance Stroll,Aston Martin,,+1:10.395,,0
+,,,16,,Nico Hülkenberg,Sauber,,+1:11.544,,0
+,,,17,,Yuki Tsunoda,Red Bull,,+1:11.849,,0
+,,,18,,Andrea Kimi Antonelli,Mercedes,,+8.409,,0
+,,,Ret,,Fernando Alonso,Aston Martin,,,,0
+,,,Ret,,Pierre Gasly,Alpine F1 Team,,,,0
+
+,,,Rd.9,2025/06/01,Circuit de Barcelona-Catalunya
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Oscar Piastri,McLaren,,1:32:57.375,,25
+,,,2,,Lando Norris,McLaren,,+2.471,,18
+,,,3,,Charles Leclerc,Ferrari,,+10.455,,15
+,,,4,,George Russell,Mercedes,,+11.359,,12
+,,,5,,Nico Hülkenberg,Sauber,,+13.648,,10
+,,,6,,Lewis Hamilton,Ferrari,,+15.508,,8
+,,,7,,Isack Hadjar,RB F1 Team,,+16.022,,6
+,,,8,,Pierre Gasly,Alpine F1 Team,,+17.882,,4
+,,,9,,Fernando Alonso,Aston Martin,,+21.564,,2
+,,,10,,Max Verstappen,Red Bull,,+21.826,,1
+,,,11,,Liam Lawson,RB F1 Team,,+25.532,,0
+,,,12,,Gabriel Bortoleto,Sauber,,+25.996,,0
+,,,13,,Yuki Tsunoda,Red Bull,,+28.822,,0
+,,,14,,Carlos Sainz,Williams,,+29.309,,0
+,,,15,,Franco Colapinto,Alpine F1 Team,,+31.381,,0
+,,,16,,Esteban Ocon,Haas F1 Team,,+32.197,,0
+,,,17,,Oliver Bearman,Haas F1 Team,,+37.065,,0
+,,,Ret,,Andrea Kimi Antonelli,Mercedes,,,,0
+,,,Ret,,Alexander Albon,Williams,,,,0
+
+,,,Rd.10,2025/06/15,Circuit Gilles Villeneuve
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,George Russell,Mercedes,,1:31:52.688,,25
+,,,2,,Max Verstappen,Red Bull,,+0.228,,18
+,,,3,,Andrea Kimi Antonelli,Mercedes,,+1.014,,15
+,,,4,,Oscar Piastri,McLaren,,+2.109,,12
+,,,5,,Charles Leclerc,Ferrari,,+3.442,,10
+,,,6,,Lewis Hamilton,Ferrari,,+10.713,,8
+,,,7,,Fernando Alonso,Aston Martin,,+10.972,,6
+,,,8,,Nico Hülkenberg,Sauber,,+15.364,,4
+,,,9,,Esteban Ocon,Haas F1 Team,,+1.473,,2
+,,,10,,Carlos Sainz,Williams,,+1.886,,1
+,,,11,,Oliver Bearman,Haas F1 Team,,+3.717,,0
+,,,12,,Yuki Tsunoda,Red Bull,,+5.456,,0
+,,,13,,Franco Colapinto,Alpine F1 Team,,+7.018,,0
+,,,14,,Gabriel Bortoleto,Sauber,,+7.879,,0
+,,,15,,Pierre Gasly,Alpine F1 Team,,+7.950,,0
+,,,16,,Isack Hadjar,RB F1 Team,,+8.737,,0
+,,,17,,Lance Stroll,Aston Martin,,+9.063,,0
+,,,Ret,,Lando Norris,McLaren,,+-1:52:09.782,,0
+,,,Ret,,Liam Lawson,RB F1 Team,,,,0
+,,,Ret,,Alexander Albon,Williams,,,,0
+
+,,,Rd.11,2025/06/29,Red Bull Ring
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Lando Norris,McLaren,,1:23:47.693,,25
+,,,2,,Oscar Piastri,McLaren,,+2.695,,18
+,,,3,,Charles Leclerc,Ferrari,,+19.820,,15
+,,,4,,Lewis Hamilton,Ferrari,,+29.020,,12
+,,,5,,George Russell,Mercedes,,+1:02.396,,10
+,,,6,,Liam Lawson,RB F1 Team,,+1:07.754,,8
+,,,7,,Fernando Alonso,Aston Martin,,+1.437,,6
+,,,8,,Gabriel Bortoleto,Sauber,,+1.952,,4
+,,,9,,Nico Hülkenberg,Sauber,,+7.720,,2
+,,,10,,Esteban Ocon,Haas F1 Team,,+9.986,,1
+,,,11,,Oliver Bearman,Haas F1 Team,,+24.854,,0
+,,,12,,Isack Hadjar,RB F1 Team,,+27.957,,0
+,,,13,,Pierre Gasly,Alpine F1 Team,,+33.055,,0
+,,,14,,Lance Stroll,Aston Martin,,+34.462,,0
+,,,15,,Franco Colapinto,Alpine F1 Team,,+42.692,,0
+,,,16,,Yuki Tsunoda,Red Bull,,+2.979,,0
+,,,Ret,,Alexander Albon,Williams,,,,0
+,,,Ret,,Max Verstappen,Red Bull,,,,0
+,,,Ret,,Andrea Kimi Antonelli,Mercedes,,,,0
+,,,20,,Carlos Sainz,Williams,,,,0
+
+,,,Rd.12,2025/07/06,Silverstone Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Lando Norris,McLaren,,1:37:15.735,,25
+,,,2,,Oscar Piastri,McLaren,,+6.812,,18
+,,,3,,Nico Hülkenberg,Sauber,,+34.742,,15
+,,,4,,Lewis Hamilton,Ferrari,,+39.812,,12
+,,,5,,Max Verstappen,Red Bull,,+56.781,,10
+,,,6,,Pierre Gasly,Alpine F1 Team,,+59.857,,8
+,,,7,,Lance Stroll,Aston Martin,,+1:00.603,,6
+,,,8,,Alexander Albon,Williams,,+1:04.135,,4
+,,,9,,Fernando Alonso,Aston Martin,,+1:05.858,,2
+,,,10,,George Russell,Mercedes,,+1:10.674,,1
+,,,11,,Oliver Bearman,Haas F1 Team,,+1:12.095,,0
+,,,12,,Carlos Sainz,Williams,,+1:16.592,,0
+,,,13,,Esteban Ocon,Haas F1 Team,,+1:17.301,,0
+,,,14,,Charles Leclerc,Ferrari,,+1:24.477,,0
+,,,15,,Yuki Tsunoda,Red Bull,,+32.250,,0
+,,,Ret,,Andrea Kimi Antonelli,Mercedes,,,,0
+,,,Ret,,Isack Hadjar,RB F1 Team,,,,0
+,,,Ret,,Gabriel Bortoleto,Sauber,,,,0
+,,,Ret,,Liam Lawson,RB F1 Team,,,,0
+,,,20,,Franco Colapinto,Alpine F1 Team,,,,0
+
+,,,Rd.13,2025/07/27,Circuit de Spa-Francorchamps
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Oscar Piastri,McLaren,,1:25:22.601,,25
+,,,2,,Lando Norris,McLaren,,+3.415,,18
+,,,3,,Charles Leclerc,Ferrari,,+20.185,,15
+,,,4,,Max Verstappen,Red Bull,,+21.731,,12
+,,,5,,George Russell,Mercedes,,+34.863,,10
+,,,6,,Alexander Albon,Williams,,+39.926,,8
+,,,7,,Lewis Hamilton,Ferrari,,+40.679,,6
+,,,8,,Liam Lawson,RB F1 Team,,+52.033,,4
+,,,9,,Gabriel Bortoleto,Sauber,,+56.434,,2
+,,,10,,Pierre Gasly,Alpine F1 Team,,+1:12.714,,1
+,,,11,,Oliver Bearman,Haas F1 Team,,+1:13.145,,0
+,,,12,,Nico Hülkenberg,Sauber,,+1:13.628,,0
+,,,13,,Yuki Tsunoda,Red Bull,,+1:15.395,,0
+,,,14,,Lance Stroll,Aston Martin,,+1:19.831,,0
+,,,15,,Esteban Ocon,Haas F1 Team,,+1:26.063,,0
+,,,16,,Andrea Kimi Antonelli,Mercedes,,+1:26.721,,0
+,,,17,,Fernando Alonso,Aston Martin,,+1:27.924,,0
+,,,18,,Carlos Sainz,Williams,,+1:32.024,,0
+,,,19,,Franco Colapinto,Alpine F1 Team,,+1:35.250,,0
+,,,20,,Isack Hadjar,RB F1 Team,,+12.942,,0
+
+,,,Rd.14,2025/08/03,Hungaroring
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Lando Norris,McLaren,,1:35:21.231,,25
+,,,2,,Oscar Piastri,McLaren,,+0.698,,18
+,,,3,,George Russell,Mercedes,,+21.916,,15
+,,,4,,Charles Leclerc,Ferrari,,+42.560,,12
+,,,5,,Fernando Alonso,Aston Martin,,+59.040,,10
+,,,6,,Gabriel Bortoleto,Sauber,,+1:06.169,,8
+,,,7,,Lance Stroll,Aston Martin,,+1:08.174,,6
+,,,8,,Liam Lawson,RB F1 Team,,+1:09.451,,4
+,,,9,,Max Verstappen,Red Bull,,+1:12.645,,2
+,,,10,,Andrea Kimi Antonelli,Mercedes,,+7.649,,1
+,,,11,,Isack Hadjar,RB F1 Team,,+8.500,,0
+,,,12,,Lewis Hamilton,Ferrari,,+9.861,,0
+,,,13,,Nico Hülkenberg,Sauber,,+31.268,,0
+,,,14,,Carlos Sainz,Williams,,+33.326,,0
+,,,15,,Alexander Albon,Williams,,+38.111,,0
+,,,16,,Esteban Ocon,Haas F1 Team,,+45.258,,0
+,,,17,,Yuki Tsunoda,Red Bull,,+46.943,,0
+,,,18,,Franco Colapinto,Alpine F1 Team,,+47.370,,0
+,,,19,,Pierre Gasly,Alpine F1 Team,,+56.344,,0
+,,,Ret,,Oliver Bearman,Haas F1 Team,,,,0
+
+,,,Rd.15,2025/08/31,Circuit Zandvoort
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Oscar Piastri,McLaren,,1:38:29.849,,25
+,,,2,,Max Verstappen,Red Bull,,+1.271,,18
+,,,3,,Isack Hadjar,RB F1 Team,,+3.233,,15
+,,,4,,George Russell,Mercedes,,+5.654,,12
+,,,5,,Alexander Albon,Williams,,+6.327,,10
+,,,6,,Oliver Bearman,Haas F1 Team,,+9.044,,8
+,,,7,,Lance Stroll,Aston Martin,,+9.497,,6
+,,,8,,Fernando Alonso,Aston Martin,,+11.709,,4
+,,,9,,Yuki Tsunoda,Red Bull,,+13.597,,2
+,,,10,,Esteban Ocon,Haas F1 Team,,+14.063,,1
+,,,11,,Franco Colapinto,Alpine F1 Team,,+14.511,,0
+,,,12,,Liam Lawson,RB F1 Team,,+17.063,,0
+,,,13,,Carlos Sainz,Williams,,+17.376,,0
+,,,14,,Nico Hülkenberg,Sauber,,+19.725,,0
+,,,15,,Gabriel Bortoleto,Sauber,,+21.565,,0
+,,,16,,Andrea Kimi Antonelli,Mercedes,,+22.029,,0
+,,,17,,Pierre Gasly,Alpine F1 Team,,+23.629,,0
+,,,Ret,,Lando Norris,McLaren,,+-1:47:38.638,,0
+,,,Ret,,Charles Leclerc,Ferrari,,,,0
+,,,Ret,,Lewis Hamilton,Ferrari,,,,0
+
+,,,Rd.16,2025/09/07,Autodromo Nazionale di Monza
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Max Verstappen,Red Bull,,1:13:24.325,,25
+,,,2,,Lando Norris,McLaren,,+19.207,,18
+,,,3,,Oscar Piastri,McLaren,,+21.351,,15
+,,,4,,Charles Leclerc,Ferrari,,+25.624,,12
+,,,5,,George Russell,Mercedes,,+32.881,,10
+,,,6,,Lewis Hamilton,Ferrari,,+37.449,,8
+,,,7,,Alexander Albon,Williams,,+50.537,,6
+,,,8,,Gabriel Bortoleto,Sauber,,+58.484,,4
+,,,9,,Andrea Kimi Antonelli,Mercedes,,+59.762,,2
+,,,10,,Isack Hadjar,RB F1 Team,,+1:03.891,,1
+,,,11,,Carlos Sainz,Williams,,+1:04.469,,0
+,,,12,,Oliver Bearman,Haas F1 Team,,+1:19.288,,0
+,,,13,,Yuki Tsunoda,Red Bull,,+1:20.701,,0
+,,,14,,Liam Lawson,RB F1 Team,,+1:22.351,,0
+,,,15,,Esteban Ocon,Haas F1 Team,,+2.135,,0
+,,,16,,Pierre Gasly,Alpine F1 Team,,+5.837,,0
+,,,17,,Franco Colapinto,Alpine F1 Team,,+7.448,,0
+,,,18,,Lance Stroll,Aston Martin,,+9.301,,0
+,,,Ret,,Fernando Alonso,Aston Martin,,,,0
+,,,20,,Nico Hülkenberg,Sauber,,,,0
+
+,,,Rd.17,2025/09/21,Baku City Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Max Verstappen,Red Bull,,1:33:26.408,,25
+,,,2,,George Russell,Mercedes,,+14.609,,18
+,,,3,,Carlos Sainz,Williams,,+19.199,,15
+,,,4,,Andrea Kimi Antonelli,Mercedes,,+21.760,,12
+,,,5,,Liam Lawson,RB F1 Team,,+33.290,,10
+,,,6,,Yuki Tsunoda,Red Bull,,+33.808,,8
+,,,7,,Lando Norris,McLaren,,+34.227,,6
+,,,8,,Lewis Hamilton,Ferrari,,+36.310,,4
+,,,9,,Charles Leclerc,Ferrari,,+36.774,,2
+,,,10,,Isack Hadjar,RB F1 Team,,+38.982,,1
+,,,11,,Gabriel Bortoleto,Sauber,,+1:07.606,,0
+,,,12,,Oliver Bearman,Haas F1 Team,,+1:08.262,,0
+,,,13,,Alexander Albon,Williams,,+1:12.870,,0
+,,,14,,Esteban Ocon,Haas F1 Team,,+1:17.580,,0
+,,,15,,Fernando Alonso,Aston Martin,,+1:18.707,,0
+,,,16,,Nico Hülkenberg,Sauber,,+1:20.237,,0
+,,,17,,Lance Stroll,Aston Martin,,+1:36.392,,0
+,,,18,,Pierre Gasly,Alpine F1 Team,,+3.865,,0
+,,,19,,Franco Colapinto,Alpine F1 Team,,+6.325,,0
+,,,Ret,,Oscar Piastri,McLaren,,,,0
+
+,,,Rd.18,2025/10/05,Marina Bay Street Circuit
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,George Russell,Mercedes,,1:40:22.367,,25
+,,,2,,Max Verstappen,Red Bull,,+5.430,,18
+,,,3,,Lando Norris,McLaren,,+6.066,,15
+,,,4,,Oscar Piastri,McLaren,,+8.146,,12
+,,,5,,Andrea Kimi Antonelli,Mercedes,,+33.681,,10
+,,,6,,Charles Leclerc,Ferrari,,+45.996,,8
+,,,7,,Fernando Alonso,Aston Martin,,+1:20.667,,6
+,,,8,,Lewis Hamilton,Ferrari,,+1:25.251,,4
+,,,9,,Oliver Bearman,Haas F1 Team,,+1:33.527,,2
+,,,10,,Carlos Sainz,Williams,,+10.754,,1
+,,,11,,Isack Hadjar,RB F1 Team,,+17.335,,0
+,,,12,,Yuki Tsunoda,Red Bull,,+19.269,,0
+,,,13,,Lance Stroll,Aston Martin,,+24.490,,0
+,,,14,,Alexander Albon,Williams,,+25.320,,0
+,,,15,,Liam Lawson,RB F1 Team,,+27.145,,0
+,,,16,,Franco Colapinto,Alpine F1 Team,,+42.890,,0
+,,,17,,Gabriel Bortoleto,Sauber,,+46.753,,0
+,,,18,,Esteban Ocon,Haas F1 Team,,+47.133,,0
+,,,19,,Pierre Gasly,Alpine F1 Team,,+47.461,,0
+,,,20,,Nico Hülkenberg,Sauber,,+49.040,,0
+
+,,,Rd.19,2025/10/19,Circuit of the Americas
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Max Verstappen,Red Bull,,1:34:00.161,,25
+,,,2,,Lando Norris,McLaren,,+7.959,,18
+,,,3,,Charles Leclerc,Ferrari,,+15.373,,15
+,,,4,,Lewis Hamilton,Ferrari,,+28.536,,12
+,,,5,,Oscar Piastri,McLaren,,+29.678,,10
+,,,6,,George Russell,Mercedes,,+33.456,,8
+,,,7,,Yuki Tsunoda,Red Bull,,+52.714,,6
+,,,8,,Nico Hülkenberg,Sauber,,+57.249,,4
+,,,9,,Oliver Bearman,Haas F1 Team,,+1:04.722,,2
+,,,10,,Fernando Alonso,Aston Martin,,+1:10.001,,1
+,,,11,,Liam Lawson,RB F1 Team,,+1:13.209,,0
+,,,12,,Lance Stroll,Aston Martin,,+1:14.778,,0
+,,,13,,Andrea Kimi Antonelli,Mercedes,,+1:15.746,,0
+,,,14,,Alexander Albon,Williams,,+1:20.000,,0
+,,,15,,Esteban Ocon,Haas F1 Team,,+1:23.043,,0
+,,,16,,Isack Hadjar,RB F1 Team,,+1:32.807,,0
+,,,17,,Franco Colapinto,Alpine F1 Team,,+2.307,,0
+,,,18,,Gabriel Bortoleto,Sauber,,+3.557,,0
+,,,19,,Pierre Gasly,Alpine F1 Team,,+6.155,,0
+,,,Ret,,Carlos Sainz,Williams,,,,0
+
+,,,Rd.20,2025/10/26,Autódromo Hermanos Rodríguez
+,,,順位,No.,ドライバー名,チーム名,周回数,タイム,グリッド,ポイント
+,,,1,,Lando Norris,McLaren,,1:37:58.574,,25
+,,,2,,Charles Leclerc,Ferrari,,+30.324,,18
+,,,3,,Max Verstappen,Red Bull,,+31.049,,15
+,,,4,,Oliver Bearman,Haas F1 Team,,+40.955,,12
+,,,5,,Oscar Piastri,McLaren,,+42.065,,10
+,,,6,,Andrea Kimi Antonelli,Mercedes,,+47.837,,8
+,,,7,,George Russell,Mercedes,,+50.287,,6
+,,,8,,Lewis Hamilton,Ferrari,,+56.446,,4
+,,,9,,Esteban Ocon,Haas F1 Team,,+1:15.464,,2
+,,,10,,Gabriel Bortoleto,Sauber,,+1:16.863,,1
+,,,11,,Yuki Tsunoda,Red Bull,,+1:19.048,,0
+,,,12,,Alexander Albon,Williams,,+2.450,,0
+,,,13,,Isack Hadjar,RB F1 Team,,+6.656,,0
+,,,14,,Lance Stroll,Aston Martin,,+7.035,,0
+,,,15,,Pierre Gasly,Alpine F1 Team,,+44.080,,0
+,,,16,,Franco Colapinto,Alpine F1 Team,,+44.376,,0
+,,,Ret,,Carlos Sainz,Williams,,+-1:55:35.558,,0
+,,,Ret,,Fernando Alonso,Aston Martin,,,,0
+,,,Ret,,Nico Hülkenberg,Sauber,,,,0
+,,,Ret,,Liam Lawson,RB F1 Team,,,,0

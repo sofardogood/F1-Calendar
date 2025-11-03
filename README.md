@@ -51,6 +51,56 @@ git commit -m "update: F1スケジュールデータを手動更新"
 git push
 ```
 
+### 年度別データ管理（過去データのアーカイブ）
+
+シーズン終了時に、現在のシーズンデータをCSV形式で保存します。
+
+#### 1. 現在シーズンをCSVにエクスポート
+
+```bash
+# 例: 2025年シーズンが終了したら
+pnpm tsx server/scripts/exportCurrentSeasonToCSV.ts
+# → F1-Data-2025.csv が生成される
+```
+
+#### 2. CSVから過去データをインポート
+
+```bash
+# 例: 2020年のデータをインポート
+pnpm tsx server/scripts/parseF1Data2020CSV.ts
+# → client/src/f1_data.json の races_by_year に追加される
+```
+
+#### 3. データ構造
+
+アプリケーションは年度別にデータを管理します:
+- `races_by_year[2025]`: 2025年のレースデータ
+- `races_by_year[2024]`: 2024年のレースデータ
+- `races_by_year[2020]`: 2020年のレースデータ
+
+#### 4. 来年（2026年）への移行手順
+
+2025年シーズン終了後、2026年に移行する手順:
+
+```bash
+# 1. 2025年のデータをCSVにエクスポート
+pnpm tsx server/scripts/exportCurrentSeasonToCSV.ts
+
+# 2. CSVファイルをリポジトリに追加
+git add F1-Data-2025.csv
+git commit -m "archive: 2025シーズンデータをアーカイブ"
+
+# 3. f1_data.json の current_season を 2026 に更新
+# (手動で編集するか、新しいスクリプトを作成)
+
+# 4. 2026年の新しいデータをスクレイピング
+pnpm tsx server/scripts/updateF1Data.ts
+
+git push
+```
+
+これにより、過去のデータ(2020, 2024, 2025など)を保持しながら、新しいシーズン(2026)のデータを追加できます。
+
 ### 環境変数設定
 
 #### GitHub Secrets（GitHub Actions用）
