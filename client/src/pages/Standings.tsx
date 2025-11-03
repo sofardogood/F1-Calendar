@@ -31,11 +31,11 @@ interface F1Data {
 }
 
 // レース結果から順位表を計算
-function calculateStandings(races: any[], year: number, sprintPoints?: Record<string, number>) {
+function calculateStandings(races: any[]) {
   const driverPoints: Record<string, { name: string; code: string; team: string; points: number }> = {};
   const constructorPoints: Record<string, { name: string; points: number }> = {};
 
-  // 結果があるレースだけを対象
+  // 結果があるレースだけを対象（スプリントレースを含む）
   const racesWithResults = races.filter(race => race.results && race.results.length > 0);
 
   racesWithResults.forEach(race => {
@@ -55,15 +55,6 @@ function calculateStandings(races: any[], year: number, sprintPoints?: Record<st
       constructorPoints[team].points += points;
     });
   });
-
-  // 2024年の場合はスプリントポイントを追加
-  if (year === 2024 && sprintPoints) {
-    Object.entries(sprintPoints).forEach(([code, points]) => {
-      if (driverPoints[code]) {
-        driverPoints[code].points += points;
-      }
-    });
-  }
 
   // ランキング順にソート
   const driversStandings = Object.values(driverPoints)
@@ -101,11 +92,7 @@ export default function Standings() {
   const isCurrentSeason = selectedYear === (data.current_season || 2025);
 
   // 年度別のドライバーとコンストラクター順位を計算
-  const { driversStandings: calculatedDrivers, constructorsStandings: calculatedConstructors } = calculateStandings(
-    races,
-    selectedYear,
-    data.sprint_points_2024
-  );
+  const { driversStandings: calculatedDrivers, constructorsStandings: calculatedConstructors } = calculateStandings(races);
 
   // 現在シーズンはf1_data.jsonのデータを使用、過去シーズンは計算結果を使用
   const drivers = isCurrentSeason ? data.drivers_standings : calculatedDrivers;

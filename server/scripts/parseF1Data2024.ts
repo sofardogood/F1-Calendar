@@ -167,8 +167,8 @@ async function parseF1Data2024() {
       const englishName = raceInfo?.name || `${raceName} Grand Prix`;
       const finalRaceName = isSprint ? `${englishName} (Sprint)` : englishName;
 
-      // Use .5 for sprint races to differentiate them from main races
-      const roundNumber = isSprint ? parseInt(round) + 0.5 : parseInt(round);
+      // Use -S suffix for sprint races (e.g., "5-S" for Round 5 Sprint)
+      const roundNumber = isSprint ? `${round}-S` : parseInt(round);
 
       currentRace = {
         round: roundNumber,

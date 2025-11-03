@@ -91,7 +91,8 @@ function parseCSV<T>(filepath: string): T[] {
 
       // 数値型に変換
       if (header === 'round') {
-        value = parseFloat(value) || 0;  // Use parseFloat for rounds to support sprint races (e.g., 5.5)
+        // Keep round as string if it contains "-S" (sprint race), otherwise convert to number
+        value = value.includes('-S') ? value : (parseInt(value) || 0);
       } else if (header === 'position' || header === 'points' || header === 'grid') {
         value = parseInt(value) || 0;
       }

@@ -28648,7 +28648,7 @@
         ]
       },
       {
-        "round": 5.5,
+        "round": "5-S",
         "name": "Chinese Grand Prix (Sprint)",
         "name_ja": "中国GP(スプリント)",
         "circuit": "Shanghai International Circuit",
@@ -28869,7 +28869,7 @@
         ]
       },
       {
-        "round": 6.5,
+        "round": "6-S",
         "name": "Miami Grand Prix (Sprint)",
         "name_ja": "マイアミGP(スプリント)",
         "circuit": "Miami International Autodrome",
@@ -29079,7 +29079,7 @@
         ]
       },
       {
-        "round": 11.5,
+        "round": "11-S",
         "name": "Austrian Grand Prix (Sprint)",
         "name_ja": "オーストリアGP(スプリント)",
         "circuit": "Red Bull Ring",
@@ -29311,7 +29311,7 @@
         ]
       },
       {
-        "round": 19.5,
+        "round": "19-S",
         "name": "United States Grand Prix (Sprint)",
         "name_ja": "アメリカGP(スプリント)",
         "circuit": "Circuit of The Americas",
@@ -29543,7 +29543,7 @@
         ]
       },
       {
-        "round": 21.5,
+        "round": "21-S",
         "name": "Brazilian Grand Prix (Sprint)",
         "name_ja": "ブラジルGP(スプリント)",
         "circuit": "Autódromo José Carlos Pace",
@@ -29764,7 +29764,7 @@
         ]
       },
       {
-        "round": 23.5,
+        "round": "23-S",
         "name": "Qatar Grand Prix (Sprint)",
         "name_ja": "カタールGP(スプリント)",
         "circuit": "Lusail International Circuit",
