@@ -149,22 +149,25 @@ export default function Statistics() {
   }));
 
   const constructorChartData = constructors.slice(0, 10).map((c: any) => {
-    // チーム名を短縮表示
+    // チーム名を短縮表示（英語・日本語両対応）
     let shortName = c.name;
-    if (c.name.includes('Red Bull Racing')) shortName = 'Red Bull';
-    else if (c.name.includes('Mercedes')) shortName = 'Mercedes';
-    else if (c.name.includes('Ferrari')) shortName = 'Ferrari';
-    else if (c.name.includes('McLaren')) shortName = 'McLaren';
+
+    // 英語表記
+    if (c.name.includes('Red Bull Racing') || c.name.includes('Red Bull')) shortName = 'Red Bull';
+    else if (c.name.includes('Mercedes') || c.name === 'メルセデス') shortName = 'Mercedes';
+    else if (c.name.includes('Ferrari') || c.name === 'フェラーリ') shortName = 'Ferrari';
+    else if (c.name.includes('McLaren') || c.name.includes('マクラーレン')) shortName = 'McLaren';
     else if (c.name.includes('Aston Martin')) shortName = 'Aston Martin';
-    else if (c.name.includes('Alpine')) shortName = 'Alpine';
-    else if (c.name.includes('Williams')) shortName = 'Williams';
-    else if (c.name.includes('Racing Bulls')) shortName = 'RB';
-    else if (c.name.includes('Kick Sauber')) shortName = 'Sauber';
-    else if (c.name.includes('Haas')) shortName = 'Haas';
-    else if (c.name.includes('Renault')) shortName = 'Renault';
-    else if (c.name.includes('Racing Point')) shortName = 'Racing Point';
-    else if (c.name.includes('AlphaTauri')) shortName = 'AlphaTauri';
-    else if (c.name.includes('Alfa Romeo')) shortName = 'Alfa Romeo';
+    else if (c.name.includes('Alpine') || c.name.includes('アルペン')) shortName = 'Alpine';
+    else if (c.name.includes('Williams') || c.name.includes('ウィリアムズ')) shortName = 'Williams';
+    else if (c.name.includes('Racing Bulls') || c.name.includes('RB F1')) shortName = 'RB';
+    else if (c.name.includes('Kick Sauber') || c.name.includes('Sauber')) shortName = 'Sauber';
+    else if (c.name.includes('Haas') || c.name.includes('ハース')) shortName = 'Haas';
+    else if (c.name.includes('Renault') || c.name === 'ルノー') shortName = 'Renault';
+    else if (c.name.includes('Racing Point') || c.name.includes('レーシング・ポイント')) shortName = 'Racing Point';
+    else if (c.name.includes('AlphaTauri') || c.name.includes('アルファタウリ')) shortName = 'AlphaTauri';
+    else if (c.name.includes('Alfa Romeo') || c.name.includes('アルファロメオ')) shortName = 'Alfa Romeo';
+    else if (c.name.includes('レッドブル')) shortName = 'Red Bull';
 
     return {
       name: shortName,
