@@ -106,11 +106,8 @@ export default function Standings() {
                         <div className="text-center w-8 md:w-12">
                           <span className="text-xl md:text-2xl font-bold text-white">{driver.position}</span>
                         </div>
-                        <div className={`${getTeamColor(driver.team)} rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0`}>
-                          <span className="text-white font-bold text-xs md:text-sm">{driver.code}</span>
-                        </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-white font-semibold text-sm md:text-base truncate">{driver.name}</p>
+                          <p className="text-white font-semibold text-base md:text-lg truncate">{driver.name}</p>
                           <p className="text-slate-400 text-xs md:text-sm truncate">{driver.team}</p>
                         </div>
                       </div>
