@@ -54,7 +54,7 @@ export default function Standings() {
                 戻る
               </Button>
             </Link>
-            <h1 className="text-lg md:text-2xl font-bold text-white">2025 順位</h1>
+            <h1 className="text-lg md:text-2xl font-bold text-white">順位</h1>
           </div>
         </div>
       </header>

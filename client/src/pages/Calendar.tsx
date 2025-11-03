@@ -126,7 +126,7 @@ export default function Calendar() {
                 戻る
               </Button>
             </Link>
-            <h1 className="text-lg md:text-2xl font-bold text-white">{selectedYear} カレンダー</h1>
+            <h1 className="text-lg md:text-2xl font-bold text-white">カレンダー</h1>
           </div>
           <div className="flex items-center gap-1 md:gap-2 overflow-x-auto pb-1 md:pb-0 -mx-4 px-4">
             {availableYears.map(year => (
