@@ -80,10 +80,10 @@ function parseCSV<T>(filepath: string): T[] {
     return [];
   }
 
-  const headers = lines[0].split(',').map(h => h.trim());
+  const headers = parseCSVLine(lines[0]);
 
   return lines.slice(1).map(line => {
-    const values = line.split(',').map(v => v.trim());
+    const values = parseCSVLine(line);
     const obj: any = {};
 
     headers.forEach((header, i) => {
@@ -99,6 +99,40 @@ function parseCSV<T>(filepath: string): T[] {
 
     return obj as T;
   });
+}
+
+// Proper CSV parsing that handles quoted fields
+function parseCSVLine(line: string): string[] {
+  const result: string[] = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    const nextChar = line[i + 1];
+
+    if (char === '"') {
+      if (inQuotes && nextChar === '"') {
+        // Escaped quote
+        current += '"';
+        i++; // Skip next quote
+      } else {
+        // Toggle quote mode
+        inQuotes = !inQuotes;
+      }
+    } else if (char === ',' && !inQuotes) {
+      // End of field
+      result.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+
+  // Add last field
+  result.push(current.trim());
+
+  return result;
 }
 
 async function parseYear(year: number) {

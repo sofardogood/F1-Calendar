@@ -1,25 +1,24 @@
 round,race_name,race_name_ja,circuit,location,date_start,date_end
-1,Round 1,第1戦,,,2024-01-01,2024-12-31
-2,Round 2,第2戦,,,2024-01-01,2024-12-31
-3,Round 3,第3戦,,,2024-01-01,2024-12-31
-4,Round 4,第4戦,,,2024-01-01,2024-12-31
-5,Round 5,第5戦,,,2024-01-01,2024-12-31
-6,Round 6,第6戦,,,2024-01-01,2024-12-31
-7,Round 7,第7戦,,,2024-01-01,2024-12-31
-8,Round 8,第8戦,,,2024-01-01,2024-12-31
-9,Round 9,第9戦,,,2024-01-01,2024-12-31
-10,Round 10,第10戦,,,2024-01-01,2024-12-31
-11,Round 11,第11戦,,,2024-01-01,2024-12-31
-12,Round 12,第12戦,,,2024-01-01,2024-12-31
-13,Round 13,第13戦,,,2024-01-01,2024-12-31
-14,Round 14,第14戦,,,2024-01-01,2024-12-31
-15,Round 15,第15戦,,,2024-01-01,2024-12-31
-16,Round 16,第16戦,,,2024-01-01,2024-12-31
-17,Round 17,第17戦,,,2024-01-01,2024-12-31
-18,Round 18,第18戦,,,2024-01-01,2024-12-31
-19,Round 19,第19戦,,,2024-01-01,2024-12-31
-20,Round 20,第20戦,,,2024-01-01,2024-12-31
-21,Round 21,第21戦,,,2024-01-01,2024-12-31
-22,Round 22,第22戦,,,2024-01-01,2024-12-31
-23,Round 23,第23戦,,,2024-01-01,2024-12-31
-24,Round 24,第24戦,,,2024-01-01,2024-12-31
+1,Bahrain Grand Prix,バーレーンGP,Bahrain International Circuit,"Sakhir, Bahrain",2024-03-02,2024-03-02
+2,Saudi Arabian Grand Prix,サウジアラビアGP,Jeddah Corniche Circuit,"Jeddah, Saudi Arabia",2024-03-09,2024-03-09
+3,Australian Grand Prix,オーストラリアGP,Albert Park Circuit,"Melbourne, Australia",2024-03-24,2024-03-24
+4,Japanese Grand Prix,日本GP,Suzuka Circuit,"Suzuka, Japan",2024-04-07,2024-04-07
+5,Chinese Grand Prix,中国GP,Shanghai International Circuit,"Shanghai, China",2024-04-21,2024-04-21
+6,Miami Grand Prix,マイアミGP,Miami International Autodrome,"Miami, USA",2024-05-05,2024-05-05
+7,Emilia Romagna Grand Prix,エミリア・ロマーニャGP,Autodromo Internazionale Enzo e Dino Ferrari,"Imola, Italy",2024-05-19,2024-05-19
+8,Monaco Grand Prix,モナコGP,Circuit de Monaco,"Monte Carlo, Monaco",2024-05-26,2024-05-26
+9,Canadian Grand Prix,カナダGP,Circuit Gilles Villeneuve,"Montreal, Canada",2024-06-09,2024-06-09
+10,Spanish Grand Prix,スペインGP,Circuit de Barcelona-Catalunya,"Barcelona, Spain",2024-06-23,2024-06-23
+11,Austrian Grand Prix,オーストリアGP,Red Bull Ring,"Spielberg, Austria",2024-06-30,2024-06-30
+13,Hungarian Grand Prix,ハンガリーGP,Hungaroring,"Budapest, Hungary",2024-07-21,2024-07-21
+14,Belgian Grand Prix,ベルギーGP,Circuit de Spa-Francorchamps,"Spa-Francorchamps, Belgium",2024-07-28,2024-07-28
+15,Dutch Grand Prix,オランダGP,Circuit Zandvoort,"Zandvoort, Netherlands",2024-08-25,2024-08-25
+16,Italian Grand Prix,イタリアGP,Autodromo Nazionale Monza,"Monza, Italy",2024-09-01,2024-09-01
+17,Azerbaijan Grand Prix,アゼルバイジャンGP,Baku City Circuit,"Baku, Azerbaijan",2024-09-15,2024-09-15
+18,Singapore Grand Prix,シンガポールGP,Marina Bay Street Circuit,Singapore,2024-09-22,2024-09-22
+19,United States Grand Prix,アメリカGP,Circuit of The Americas,"Austin, USA",2024-10-20,2024-10-20
+20,Mexico City Grand Prix,メキシコGP,Autódromo Hermanos Rodríguez,"Mexico City, Mexico",2024-10-27,2024-10-27
+21,サンパウロ Grand Prix,サンパウロGP,Autódromo José Carlos Pace,,2024-11-03,2024-11-03
+22,Las Vegas Grand Prix,ラスベガスGP,Las Vegas Street Circuit,"Las Vegas, USA",2024-11-23,2024-11-23
+23,Qatar Grand Prix,カタールGP,Lusail International Circuit,"Lusail, Qatar",2024-12-01,2024-12-01
+24,Abu Dhabi Grand Prix,アブダビGP,Yas Marina Circuit,"Abu Dhabi, UAE",2024-12-08,2024-12-08
