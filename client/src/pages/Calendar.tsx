@@ -174,6 +174,7 @@ export default function Calendar() {
                 const isSelected = selectedRound === race.round;
                 const isPast = isRacePast(race);
                 const hasResults = race.results && race.results.length > 0;
+                const isSprint = String(race.round).includes('-S');
                 return (
                   <Card
                     key={race.round}
@@ -187,6 +188,12 @@ export default function Calendar() {
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-2">
                             <Badge className="bg-red-600">第{race.round}戦</Badge>
+                            {isSprint && (
+                              <Badge className="bg-orange-600 flex items-center gap-1">
+                                <Trophy className="w-3 h-3" />
+                                スプリント
+                              </Badge>
+                            )}
                             {hasResults && (
                               <Badge className="bg-green-600 flex items-center gap-1">
                                 <CheckCircle2 className="w-3 h-3" />
