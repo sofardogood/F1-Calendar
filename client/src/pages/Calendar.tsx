@@ -75,7 +75,8 @@ export default function Calendar() {
   ];
 
   // 過去年度（結果のみ）かどうかを判定
-  const isHistoricalYear = races.length > 0 && races[0].date_start === `${selectedYear}-01-01`;
+  const currentYear = new Date().getFullYear();
+  const isHistoricalYear = selectedYear < currentYear;
 
   // 過去年度は月別表示をせず、全レース表示
   let racesInMonth: Race[];
