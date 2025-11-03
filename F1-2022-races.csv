@@ -3,11 +3,13 @@ round,race_name,race_name_ja,circuit,location,date_start,date_end
 2,Saudi Arabian Grand Prix,サウジアラビアGP,Jeddah Corniche Circuit,"Jeddah, Saudi Arabia",2022-03-27,2022-03-27
 3,Australian Grand Prix,オーストラリアGP,Albert Park Circuit,"Melbourne, Australia",2022-04-10,2022-04-10
 4,Emilia Romagna Grand Prix,エミリア・ロマーニャGP,Autodromo Internazionale Enzo e Dino Ferrari,"Imola, Italy",2022-04-24,2022-04-24
+4-S,Emilia Romagna Grand Prix (Sprint),エミリア・ロマーニャGP(スプリント),Autodromo Enzo e Dino Ferrari,"Imola, Italy",2022-04-23,2022-04-23
 7,Monaco Grand Prix,モナコGP,Circuit de Monaco,"Monte Carlo, Monaco",2022-05-29,2022-05-29
 8,Azerbaijan Grand Prix,アゼルバイジャンGP,Baku City Circuit,"Baku, Azerbaijan",2022-06-12,2022-06-12
 9,Canadian Grand Prix,カナダGP,Circuit Gilles Villeneuve,"Montreal, Canada",2022-06-19,2022-06-19
 10,British Grand Prix,イギリスGP,Silverstone Circuit,"Silverstone, UK",2022-07-03,2022-07-03
 11,Austrian Grand Prix,オーストリアGP,Red Bull Ring,"Spielberg, Austria",2022-07-10,2022-07-10
+11-S,Austrian Grand Prix (Sprint),オーストリアGP(スプリント),Red Bull Ring,"Spielberg, Austria",2022-07-09,2022-07-09
 12,フランス Grand Prix,フランスGP,Circuit Paul Ricard,,2022-07-24,2022-07-24
 13,Hungarian Grand Prix,ハンガリーGP,Hungaroring,"Budapest, Hungary",2022-07-31,2022-07-31
 14,Belgian Grand Prix,ベルギーGP,Circuit de Spa-Francorchamps,"Spa-Francorchamps, Belgium",2022-08-28,2022-08-28
@@ -18,4 +20,5 @@ round,race_name,race_name_ja,circuit,location,date_start,date_end
 19,United States Grand Prix,アメリカGP,Circuit of the Americas,"Austin, USA",2022-10-23,2022-10-23
 20,Mexico City Grand Prix,メキシコGP,Autódromo Hermanos Rodríguez,"Mexico City, Mexico",2022-10-30,2022-10-30
 21,サンパウロ Grand Prix,サンパウロGP,Autódromo José Carlos Pace,,2022-11-13,2022-11-13
+21-S,Brazilian Grand Prix (Sprint),ブラジルGP(スプリント),Autódromo José Carlos Pace,"São Paulo, Brazil",2022-11-12,2022-11-12
 22,Abu Dhabi Grand Prix,アブダビGP,Yas Marina Circuit,"Abu Dhabi, UAE",2022-11-20,2022-11-20

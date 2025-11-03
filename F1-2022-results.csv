@@ -18,7 +18,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 1,17,HUL,Nico Hülkenberg,Aston Martin,0,17,57,+1:03.829s,Finished
 1,18,PER,Sergio Pérez,Red Bull Racing,0,4,56,Fuel problem,Finished
 1,19,VER,Max Verstappen,Red Bull Racing,0,2,54,Fuel problem,Finished
-1,0,GAS,Pierre Gasly,AlphaTauri,0,10,44,Power unit,Finished
 2,1,VER,Max Verstappen,Red Bull Racing,25,4,50,1:24:19.293,Finished
 2,2,LEC,Charles Leclerc,Ferrari,19,2,50,+0.549s,Finished
 2,3,SAI,Carlos Sainz,Ferrari,15,3,50,+8.097s,Finished
@@ -33,12 +32,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 2,12,HUL,Nico Hülkenberg,Aston Martin,0,17,50,+1:31.742s,Finished
 2,13,STR,Lance Stroll,Aston Martin,0,13,49,+1 lap,Finished
 2,14,ALB,Alexander Albon,Williams,0,16,47,Accident,Finished
-2,0,BOT,Valtteri Bottas,Alfa Romeo,0,8,36,Cooling system,Finished
-2,0,ALO,Fernando Alonso,Alpine,0,7,35,Water pressure,Finished
-2,0,RIC,Daniel Ricciardo,McLaren,0,14,35,Gearbox,Finished
-2,0,LAT,Nicholas Latifi,Williams,0,18,14,Accident,Finished
-2,0,TSU,Yuki Tsunoda,AlphaTauri,0,—,0,Power unit,Finished
-2,0,MSC,Mick Schumacher,Haas,0,—,0,Did not start,Finished
 3,1,LEC,Charles Leclerc,Ferrari,26,1,58,1:27:46.548,Finished
 3,2,PER,Sergio Pérez,Red Bull Racing,18,3,58,+20.524s,Finished
 3,3,RUS,George Russell,Mercedes,15,6,58,+25.593s,Finished
@@ -56,9 +49,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 3,15,TSU,Yuki Tsunoda,AlphaTauri,0,13,57,+1 lap,Finished
 3,16,LAT,Nicholas Latifi,Williams,0,18,57,+1 lap,Finished
 3,17,ALO,Fernando Alonso,Alpine,0,10,57,+1 lap,Finished
-3,0,VER,Max Verstappen,Red Bull Racing,0,2,38,Fuel leak,Finished
-3,0,VET,Sebastian Vettel,Aston Martin,0,17,22,Accident,Finished
-3,0,SAI,Carlos Sainz,Ferrari,0,9,1,Spun off,Finished
 4,1,VER,Max Verstappen,Red Bull Racing,26,1,63,1:32:07.986,Finished
 4,2,PER,Sergio Pérez,Red Bull Racing,18,3,63,+16.527s,Finished
 4,3,NOR,Lando Norris,McLaren,15,5,63,+34.834s,Finished
@@ -77,8 +67,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 4,16,LAT,Nicholas Latifi,Williams,0,19,62,+1 lap,Finished
 4,17,MSC,Mick Schumacher,Haas,0,10,62,+1 lap,Finished
 4,18,RIC,Daniel Ricciardo,McLaren,0,6,62,+1 lap,Finished
-4,0,ALO,Fernando Alonso,Alpine,0,9,6,Collision damage,Finished
-4,0,SAI,Carlos Sainz,Ferrari,0,4,0,Collision,Finished
 4,1,VER,Max Verstappen,Red Bull Racing,26,3,57,1:34:24.258,Finished
 4,2,LEC,Charles Leclerc,Ferrari,18,1,57,+3.786s,Finished
 4,3,SAI,Carlos Sainz,Ferrari,15,2,57,+8.229s,Finished
@@ -117,8 +105,14 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 4,16,LAT,Nicholas Latifi,Williams,0,19,64,+2 laps,Finished
 4,17,MAG,Kevin Magnussen,Haas,0,8,64,+2 laps,Finished
 4,18,ALB,Alexander Albon,Williams,0,18,64,+2 laps,Finished
-4,0,ZHO,Zhou Guanyu,Alfa Romeo,0,15,28,Power loss,Finished
-4,0,LEC,Charles Leclerc,Ferrari,0,1,27,Turbo,Finished
+4-S,1,VER,Max Verstappen,Red Bull Racing,8,2,21,30:39.567,Finished
+4-S,2,LEC,Charles Leclerc,Ferrari,7,1,21,+2.975s,Finished
+4-S,3,PER,Sergio Pérez,Red Bull Racing,6,4,21,+5.902s,Finished
+4-S,4,SAI,Carlos Sainz,Ferrari,5,10,21,+8.718s,Finished
+4-S,5,NOR,Lando Norris,McLaren,4,7,21,+19.689s,Finished
+4-S,6,RIC,Daniel Ricciardo,McLaren,3,6,21,+21.140s,Finished
+4-S,7,BOT,Valtteri Bottas,Alfa Romeo,2,9,21,+33.592s,Finished
+4-S,8,MAG,Kevin Magnussen,Haas,1,13,21,+35.508s,Finished
 7,1,PER,Sergio Perez,Red Bull Racing,25,3,64,1:56:30.265,Finished
 7,2,SAI,Carlos Sainz,Ferrari,18,2,64,+1.154s,Finished
 7,3,VER,Max Verstappen,Red Bull Racing,15,4,64,+1.491s,Finished
@@ -136,9 +130,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 7,15,LAT,Nicholas Latifi,Williams,0,19,63,+1 lap,Finished
 7,16,ZHO,Zhou Guanyu,Alfa Romeo,0,20,63,+1 lap,Finished
 7,17,TSU,Yuki Tsunoda,AlphaTauri,0,11,63,+1 lap,Finished
-7,0,ALB,Alexander Albon,Williams,0,16,48,Mechanical,Finished
-7,0,MSC,Mick Schumacher,Haas,0,15,24,Accident,Finished
-7,0,MAG,Kevin Magnussen,Haas,0,13,19,Water pressure,Finished
 8,1,VER,Max Verstappen,Red Bull Racing,25,3,51,1:34:05.941,Finished
 8,2,PER,Sergio Perez,Red Bull Racing,19,2,51,+20.823s,Finished
 8,3,RUS,George Russell,Mercedes,15,5,51,+45.995s,Finished
@@ -155,10 +146,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 8,14,MSC,Mick Schumacher,Haas,0,20,50,+1 lap,Finished
 8,15,LAT,Nicholas Latifi,Williams,0,18,50,+1 lap,Finished
 8,16,STR,Lance Stroll,Aston Martin,0,19,46,Vibration,Finished
-8,0,MAG,Kevin Magnussen,Haas,0,16,31,Power unit,Finished
-8,0,ZHO,Zhou Guanyu,Alfa Romeo,0,14,23,Hydraulics,Finished
-8,0,LEC,Charles Leclerc,Ferrari,0,1,21,Power unit,Finished
-8,0,SAI,Carlos Sainz,Ferrari,0,4,8,Hydraulics,Finished
 9,1,VER,Max Verstappen,Red Bull Racing,25,1,70,1:36:21.757,Finished
 9,2,SAI,Carlos Sainz,Ferrari,19,3,70,+0.993s,Finished
 9,3,HAM,Lewis Hamilton,Mercedes,15,4,70,+7.006s,Finished
@@ -176,9 +163,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 9,15,NOR,Lando Norris,McLaren,0,14,70,+52.145s,Finished
 9,16,LAT,Nicholas Latifi,Williams,0,18,70,+59.978s,Finished
 9,17,MAG,Kevin Magnussen,Haas,0,5,70,+1:08.180,Finished
-9,0,TSU,Yuki Tsunoda,AlphaTauri,0,20,47,Accident,Finished
-9,0,MSC,Mick Schumacher,Haas,0,6,18,Engine,Finished
-9,0,PER,Sergio Perez,Red Bull Racing,0,13,7,Gearbox,Finished
 10,1,SAI,Carlos Sainz,Ferrari,25,1,52,2:17:50.311,Finished
 10,2,PER,Sergio Perez,Red Bull Racing,18,4,52,+3.779s,Finished
 10,3,HAM,Lewis Hamilton,Mercedes,16,5,52,+6.225s,Finished
@@ -193,12 +177,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 10,12,LAT,Nicholas Latifi,Williams,0,10,52,+32.511s,Finished
 10,13,RIC,Daniel Ricciardo,McLaren,0,14,52,+32.817s,Finished
 10,14,TSU,Yuki Tsunoda,AlphaTauri,0,13,52,+40.910s,Finished
-10,0,OCO,Esteban Ocon,Alpine,0,15,37,Fuel pump,Finished
-10,0,GAS,Pierre Gasly,AlphaTauri,0,11,26,Collision damage,Finished
-10,0,BOT,Valtteri Bottas,Alfa Romeo,0,12,21,Gearbox,Finished
-10,0,RUS,George Russell,Mercedes,0,8,0,Collision,Finished
-10,0,ZHO,Zhou Guanyu,Alfa Romeo,0,9,0,Collision,Finished
-10,0,ALB,Alexander Albon,Williams,0,16,0,Collision,Finished
 11,1,LEC,Charles Leclerc,Ferrari,25,2,71,1:24:24.312,Finished
 11,2,VER,Max Verstappen,Red Bull Racing,19,1,71,+1.532s,Finished
 11,3,HAM,Lewis Hamilton,Mercedes,15,8,71,+41.217s,Finished
@@ -216,9 +194,14 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 11,15,GAS,Pierre Gasly,AlphaTauri,0,14,70,+1 lap,Finished
 11,16,TSU,Yuki Tsunoda,AlphaTauri,0,16,70,+1 lap,Finished
 11,17,VET,Sebastian Vettel,Aston Martin,0,18,70,+1 lap,Finished
-11,0,SAI,Carlos Sainz,Ferrari,0,3,56,Power unit,Finished
-11,0,LAT,Nicholas Latifi,Williams,0,17,48,Undertray,Finished
-11,0,PER,Sergio Perez,Red Bull Racing,0,5,24,Collision damage,Finished
+11-S,1,VER,Max Verstappen,Red Bull Racing,8,1,23,25:42.055,Finished
+11-S,2,LEC,Charles Leclerc,Ferrari,7,2,23,+1.675s,Finished
+11-S,3,SAI,Carlos Sainz,Ferrari,6,3,23,+5.644s,Finished
+11-S,4,RUS,George Russell,Mercedes,5,4,23,+13.429s,Finished
+11-S,5,PER,Sergio Pérez,Red Bull Racing,4,13,23,+18.302s,Finished
+11-S,6,OCO,Esteban Ocon,Alpine,3,6,23,+21.064s,Finished
+11-S,7,MAG,Kevin Magnussen,Haas,2,7,23,+23.097s,Finished
+11-S,8,HAM,Lewis Hamilton,Mercedes,1,8,23,+23.753s,Finished
 12,1,VER,Max Verstappen,Red Bull Racing,25,2,53,1:30:02.112,Finished
 12,2,HAM,Lewis Hamilton,Mercedes,18,4,53,+10.587s,Finished
 12,3,RUS,George Russell,Mercedes,15,6,53,+16.495s,Finished
@@ -235,10 +218,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 12,14,BOT,Valtteri Bottas,Alfa Romeo,0,11,53,+1:16.666,Finished
 12,15,MSC,Mick Schumacher,Haas,0,17,53,+1:20.394,Finished
 12,16,ZHO,Zhou Guanyu,Alfa Romeo,0,16,47,Power unit,Finished
-12,0,LAT,Nicholas Latifi,Williams,0,18,40,Collision damage,Finished
-12,0,MAG,Kevin Magnussen,Haas,0,20,37,Collision damage,Finished
-12,0,LEC,Charles Leclerc,Ferrari,0,1,17,Accident,Finished
-12,0,TSU,Yuki Tsunoda,AlphaTauri,0,8,17,Undertray,Finished
 13,1,VER,Max Verstappen,Red Bull Racing,25,10,70,1:39:35.912,Finished
 13,2,HAM,Lewis Hamilton,Mercedes,19,7,70,+7.834s,Finished
 13,3,RUS,George Russell,Mercedes,15,1,70,+12.337s,Finished
@@ -258,7 +237,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 13,17,ALB,Alexander Albon,Williams,0,17,69,+1 lap,Finished
 13,18,LAT,Nicholas Latifi,Williams,0,19,69,+1 lap,Finished
 13,19,TSU,Yuki Tsunoda,AlphaTauri,0,16,68,+2 laps,Finished
-13,0,BOT,Valtteri Bottas,Alfa Romeo,0,8,65,Fuel system,Finished
 14,1,VER,Max Verstappen,Red Bull Racing,26,14,44,1:25:52.894,Finished
 14,2,PER,Sergio Perez,Red Bull Racing,18,2,44,+17.841s,Finished
 14,3,SAI,Carlos Sainz,Ferrari,15,1,44,+26.886s,Finished
@@ -277,8 +255,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 14,16,MAG,Kevin Magnussen,Haas,0,12,43,+1 lap,Finished
 14,17,MSC,Mick Schumacher,Haas,0,19,43,+1 lap,Finished
 14,18,LAT,Nicholas Latifi,Williams,0,11,43,+1 lap,Finished
-14,0,BOT,Valtteri Bottas,Alfa Romeo,0,13,1,Accident,Finished
-14,0,HAM,Lewis Hamilton,Mercedes,0,4,0,Collision damage,Finished
 15,1,VER,Max Verstappen,Red Bull Racing,26,1,72,1:36:42.773,Finished
 15,2,RUS,George Russell,Mercedes,18,6,72,+4.071s,Finished
 15,3,LEC,Charles Leclerc,Ferrari,15,2,72,+10.929s,Finished
@@ -297,8 +273,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 15,16,ZHO,Zhou Guanyu,Alfa Romeo,0,14,72,+37.320s,Finished
 15,17,RIC,Daniel Ricciardo,McLaren,0,17,72,+37.764s,Finished
 15,18,LAT,Nicholas Latifi,Williams,0,20,71,+1 lap,Finished
-15,0,BOT,Valtteri Bottas,Alfa Romeo,0,16,53,Engine,Finished
-15,0,TSU,Yuki Tsunoda,AlphaTauri,0,9,43,Differential,Finished
 16,1,VER,Max Verstappen,Red Bull Racing,25,7,53,1:20:27.511,Finished
 16,2,LEC,Charles Leclerc,Ferrari,18,1,53,+2.446s,Finished
 16,3,RUS,George Russell,Mercedes,15,2,53,+3.405s,Finished
@@ -315,10 +289,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 16,14,TSU,Yuki Tsunoda,AlphaTauri,0,20,52,+1 lap,Finished
 16,15,LAT,Nicholas Latifi,Williams,0,10,52,+1 lap,Finished
 16,16,MAG,Kevin Magnussen,Haas,0,16,52,+1 lap,Finished
-16,0,RIC,Daniel Ricciardo,McLaren,0,4,45,Oil leak,Finished
-16,0,STR,Lance Stroll,Aston Martin,0,12,39,Engine,Finished
-16,0,ALO,Fernando Alonso,Alpine,0,6,31,Water pressure,Finished
-16,0,VET,Sebastian Vettel,Aston Martin,0,11,10,Engine,Finished
 17,1,PER,Sergio Perez,Red Bull Racing,25,2,59,2:02:20.238,Finished
 17,2,LEC,Charles Leclerc,Ferrari,18,1,59,+2.595s,Finished
 17,3,SAI,Carlos Sainz,Ferrari,15,4,59,+10.305s,Finished
@@ -333,12 +303,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 17,12,MAG,Kevin Magnussen,Haas,0,9,59,+1:32.610,Finished
 17,13,MSC,Mick Schumacher,Haas,0,12,58,+1 lap,Finished
 17,14,RUS,George Russell,Mercedes,0,PL,57,+2 laps,Finished
-17,0,TSU,Yuki Tsunoda,AlphaTauri,0,10,34,Accident,Finished
-17,0,OCO,Esteban Ocon,Alpine,0,17,26,Engine,Finished
-17,0,ALB,Alexander Albon,Williams,0,18,25,Accident damage,Finished
-17,0,ALO,Fernando Alonso,Alpine,0,5,20,Engine,Finished
-17,0,LAT,Nicholas Latifi,Williams,0,19,7,Collision damage,Finished
-17,0,ZHO,Zhou Guanyu,Alfa Romeo,0,14,6,Collision,Finished
 18,1,VER,Max Verstappen,Red Bull Racing,25,1,28,3:01:44.004,Finished
 18,2,PER,Sergio Perez,Red Bull Racing,18,4,28,+27.066s,Finished
 18,3,LEC,Charles Leclerc,Ferrari,15,2,28,+31.763s,Finished
@@ -357,8 +321,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 18,16,ZHO,Zhou Guanyu,Alfa Romeo,0,14,28,+1:27.043,Finished
 18,17,MSC,Mick Schumacher,Haas,0,15,28,+1:32.523,Finished
 18,18,GAS,Pierre Gasly,AlphaTauri,0,PL,28,+1:48.091,Finished
-18,0,SAI,Carlos Sainz,Ferrari,0,3,0,Accident,Finished
-18,0,ALB,Alexander Albon,Williams,0,16,0,Collision damage,Finished
 19,1,VER,Max Verstappen,Red Bull Racing,25,2,56,1:42:11.687,Finished
 19,2,HAM,Lewis Hamilton,Mercedes,18,3,56,+5.023s,Finished
 19,3,LEC,Charles Leclerc,Ferrari,15,12,56,+7.501s,Finished
@@ -376,9 +338,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 19,15,MSC,Mick Schumacher,Haas,0,16,56,+1:24.490,Finished
 19,16,RIC,Daniel Ricciardo,McLaren,0,15,56,+1:30.487,Finished
 19,17,LAT,Nicholas Latifi,Williams,0,17,56,+1:43.588,Finished
-19,0,STR,Lance Stroll,Aston Martin,0,5,21,Collision,Finished
-19,0,BOT,Valtteri Bottas,Alfa Romeo,0,7,16,Spun off,Finished
-19,0,SAI,Carlos Sainz,Ferrari,0,1,1,Collision damage,Finished
 20,1,VER,Max Verstappen,Red Bull Racing,25,1,71,1:38:36.729,Finished
 20,2,HAM,Lewis Hamilton,Mercedes,18,3,71,+15.186s,Finished
 20,3,PER,Sergio Perez,Red Bull Racing,15,4,71,+18.097s,Finished
@@ -398,7 +357,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 20,17,MAG,Kevin Magnussen,Haas,0,19,70,+1 lap,Finished
 20,18,LAT,Nicholas Latifi,Williams,0,18,69,+2 laps,Finished
 20,19,ALO,Fernando Alonso,Alpine,0,9,63,Engine,Finished
-20,0,TSU,Yuki Tsunoda,AlphaTauri,0,13,50,Collision damage,Finished
 21,1,RUS,George Russell,Mercedes,26,1,71,1:38:34.044,Finished
 21,2,HAM,Lewis Hamilton,Mercedes,18,2,71,+1.529s,Finished
 21,3,SAI,Carlos Sainz,Ferrari,15,7,71,+4.051s,Finished
@@ -416,9 +374,14 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 21,15,ALB,Alexander Albon,Williams,0,19,71,+36.016s,Finished
 21,16,LAT,Nicholas Latifi,Williams,0,18,71,+37.038s,Finished
 21,17,TSU,Yuki Tsunoda,AlphaTauri,0,PL,70,+1 lap,Finished
-21,0,NOR,Lando Norris,McLaren,0,6,50,Gearbox,Finished
-21,0,MAG,Kevin Magnussen,Haas,0,8,0,Collision,Finished
-21,0,RIC,Daniel Ricciardo,McLaren,0,11,0,Collision,Finished
+21-S,1,RUS,George Russell,Mercedes,8,1,24,31:09.978,Finished
+21-S,2,SAI,Carlos Sainz,Ferrari,7,2,24,+3.085s,Finished
+21-S,3,HAM,Lewis Hamilton,Mercedes,6,3,24,+4.176s,Finished
+21-S,4,LEC,Charles Leclerc,Ferrari,5,4,24,+8.079s,Finished
+21-S,5,PER,Sergio Pérez,Red Bull Racing,4,7,24,+9.576s,Finished
+21-S,6,OCO,Esteban Ocon,Alpine,3,5,24,+17.100s,Finished
+21-S,7,BOT,Valtteri Bottas,Alfa Romeo,2,13,24,+18.260s,Finished
+21-S,8,NOR,Lando Norris,McLaren,1,11,24,+25.007s,Finished
 22,1,VER,Max Verstappen,Red Bull Racing,25,1,58,1:27:45.914,Finished
 22,2,LEC,Charles Leclerc,Ferrari,18,3,58,+8.771s,Finished
 22,3,PER,Sergio Perez,Red Bull Racing,15,2,58,+10.093s,Finished
@@ -438,7 +401,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 22,17,MAG,Kevin Magnussen,Haas,0,16,57,+1 lap,Finished
 22,18,HAM,Lewis Hamilton,Mercedes,0,5,55,Gearbox,Finished
 22,19,LAT,Nicholas Latifi,Williams,0,20,55,Collision damage,Finished
-22,0,ALO,Fernando Alonso,Alpine,0,10,27,Water leak,Finished
 22,1,VER,Max Verstappen,Red Bull Racing,8,1,21,30:39.567,Finished
 22,2,LEC,Charles Leclerc,Ferrari,7,2,21,+2.975s,Finished
 22,3,PER,Sergio Perez,Red Bull Racing,6,7,21,+4.721s,Finished
@@ -458,7 +420,6 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 22,17,GAS,Pierre Gasly,AlphaTauri,0,17,21,+43.794s,Finished
 22,18,ALB,Alexander Albon,Williams,0,20,21,+48.871s,Finished
 22,19,LAT,Nicholas Latifi,Williams,0,18,21,+52.017s,Finished
-22,0,ZHO,Zhou Guanyu,Alfa Romeo,0,14,0,Collision,Finished
 22,1,VER,Max Verstappen,Red Bull Racing,8,1,23,26:30.059,Finished
 22,2,LEC,Charles Leclerc,Ferrari,7,2,23,+1.675s,Finished
 22,3,SAI,Carlos Sainz,Ferrari,6,3,23,+5.644s,Finished
@@ -498,4 +459,3 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 22,17,OCO,Esteban Ocon,Alpine,0,6,24,+51.756s,Finished
 22,18,ALO,Fernando Alonso,Alpine,0,7,24,+53.985s,Finished
 22,19,LAT,Nicholas Latifi,Williams,0,16,24,+1:16.850,Finished
-22,0,ALB,Alexander Albon,Williams,0,11,12,Undertray,Finished

@@ -218,6 +218,26 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 11,18,ALO,Fernando Alonso,Aston Martin,0,15,70,+1 lap,Finished
 11,19,SAR,Logan Sargeant,Williams,0,19,69,+2 laps,Finished
 11,20,NOR,Lando Norris,McLaren,0,2,64,リタイア (事故),Retired (事故)
+12,1,HAM,Lewis Hamilton,Mercedes,25,2,52,1:22:27.059,Finished
+12,2,VER,Max Verstappen,Red Bull Racing,18,4,52,+1.465s,Finished
+12,3,NOR,Lando Norris,McLaren,15,3,52,+7.547s,Finished
+12,4,PIA,Oscar Piastri,McLaren,12,5,52,+12.429s,Finished
+12,5,SAI,Carlos Sainz,Ferrari,11,7,52,+47.318s,Finished
+12,6,HUL,Nico Hulkenberg,Haas,8,6,52,+55.722s,Finished
+12,7,STR,Lance Stroll,Aston Martin,6,8,52,+56.569s,Finished
+12,8,ALO,Fernando Alonso,Aston Martin,4,10,52,+1:03.577,Finished
+12,9,ALB,Alexander Albon,Williams,2,9,52,+1:08.387,Finished
+12,10,TSU,Yuki Tsunoda,RB,1,13,52,+1:19.303,Finished
+12,11,SAR,Logan Sargeant,Williams,0,12,52,+1:28.960,Finished
+12,12,MAG,Kevin Magnussen,Haas,0,17,52,+1:30.153,Finished
+12,13,RIC,Daniel Ricciardo,RB,0,15,51,+1 lap,Finished
+12,14,LEC,Charles Leclerc,Ferrari,0,11,51,+1 lap,Finished
+12,15,BOT,Valtteri Bottas,Kick Sauber,0,16,51,+1 lap,Finished
+12,16,OCO,Esteban Ocon,Alpine,0,18,50,+2 laps,Finished
+12,17,PER,Sergio Perez,Red Bull Racing,0,PL,50,+2 laps,Finished
+12,18,ZHO,Zhou Guanyu,Kick Sauber,0,14,50,+2 laps,Finished
+12,0,RUS,George Russell,Mercedes,0,1,33,リタイア (ウォーターリーク),Retired (ウォーターリーク)
+12,DNS,GAS,Pierre Gasly,Alpine,0,—,0,不出走 (ギアボックス),Finished
 13,1,PIA,Oscar Piastri,McLaren,25,2,70,1:38:01.989,Finished
 13,2,NOR,Lando Norris,McLaren,18,1,70,+2.141s,Finished
 13,3,HAM,Lewis Hamilton,Mercedes,15,5,70,+14.880s,Finished
