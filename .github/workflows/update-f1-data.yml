@@ -11,6 +11,8 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -32,9 +34,7 @@ jobs:
         run: pnpm install
 
       - name: Run scraper to update F1 data
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: pnpm tsx server/scripts/updateF1Data.ts
+        run: pnpm tsx server/scripts/updateF1DataFromWikipedia.ts
 
       - name: Commit and push if changed
         run: |
