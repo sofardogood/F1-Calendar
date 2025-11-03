@@ -10,7 +10,7 @@ interface Driver {
   position: number;
   name: string;
   code: string;
-  nationality: string;
+  nationality?: string;
   team: string;
   points: number;
 }
@@ -21,10 +21,81 @@ interface Constructor {
   points: number;
 }
 
+interface F1Data {
+  races_by_year?: Record<string, any[]>;
+  current_season?: number;
+  races?: any[];
+  drivers_standings: Driver[];
+  constructors_standings: Constructor[];
+}
+
+// レース結果から順位表を計算
+function calculateStandings(races: any[]) {
+  const driverPoints: Record<string, { name: string; code: string; team: string; points: number }> = {};
+  const constructorPoints: Record<string, { name: string; points: number }> = {};
+
+  // 結果があるレースだけを対象
+  const racesWithResults = races.filter(race => race.results && race.results.length > 0);
+
+  racesWithResults.forEach(race => {
+    race.results.forEach((result: any) => {
+      const { driver, driver_code, team, points } = result;
+
+      // ドライバーポイント
+      if (!driverPoints[driver_code]) {
+        driverPoints[driver_code] = { name: driver, code: driver_code, team, points: 0 };
+      }
+      driverPoints[driver_code].points += points;
+
+      // コンストラクターポイント
+      if (!constructorPoints[team]) {
+        constructorPoints[team] = { name: team, points: 0 };
+      }
+      constructorPoints[team].points += points;
+    });
+  });
+
+  // ランキング順にソート
+  const driversStandings = Object.values(driverPoints)
+    .sort((a, b) => b.points - a.points)
+    .map((driver, index) => ({
+      position: index + 1,
+      ...driver
+    }));
+
+  const constructorsStandings = Object.values(constructorPoints)
+    .sort((a, b) => b.points - a.points)
+    .map((constructor, index) => ({
+      position: index + 1,
+      ...constructor
+    }));
+
+  return { driversStandings, constructorsStandings };
+}
+
 export default function Standings() {
+  const data = f1Data as F1Data;
+
+  // 利用可能な年度を取得
+  const availableYears = data.races_by_year
+    ? Object.keys(data.races_by_year).map(Number).sort((a, b) => b - a)
+    : [data.current_season || 2025];
+
+  const [selectedYear, setSelectedYear] = useState(availableYears[0]);
   const [view, setView] = useState<'drivers' | 'constructors'>('drivers');
-  const [drivers] = useState<Driver[]>(f1Data.drivers_standings);
-  const [constructors] = useState<Constructor[]>(f1Data.constructors_standings);
+
+  // 選択された年度のレースデータを取得
+  const races = (data.races_by_year?.[selectedYear] || data.races || []) as any[];
+
+  // 現在シーズン(2025)かどうかを判定
+  const isCurrentSeason = selectedYear === (data.current_season || 2025);
+
+  // 年度別のドライバーとコンストラクター順位を計算
+  const { driversStandings: calculatedDrivers, constructorsStandings: calculatedConstructors } = calculateStandings(races);
+
+  // 現在シーズンはf1_data.jsonのデータを使用、過去シーズンは計算結果を使用
+  const drivers = isCurrentSeason ? data.drivers_standings : calculatedDrivers;
+  const constructors = isCurrentSeason ? data.constructors_standings : calculatedConstructors;
 
   const maxPoints = 600;
 
@@ -47,14 +118,30 @@ export default function Standings() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2 md:gap-3">
+        <div className="container mx-auto px-4 py-3">
+          <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-0">
             <Link href="/">
               <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white px-2">
                 戻る
               </Button>
             </Link>
             <h1 className="text-lg md:text-2xl font-bold text-white">順位</h1>
+          </div>
+          <div className="flex items-center gap-1 md:gap-2 overflow-x-auto pb-1 md:pb-0 -mx-4 px-4">
+            {availableYears.map(year => (
+              <Button
+                key={year}
+                variant={selectedYear === year ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedYear(year)}
+                className={`flex-shrink-0 text-xs md:text-sm px-2 md:px-3 ${selectedYear === year
+                  ? "bg-red-600 hover:bg-red-700 text-white"
+                  : "border-slate-600 text-white hover:bg-slate-800"
+                }`}
+              >
+                {year}年
+              </Button>
+            ))}
           </div>
         </div>
       </header>

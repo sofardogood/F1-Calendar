@@ -15,6 +15,50 @@ interface F1Data {
   constructors_standings: any[];
 }
 
+// レース結果から順位表を計算
+function calculateStandings(races: any[]) {
+  const driverPoints: Record<string, { name: string; code: string; team: string; points: number }> = {};
+  const constructorPoints: Record<string, { name: string; points: number }> = {};
+
+  // 結果があるレースだけを対象
+  const racesWithResults = races.filter(race => race.results && race.results.length > 0);
+
+  racesWithResults.forEach(race => {
+    race.results.forEach((result: any) => {
+      const { driver, driver_code, team, points } = result;
+
+      // ドライバーポイント
+      if (!driverPoints[driver_code]) {
+        driverPoints[driver_code] = { name: driver, code: driver_code, team, points: 0 };
+      }
+      driverPoints[driver_code].points += points;
+
+      // コンストラクターポイント
+      if (!constructorPoints[team]) {
+        constructorPoints[team] = { name: team, points: 0 };
+      }
+      constructorPoints[team].points += points;
+    });
+  });
+
+  // ランキング順にソート
+  const driversStandings = Object.values(driverPoints)
+    .sort((a, b) => b.points - a.points)
+    .map((driver, index) => ({
+      position: index + 1,
+      ...driver
+    }));
+
+  const constructorsStandings = Object.values(constructorPoints)
+    .sort((a, b) => b.points - a.points)
+    .map((constructor, index) => ({
+      position: index + 1,
+      ...constructor
+    }));
+
+  return { driversStandings, constructorsStandings };
+}
+
 // レース結果からポイント推移を計算
 function calculatePointsProgression(races: any[]) {
   const driverPoints: Record<string, number[]> = {};
@@ -75,8 +119,6 @@ function calculatePointsProgression(races: any[]) {
 
 export default function Statistics() {
   const data = f1Data as F1Data;
-  const drivers = data.drivers_standings;
-  const constructors = data.constructors_standings;
 
   // 利用可能な年度を取得
   const availableYears = data.races_by_year
@@ -87,6 +129,16 @@ export default function Statistics() {
 
   // 選択された年度のレースデータを取得
   const races = (data.races_by_year?.[selectedYear] || data.races || []) as any[];
+
+  // 現在シーズン(2025)かどうかを判定
+  const isCurrentSeason = selectedYear === (data.current_season || 2025);
+
+  // 年度別のドライバーとコンストラクター順位を計算
+  const { driversStandings: calculatedDrivers, constructorsStandings: calculatedConstructors } = calculateStandings(races);
+
+  // 現在シーズンはf1_data.jsonのデータを使用、過去シーズンは計算結果を使用
+  const drivers = isCurrentSeason ? data.drivers_standings : calculatedDrivers;
+  const constructors = isCurrentSeason ? data.constructors_standings : calculatedConstructors;
 
   // ポイント推移を計算
   const { chartData: pointsProgressionData, drivers: topDrivers } = calculatePointsProgression(races);
@@ -252,9 +304,11 @@ export default function Statistics() {
           <Card className="bg-slate-800 border-slate-700">
             <CardContent className="pt-4 md:pt-6 pb-4">
               <div className="text-center">
-                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">リーダー<br className="md:hidden" />（ドライバー）</p>
-                <p className="text-base md:text-2xl font-bold text-white truncate px-1">{drivers[0].name}</p>
-                <p className="text-red-600 font-semibold text-sm md:text-base">{drivers[0].points} pts</p>
+                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">
+                  {isCurrentSeason ? 'リーダー' : 'チャンピオン'}<br className="md:hidden" />（ドライバー）
+                </p>
+                <p className="text-base md:text-2xl font-bold text-white truncate px-1">{drivers[0]?.name || 'N/A'}</p>
+                <p className="text-red-600 font-semibold text-sm md:text-base">{drivers[0]?.points || 0} pts</p>
               </div>
             </CardContent>
           </Card>
@@ -262,9 +316,11 @@ export default function Statistics() {
           <Card className="bg-slate-800 border-slate-700">
             <CardContent className="pt-4 md:pt-6 pb-4">
               <div className="text-center">
-                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">リーダー<br className="md:hidden" />（チーム）</p>
-                <p className="text-base md:text-2xl font-bold text-white truncate px-1">{constructors[0].name}</p>
-                <p className="text-blue-600 font-semibold text-sm md:text-base">{constructors[0].points} pts</p>
+                <p className="text-slate-400 text-xs md:text-sm mb-1 md:mb-2">
+                  {isCurrentSeason ? 'リーダー' : 'チャンピオン'}<br className="md:hidden" />（チーム）
+                </p>
+                <p className="text-base md:text-2xl font-bold text-white truncate px-1">{constructors[0]?.name || 'N/A'}</p>
+                <p className="text-blue-600 font-semibold text-sm md:text-base">{constructors[0]?.points || 0} pts</p>
               </div>
             </CardContent>
           </Card>
