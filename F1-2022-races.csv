@@ -22,3 +22,5 @@ round,race_name,race_name_ja,circuit,location,date_start,date_end
 21,サンパウロ Grand Prix,サンパウロGP,Autódromo José Carlos Pace,,2022-11-13,2022-11-13
 21-S,Brazilian Grand Prix (Sprint),ブラジルGP(スプリント),Autódromo José Carlos Pace,"São Paulo, Brazil",2022-11-12,2022-11-12
 22,Abu Dhabi Grand Prix,アブダビGP,Yas Marina Circuit,"Abu Dhabi, UAE",2022-11-20,2022-11-20
+5,Miami Grand Prix,マイアミGP,Miami International Autodrome,Miami USA,2022-05-06,2022-05-08
+6,Spanish Grand Prix,スペインGP,Circuit de Barcelona-Catalunya,Barcelona Spain,2022-05-20,2022-05-22

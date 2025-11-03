@@ -459,3 +459,43 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 22,17,OCO,Esteban Ocon,Alpine,0,6,24,+51.756s,Finished
 22,18,ALO,Fernando Alonso,Alpine,0,7,24,+53.985s,Finished
 22,19,LAT,Nicholas Latifi,Williams,0,16,24,+1:16.850,Finished
+5,1,VER,Max Verstappen,Red Bull Racing,26,3,57,,Finished
+5,2,LEC,Charles Leclerc,Ferrari,18,1,57,,Finished
+5,3,SAI,Carlos Sainz,Ferrari,15,2,57,,Finished
+5,4,PER,Sergio Pérez,Red Bull Racing,12,4,57,,Finished
+5,5,RUS,George Russell,Mercedes,10,12,57,,Finished
+5,6,HAM,Lewis Hamilton,Mercedes,8,6,57,,Finished
+5,7,BOT,Valtteri Bottas,Alfa Romeo,6,5,57,,Finished
+5,8,OCO,Esteban Ocon,Alpine,4,8,57,,Finished
+5,9,ALB,Alexander Albon,Williams,2,10,57,,Finished
+5,10,STR,Lance Stroll,Aston Martin,1,14,57,,Finished
+5,11,ALO,Fernando Alonso,Alpine,0,9,57,,Finished
+5,12,TSU,Yuki Tsunoda,AlphaTauri,0,16,57,,Finished
+5,13,RIC,Daniel Ricciardo,McLaren,0,11,56,,Finished
+5,14,LAT,Nicholas Latifi,Williams,0,18,56,,Finished
+5,15,MSC,Mick Schumacher,Haas F1 Team,0,15,56,,Finished
+5,16,VET,Sebastian Vettel,Aston Martin,0,7,55,,Finished
+5,17,MAG,Kevin Magnussen,Haas F1 Team,0,17,54,,+1 Lap
+5,18,GAS,Pierre Gasly,AlphaTauri,0,13,48,,Retired
+5,19,NOR,Lando Norris,McLaren,0,19,6,,Retired
+5,20,ZHO,Zhou Guanyu,Alfa Romeo,0,20,1,,Retired
+6,1,VER,Max Verstappen,Red Bull Racing,25,2,66,,Finished
+6,2,PER,Sergio Pérez,Red Bull Racing,19,3,66,,Finished
+6,3,RUS,George Russell,Mercedes,15,4,66,,Finished
+6,4,SAI,Carlos Sainz,Ferrari,12,5,66,,Finished
+6,5,HAM,Lewis Hamilton,Mercedes,10,6,66,,Finished
+6,6,BOT,Valtteri Bottas,Alfa Romeo,8,11,66,,Finished
+6,7,OCO,Esteban Ocon,Alpine,6,8,66,,Finished
+6,8,NOR,Lando Norris,McLaren,4,9,66,,Finished
+6,9,ALO,Fernando Alonso,Alpine,2,7,66,,Finished
+6,10,TSU,Yuki Tsunoda,AlphaTauri,1,15,66,,Finished
+6,11,VET,Sebastian Vettel,Aston Martin,0,10,66,,Finished
+6,12,RIC,Daniel Ricciardo,McLaren,0,12,66,,Finished
+6,13,GAS,Pierre Gasly,AlphaTauri,0,13,66,,Finished
+6,14,MSC,Mick Schumacher,Haas F1 Team,0,14,66,,Finished
+6,15,STR,Lance Stroll,Aston Martin,0,16,66,,Finished
+6,16,LAT,Nicholas Latifi,Williams,0,17,65,,+1 Lap
+6,17,MAG,Kevin Magnussen,Haas F1 Team,0,19,60,,Retired
+6,18,LEC,Charles Leclerc,Ferrari,0,1,27,,Retired
+6,19,ALB,Alexander Albon,Williams,0,18,6,,Retired
+6,20,ZHO,Zhou Guanyu,Alfa Romeo,0,20,5,,Retired
