@@ -78,27 +78,17 @@ export default function Calendar() {
   const currentYear = new Date().getFullYear();
   const isHistoricalYear = selectedYear < currentYear;
 
-  // 過去年度は月別表示をせず、全レース表示
-  let racesInMonth: Race[];
-  let monthsWithRaces: number[];
-  let currentMonthIndex: number;
+  // 全年度で月別表示を有効化
+  const racesByMonth = races.reduce((acc, race) => {
+    const month = new Date(race.date_start).getMonth();
+    if (!acc[month]) acc[month] = [];
+    acc[month].push(race);
+    return acc;
+  }, {} as Record<number, Race[]>);
 
-  if (isHistoricalYear) {
-    racesInMonth = races;
-    monthsWithRaces = [0];
-    currentMonthIndex = 0;
-  } else {
-    const racesByMonth = races.reduce((acc, race) => {
-      const month = new Date(race.date_start).getMonth();
-      if (!acc[month]) acc[month] = [];
-      acc[month].push(race);
-      return acc;
-    }, {} as Record<number, Race[]>);
-
-    monthsWithRaces = Object.keys(racesByMonth).map(Number).sort((a, b) => a - b);
-    currentMonthIndex = monthsWithRaces[currentMonth] || 0;
-    racesInMonth = racesByMonth[currentMonthIndex] || [];
-  }
+  const monthsWithRaces = Object.keys(racesByMonth).map(Number).sort((a, b) => a - b);
+  const currentMonthIndex = monthsWithRaces[currentMonth] || 0;
+  const racesInMonth = racesByMonth[currentMonthIndex] || [];
 
   const handlePrevMonth = () => {
     setCurrentMonth(Math.max(0, currentMonth - 1));
@@ -155,38 +145,29 @@ export default function Calendar() {
       <main className="container mx-auto px-4 py-4 md:py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8">
           <div className="lg:col-span-2">
-            {!isHistoricalYear && (
-              <div className="flex items-center justify-between mb-4 md:mb-6">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={handlePrevMonth}
-                  disabled={currentMonth === 0}
-                  className="border-slate-600 text-white hover:bg-slate-800 px-2 md:px-3"
-                >
-                  <ChevronLeft className="w-4 h-4" />
-                </Button>
-                <h2 className="text-lg md:text-2xl font-bold text-white">
-                  {selectedYear}年 {months[currentMonthIndex]}
-                </h2>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={handleNextMonth}
-                  disabled={currentMonth === monthsWithRaces.length - 1}
-                  className="border-slate-600 text-white hover:bg-slate-800 px-2 md:px-3"
-                >
-                  <ChevronRight className="w-4 h-4" />
-                </Button>
-              </div>
-            )}
-            {isHistoricalYear && (
-              <div className="mb-4 md:mb-6">
-                <h2 className="text-lg md:text-2xl font-bold text-white text-center">
-                  {selectedYear}年 全レース結果
-                </h2>
-              </div>
-            )}
+            <div className="flex items-center justify-between mb-4 md:mb-6">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handlePrevMonth}
+                disabled={currentMonth === 0}
+                className="border-slate-600 text-white hover:bg-slate-800 px-2 md:px-3"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </Button>
+              <h2 className="text-lg md:text-2xl font-bold text-white">
+                {selectedYear}年 {months[currentMonthIndex]}
+              </h2>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleNextMonth}
+                disabled={currentMonth === monthsWithRaces.length - 1}
+                className="border-slate-600 text-white hover:bg-slate-800 px-2 md:px-3"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </Button>
+            </div>
 
             <div className="space-y-4">
               {racesInMonth.map((race) => {
