@@ -148,10 +148,29 @@ export default function Statistics() {
     points: d.points
   }));
 
-  const constructorChartData = constructors.slice(0, 10).map((c: any) => ({
-    name: c.name,
-    points: c.points
-  }));
+  const constructorChartData = constructors.slice(0, 10).map((c: any) => {
+    // チーム名を短縮表示
+    let shortName = c.name;
+    if (c.name.includes('Red Bull Racing')) shortName = 'Red Bull';
+    else if (c.name.includes('Mercedes')) shortName = 'Mercedes';
+    else if (c.name.includes('Ferrari')) shortName = 'Ferrari';
+    else if (c.name.includes('McLaren')) shortName = 'McLaren';
+    else if (c.name.includes('Aston Martin')) shortName = 'Aston Martin';
+    else if (c.name.includes('Alpine')) shortName = 'Alpine';
+    else if (c.name.includes('Williams')) shortName = 'Williams';
+    else if (c.name.includes('Racing Bulls')) shortName = 'RB';
+    else if (c.name.includes('Kick Sauber')) shortName = 'Sauber';
+    else if (c.name.includes('Haas')) shortName = 'Haas';
+    else if (c.name.includes('Renault')) shortName = 'Renault';
+    else if (c.name.includes('Racing Point')) shortName = 'Racing Point';
+    else if (c.name.includes('AlphaTauri')) shortName = 'AlphaTauri';
+    else if (c.name.includes('Alfa Romeo')) shortName = 'Alfa Romeo';
+
+    return {
+      name: shortName,
+      points: c.points
+    };
+  });
 
   const pointsDistribution = [
     { name: 'トップ3', value: drivers.slice(0, 3).reduce((sum: number, d: any) => sum + d.points, 0) },
@@ -252,10 +271,18 @@ export default function Statistics() {
               <CardTitle className="text-white text-base md:text-lg">トップ10コンストラクターのポイント</CardTitle>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={250} className="md:!h-[300px]">
-                <BarChart data={constructorChartData}>
+              <ResponsiveContainer width="100%" height={300} className="md:!h-[350px]">
+                <BarChart data={constructorChartData} margin={{ bottom: 60 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
-                  <XAxis dataKey="name" stroke="#94a3b8" angle={-45} textAnchor="end" height={80} />
+                  <XAxis
+                    dataKey="name"
+                    stroke="#94a3b8"
+                    angle={-45}
+                    textAnchor="end"
+                    height={100}
+                    interval={0}
+                    style={{ fontSize: '12px' }}
+                  />
                   <YAxis stroke="#94a3b8" />
                   <Tooltip
                     contentStyle={{ backgroundColor: '#1e293b', border: '1px solid #475569' }}
