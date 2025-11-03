@@ -119,18 +119,16 @@ export default function Calendar() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-0">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 md:gap-3">
-              <Link href="/">
-                <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white px-2">
-                  戻る
-                </Button>
-              </Link>
-              <h1 className="text-lg md:text-2xl font-bold text-white">{selectedYear} カレンダー</h1>
-            </div>
+        <div className="container mx-auto px-4 py-3">
+          <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-0">
+            <Link href="/">
+              <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white px-2">
+                戻る
+              </Button>
+            </Link>
+            <h1 className="text-lg md:text-2xl font-bold text-white">{selectedYear} カレンダー</h1>
           </div>
-          <div className="flex items-center gap-1 md:gap-2 overflow-x-auto pb-1 md:pb-0">
+          <div className="flex items-center gap-1 md:gap-2 overflow-x-auto pb-1 md:pb-0 -mx-4 px-4">
             {availableYears.map(year => (
               <Button
                 key={year}
