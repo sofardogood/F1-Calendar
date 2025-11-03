@@ -90,7 +90,9 @@ function parseCSV<T>(filepath: string): T[] {
       let value: any = values[i] || '';
 
       // 数値型に変換
-      if (header === 'round' || header === 'position' || header === 'points' || header === 'grid') {
+      if (header === 'round') {
+        value = parseFloat(value) || 0;  // Use parseFloat for rounds to support sprint races (e.g., 5.5)
+      } else if (header === 'position' || header === 'points' || header === 'grid') {
         value = parseInt(value) || 0;
       }
 

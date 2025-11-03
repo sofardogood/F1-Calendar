@@ -144,16 +144,17 @@ async function parseF1Data2024() {
       continue;
     }
 
-    // Parse race info line
-    const raceMatch = cleanLine.match(/^(\d+),(.*?)GP,.*?,.*?,(\d{4}\/\d{1,2}\/\d{1,2}),(.*?)$/);
+    // Parse race info line (including sprint races)
+    const raceMatch = cleanLine.match(/^(\d+),(.*?)GP(\(スプリント\))?,.*?,.*?,(\d{4}\/\d{1,2}\/\d{1,2}),(.*?)$/);
     if (raceMatch) {
       if (currentRace) {
         races.push(currentRace);
       }
 
-      const [, round, raceName, dateStr, circuit] = raceMatch;
-      const raceNameJa = raceName + 'GP';
-      const raceInfo = raceNameMap[raceNameJa];
+      const [, round, raceName, isSprint, dateStr, circuit] = raceMatch;
+      const baseRaceNameJa = raceName + 'GP';
+      const raceNameJa = isSprint ? baseRaceNameJa + '(スプリント)' : baseRaceNameJa;
+      const raceInfo = raceNameMap[baseRaceNameJa];
 
       // Parse date (format: 2024/3/2)
       const dateParts = dateStr.split('/');
@@ -162,9 +163,16 @@ async function parseF1Data2024() {
       const day = dateParts[2].padStart(2, '0');
       const formattedDate = `${year}-${month}-${day}`;
 
+      // Generate race name with Sprint designation if applicable
+      const englishName = raceInfo?.name || `${raceName} Grand Prix`;
+      const finalRaceName = isSprint ? `${englishName} (Sprint)` : englishName;
+
+      // Use .5 for sprint races to differentiate them from main races
+      const roundNumber = isSprint ? parseInt(round) + 0.5 : parseInt(round);
+
       currentRace = {
-        round: parseInt(round),
-        raceName: raceInfo?.name || `${raceName} Grand Prix`,
+        round: roundNumber,
+        raceName: finalRaceName,
         raceNameJa,
         circuit: circuit,
         location: raceInfo?.location || '',
@@ -187,9 +195,13 @@ async function parseF1Data2024() {
       // Skip empty or malformed lines
       if (parts.length < 7) continue;
 
-      // Check if this is a retirement line (has "Ret" in position field)
+      // Check if this is a retirement line (has "Ret" in column 1, which adds an extra column)
+      // Note: "NC" is in column 0 (position field), not an extra column like "Ret"
       const hasRet = parts[1] === 'Ret';
       const offset = hasRet ? 1 : 0;
+
+      // For NC entries, skip them (they are not classified, shouldn't appear in final results)
+      if (parts[0] === 'NC') continue;
 
       const position = parts[0].replace(/Ret/, '');
       const driverNameJa = parts[2 + offset];
