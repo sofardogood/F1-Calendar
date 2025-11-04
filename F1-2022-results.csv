@@ -17,7 +17,7 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 1,16,LAT,Nicholas Latifi,Williams,0,20,57,+1:01.795,Finished
 1,17,HUL,Nico Hülkenberg,Aston Martin,0,17,57,+1:03.829s,Finished
 1,18,PER,Sergio Pérez,Red Bull Racing,0,4,56,Fuel problem,Finished
-1,2,VER,Max Verstappen,Red Bull Racing,18,2,54,Fuel problem,Finished
+1,19,VER,Max Verstappen,Red Bull Racing,0,2,54,Fuel problem,Finished
 2,1,VER,Max Verstappen,Red Bull Racing,25,4,50,1:24:19.293,Finished
 2,2,LEC,Charles Leclerc,Ferrari,19,2,50,+0.549s,Finished
 2,3,SAI,Carlos Sainz,Ferrari,15,3,50,+8.097s,Finished
@@ -365,7 +365,7 @@ round,position,driver_code,driver_name,team,points,grid,laps,time,status
 22,17,MAG,Kevin Magnussen,Haas,0,16,57,+1 lap,Finished
 22,18,HAM,Lewis Hamilton,Mercedes,0,5,55,Gearbox,Finished
 22,19,LAT,Nicholas Latifi,Williams,0,20,55,Collision damage,Finished
-22,9,ALO,Fernando Alonso,Alpine,0,5,21,+32.278s,Finished
+22,9,ALO,Fernando Alonso,Alpine,2,5,21,+32.278s,Finished
 5,1,VER,Max Verstappen,Red Bull Racing,26,3,57,,Finished
 5,2,LEC,Charles Leclerc,Ferrari,18,1,57,,Finished
 5,3,SAI,Carlos Sainz,Ferrari,15,2,57,,Finished
