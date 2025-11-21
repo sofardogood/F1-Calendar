@@ -6407,7 +6407,7 @@
       "points": 20
     }
   ],
-  "last_updated": "2025-11-20T03:52:16.888Z",
+  "last_updated": "2025-11-21T03:51:19.676Z",
   "races_by_year": {
     "2020": [
       {
@@ -21831,12 +21831,12 @@
     "2024": [
       {
         "round": 1,
-        "name": "Round 1",
-        "name_ja": "第1戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "バーレーングランプリ",
+        "name_ja": "バーレーンGP",
+        "circuit": "バーレーン・インターナショナル・サーキット",
+        "location": "Gulf Air Bahrain Grand Prix",
+        "date_start": "2024-03-02",
+        "date_end": "2024-03-02",
         "sessions": [],
         "results": [
           {
@@ -22023,12 +22023,12 @@
       },
       {
         "round": 2,
-        "name": "Round 2",
-        "name_ja": "第2戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "サウジアラビアグランプリ",
+        "name_ja": "サウジアラビアGP",
+        "circuit": "Unknown Circuit",
+        "location": "Stc Saudi Arabian Grand Prix",
+        "date_start": "2024-03-09",
+        "date_end": "2024-03-09",
         "sessions": [],
         "results": [
           {
@@ -22213,12 +22213,12 @@
       },
       {
         "round": 3,
-        "name": "Round 3",
-        "name_ja": "第3戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "オーストラリアグランプリ",
+        "name_ja": "オーストラリアGP",
+        "circuit": "アルバート・パーク・サーキット",
+        "location": "Rolex Australian Grand Prix",
+        "date_start": "2024-03-24",
+        "date_end": "2024-03-24",
         "sessions": [],
         "results": [
           {
@@ -22394,12 +22394,12 @@
       },
       {
         "round": 4,
-        "name": "Round 4",
-        "name_ja": "第4戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "日本グランプリ (4輪)",
+        "name_ja": "日本GP",
+        "circuit": "鈴鹿サーキット",
+        "location": "Msc Cruises Japanese Grand Prix",
+        "date_start": "2024-04-07",
+        "date_end": "2024-04-07",
         "sessions": [],
         "results": [
           {
@@ -22583,12 +22583,12 @@
       },
       {
         "round": 5,
-        "name": "Round 5",
-        "name_ja": "第5戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "中国グランプリ",
+        "name_ja": "中国GP",
+        "circuit": "上海インターナショナル・サーキット",
+        "location": "Lenovo Chinese Grand Prix",
+        "date_start": "2024-04-21",
+        "date_end": "2024-04-21",
         "sessions": [],
         "results": [
           {
@@ -22772,12 +22772,12 @@
       },
       {
         "round": 6,
-        "name": "Round 6",
-        "name_ja": "第6戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "マイアミグランプリ",
+        "name_ja": "マイアミGP",
+        "circuit": "Unknown Circuit",
+        "location": "Crypto.com Miami Grand Prix",
+        "date_start": "2024-05-05",
+        "date_end": "2024-05-05",
         "sessions": [],
         "results": [
           {
@@ -22963,12 +22963,12 @@
       },
       {
         "round": 7,
-        "name": "Round 7",
-        "name_ja": "第7戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "エミリア・ロマーニャグランプリ",
+        "name_ja": "エミリア・ロマーニャGP",
+        "circuit": "イモラ・サーキット",
+        "location": "63",
+        "date_start": "2024-05-19",
+        "date_end": "2024-05-19",
         "sessions": [],
         "results": [
           {
@@ -23154,12 +23154,12 @@
       },
       {
         "round": 8,
-        "name": "Round 8",
-        "name_ja": "第8戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "モナコグランプリ",
+        "name_ja": "モナコGP",
+        "circuit": "Unknown Circuit",
+        "location": "Grand Prix de Monaco",
+        "date_start": "2024-05-26",
+        "date_end": "2024-05-26",
         "sessions": [],
         "results": [
           {
@@ -23342,12 +23342,12 @@
       },
       {
         "round": 9,
-        "name": "Round 9",
-        "name_ja": "第9戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "カナダグランプリ",
+        "name_ja": "カナダGP",
+        "circuit": "ジル・ヴィルヌーヴ・サーキット",
+        "location": "Aws Grand Prix du Canada",
+        "date_start": "2024-06-09",
+        "date_end": "2024-06-09",
         "sessions": [],
         "results": [
           {
@@ -23529,12 +23529,12 @@
       },
       {
         "round": 10,
-        "name": "Round 10",
-        "name_ja": "第10戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "スペイングランプリ",
+        "name_ja": "スペインGP",
+        "circuit": "カタロニア・サーキット",
+        "location": "Aramco Gran Premio de España",
+        "date_start": "2024-06-23",
+        "date_end": "2024-06-23",
         "sessions": [],
         "results": [
           {
@@ -23721,12 +23721,12 @@
       },
       {
         "round": 11,
-        "name": "Round 11",
-        "name_ja": "第11戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "オーストリアグランプリ",
+        "name_ja": "オーストリアGP",
+        "circuit": "Unknown Circuit",
+        "location": "Qatar Airways Austrian Grand Prix",
+        "date_start": "2024-06-30",
+        "date_end": "2024-06-30",
         "sessions": [],
         "results": [
           {
@@ -23913,12 +23913,12 @@
       },
       {
         "round": 12,
-        "name": "Round 12",
-        "name_ja": "第12戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "イギリスグランプリ",
+        "name_ja": "イギリスGP",
+        "circuit": "シルバーストン・サーキット",
+        "location": "Qatar Airways British Grand Prix",
+        "date_start": "2024-07-07",
+        "date_end": "2024-07-07",
         "sessions": [],
         "results": [
           {
@@ -24103,12 +24103,12 @@
       },
       {
         "round": 13,
-        "name": "Round 13",
-        "name_ja": "第13戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "ハンガリーグランプリ",
+        "name_ja": "ハンガリーGP",
+        "circuit": "Unknown Circuit",
+        "location": "Hungarian Grand Prix",
+        "date_start": "2024-07-21",
+        "date_end": "2024-07-21",
         "sessions": [],
         "results": [
           {
@@ -24294,12 +24294,12 @@
       },
       {
         "round": 14,
-        "name": "Round 14",
-        "name_ja": "第14戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "ベルギーグランプリ",
+        "name_ja": "ベルギーGP",
+        "circuit": "Unknown Circuit",
+        "location": "Rolex Belgian Grand Prix",
+        "date_start": "2024-07-28",
+        "date_end": "2024-07-28",
         "sessions": [],
         "results": [
           {
@@ -24485,12 +24485,12 @@
       },
       {
         "round": 15,
-        "name": "Round 15",
-        "name_ja": "第15戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "オランダグランプリ",
+        "name_ja": "オランダGP",
+        "circuit": "ザントフォールト・サーキット",
+        "location": "Heineken Dutch Grand Prix",
+        "date_start": "2024-08-25",
+        "date_end": "2024-08-25",
         "sessions": [],
         "results": [
           {
@@ -24677,12 +24677,12 @@
       },
       {
         "round": 16,
-        "name": "Round 16",
-        "name_ja": "第16戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "イタリアグランプリ",
+        "name_ja": "イタリアGP",
+        "circuit": "モンツァ・サーキット",
+        "location": "Pirelli Gran Premio d'Italia",
+        "date_start": "2024-09-01",
+        "date_end": "2024-09-01",
         "sessions": [],
         "results": [
           {
@@ -24868,12 +24868,12 @@
       },
       {
         "round": 17,
-        "name": "Round 17",
-        "name_ja": "第17戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "アゼルバイジャングランプリ",
+        "name_ja": "アゼルバイジャンGP",
+        "circuit": "Unknown Circuit",
+        "location": "Qatar Airways Azerbaijan Grand Prix",
+        "date_start": "2024-09-15",
+        "date_end": "2024-09-15",
         "sessions": [],
         "results": [
           {
@@ -25059,12 +25059,12 @@
       },
       {
         "round": 18,
-        "name": "Round 18",
-        "name_ja": "第18戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "シンガポールグランプリ",
+        "name_ja": "シンガポールGP",
+        "circuit": "Unknown Circuit",
+        "location": "Singapore Airlines Singapore Grand Prix",
+        "date_start": "2024-09-22",
+        "date_end": "2024-09-22",
         "sessions": [],
         "results": [
           {
@@ -25250,12 +25250,12 @@
       },
       {
         "round": 19,
-        "name": "Round 19",
-        "name_ja": "第19戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "アメリカグランプリ",
+        "name_ja": "アメリカGP",
+        "circuit": "サーキット・オブ・ジ・アメリカズ",
+        "location": "Pirelli United States Grand Prix",
+        "date_start": "2024-10-20",
+        "date_end": "2024-10-20",
         "sessions": [],
         "results": [
           {
@@ -25441,12 +25441,12 @@
       },
       {
         "round": 20,
-        "name": "Round 20",
-        "name_ja": "第20戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "メキシコグランプリ",
+        "name_ja": "メキシコシティGP",
+        "circuit": "エルマノス・ロドリゲス・サーキット",
+        "location": "Gran Premio de La Ciudad de México",
+        "date_start": "2024-10-27",
+        "date_end": "2024-10-27",
         "sessions": [],
         "results": [
           {
@@ -25630,12 +25630,12 @@
       },
       {
         "round": 21,
-        "name": "Round 21",
-        "name_ja": "第21戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "ブラジルグランプリ",
+        "name_ja": "サンパウロGP",
+        "circuit": "インテルラゴス・サーキット",
+        "location": "Lenovo Grande Prêmio de São Paulo",
+        "date_start": "2024-11-03",
+        "date_end": "2024-11-03",
         "sessions": [],
         "results": [
           {
@@ -25817,12 +25817,12 @@
       },
       {
         "round": 22,
-        "name": "Round 22",
-        "name_ja": "第22戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "ラスベガスグランプリ",
+        "name_ja": "ラスベガスGP",
+        "circuit": "ラスベガス・ストリップ・サーキット",
+        "location": "Heineken Silver Las Vegas Grand Prix",
+        "date_start": "2024-11-23",
+        "date_end": "2024-11-23",
         "sessions": [],
         "results": [
           {
@@ -26007,12 +26007,12 @@
       },
       {
         "round": 23,
-        "name": "Round 23",
-        "name_ja": "第23戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "カタールグランプリ (4輪)",
+        "name_ja": "カタールGP",
+        "circuit": "ルサイル・インターナショナル・サーキット",
+        "location": "Qatar Airways Qatar Grand Prix",
+        "date_start": "2024-12-01",
+        "date_end": "2024-12-01",
         "sessions": [],
         "results": [
           {
@@ -26194,12 +26194,12 @@
       },
       {
         "round": 24,
-        "name": "Round 24",
-        "name_ja": "第24戦",
-        "circuit": "",
-        "location": "",
-        "date_start": "2024-01-01",
-        "date_end": "2024-12-31",
+        "name": "アブダビグランプリ",
+        "name_ja": "アブダビGP",
+        "circuit": "ヤス・マリーナ・サーキット",
+        "location": "Etihad Airways Abu Dhabi Grand Prix",
+        "date_start": "2024-12-08",
+        "date_end": "2024-12-08",
         "sessions": [],
         "results": [
           {
