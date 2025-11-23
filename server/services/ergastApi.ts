@@ -18,6 +18,7 @@ interface ErgastConstructor {
 
 interface ErgastResult {
   position: string;
+  positionText: string;
   Driver: ErgastDriver;
   Constructor: ErgastConstructor;
   points: string;
@@ -35,6 +36,7 @@ interface ErgastRace {
 
 export interface RaceResult {
   position: number;
+  position_text: string;
   driver: string;
   driver_code: string;
   team: string;
@@ -68,6 +70,7 @@ export async function fetchRaceResults(season: number, round: number): Promise<R
 
     const results: RaceResult[] = raceData.Results.map((result) => ({
       position: parseInt(result.position),
+      position_text: result.positionText,
       driver: `${result.Driver.givenName} ${result.Driver.familyName}`,
       driver_code: result.Driver.code || result.Driver.driverId.substring(0, 3).toUpperCase(),
       team: result.Constructor.name,

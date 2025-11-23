@@ -6,7 +6,7 @@
  * pnpm tsx server/scripts/updateF1DataFromWikipedia.ts
  */
 
-import { scrapeWikipediaSchedule } from '../services/wikipediaScraper.js';
+import { scrapeWikipediaSchedule, scrapeRaceDetails } from '../services/wikipediaScraper.js';
 import { fetchAllRaceResults } from '../services/ergastApi.js';
 import fs from 'fs/promises';
 import path from 'path';
@@ -34,6 +34,25 @@ async function main() {
     console.log(`Fetching ${currentYear} schedule from Wikipedia...`);
     const races2025 = await scrapeWikipediaSchedule(currentYear);
     console.log(`✓ Fetched ${races2025.length} races from Wikipedia\n`);
+
+    // 各レースの詳細情報を取得（セッション時間など）
+    console.log('Fetching race details (sessions) for 2025...');
+    for (const race of races2025) {
+      if (race.url) {
+        try {
+          // API制限を考慮して少し待機
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          const sessions = await scrapeRaceDetails(race.url, currentYear);
+          if (sessions.length > 0) {
+            race.sessions = sessions;
+            console.log(`  ✓ Fetched sessions for Round ${race.round}: ${race.name}`);
+          }
+        } catch (err) {
+          console.warn(`  ⚠ Failed to fetch details for ${race.name}:`, err);
+        }
+      }
+    }
+    console.log('');
 
     // 2025年のレース結果をErgast APIから取得してマージ
     console.log(`Fetching ${currentYear} race results from Ergast API...`);

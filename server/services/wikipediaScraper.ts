@@ -15,6 +15,7 @@ interface RaceInfo {
   round: number;
   name: string;
   name_ja: string;
+  url?: string;
   circuit: string;
   location: string;
   date_start: string;
@@ -98,6 +99,13 @@ export async function scrapeWikipediaSchedule(year: number): Promise<RaceInfo[]>
               if (link) {
                 nameEn = link.getAttribute('title') || link.textContent?.trim() || '';
               }
+              const href = link?.getAttribute('href');
+              if (href) {
+                // 相対パスの場合は絶対パスに変換
+                if (href.startsWith('/')) {
+                  races[races.length]?.url ? races[races.length].url = `https://ja.wikipedia.org${href}` : null; // This is tricky inside the loop, let's just store it in a variable
+                }
+              }
               break;
             }
           }
@@ -155,10 +163,24 @@ export async function scrapeWikipediaSchedule(year: number): Promise<RaceInfo[]>
             dateEnd = `${year}-12-31`;
           }
 
+          // URLを取得 (nameJaの取得時に保存しておくのが理想だが、構造上ここで再取得するか、変数を追加する)
+          let url = '';
+          for (const cell of cells) {
+            const link = cell.querySelector('a');
+            if (link && (cell.textContent?.includes('GP') || cell.textContent?.includes('グランプリ'))) {
+              const href = link.getAttribute('href');
+              if (href) {
+                url = href.startsWith('/') ? `https://ja.wikipedia.org${href}` : href;
+              }
+              break;
+            }
+          }
+
           races.push({
             round,
             name: nameEn || nameJa,
             name_ja: nameJa,
+            url,
             circuit: circuit || 'Unknown Circuit',
             location: location || 'Unknown Location',
             date_start: dateStart,
@@ -186,15 +208,11 @@ export async function scrapeWikipediaSchedule(year: number): Promise<RaceInfo[]>
 /**
  * 特定の年度のレース詳細ページから日程情報を取得
  */
-export async function scrapeRaceDetails(year: number, raceName: string): Promise<RaceSession[]> {
+export async function scrapeRaceDetails(raceUrl: string, year: number): Promise<RaceSession[]> {
   try {
-    // レース名からWikipediaページURLを構築
-    const encodedName = encodeURIComponent(raceName.replace(/\s+/g, '_'));
-    const url = `https://ja.wikipedia.org/wiki/${year}年${encodedName}`;
+    console.log(`Fetching race details from: ${raceUrl}`);
 
-    console.log(`Fetching race details from: ${url}`);
-
-    const response = await fetch(url, {
+    const response = await fetch(raceUrl, {
       headers: {
         'User-Agent': 'F1-Calendar-Scraper/1.0 (https://github.com/sofardogood/F1-Calendar; contact@example.com)'
       }
@@ -262,7 +280,7 @@ export async function scrapeRaceDetails(year: number, raceName: string): Promise
 
     return sessions;
   } catch (error) {
-    console.error(`Error scraping race details for ${raceName}:`, error);
+    console.error(`Error scraping race details for ${raceUrl}:`, error);
     return [];
   }
 }
