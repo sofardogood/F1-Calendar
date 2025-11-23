@@ -6407,7 +6407,7 @@
       "points": 20
     }
   ],
-  "last_updated": "2025-11-23T04:04:34.297Z",
+  "last_updated": "2025-11-23T12:20:40.979Z",
   "races_by_year": {
     "2020": [
       {
@@ -30366,7 +30366,186 @@
         "location": "Heineken Las Vegas Grand Prix",
         "date_start": "2025-11-22",
         "date_end": "2025-11-22",
-        "sessions": []
+        "sessions": [],
+        "results": [
+          {
+            "position": 1,
+            "driver": "Max Verstappen",
+            "driver_code": "VER",
+            "team": "Red Bull",
+            "points": 25,
+            "time": "1:21:08.429",
+            "status": "Finished"
+          },
+          {
+            "position": 2,
+            "driver": "Lando Norris",
+            "driver_code": "NOR",
+            "team": "McLaren",
+            "points": 18,
+            "time": "+20.741",
+            "status": "Finished"
+          },
+          {
+            "position": 2,
+            "driver": "George Russell",
+            "driver_code": "RUS",
+            "team": "Mercedes",
+            "points": 18,
+            "time": "+23.546",
+            "status": "Finished"
+          },
+          {
+            "position": 3,
+            "driver": "Andrea Kimi Antonelli",
+            "driver_code": "ANT",
+            "team": "Mercedes",
+            "points": 15,
+            "time": "+30.488",
+            "status": "Finished"
+          },
+          {
+            "position": 4,
+            "driver": "Oscar Piastri",
+            "driver_code": "PIA",
+            "team": "McLaren",
+            "points": 12,
+            "time": "+27.650",
+            "status": "Finished"
+          },
+          {
+            "position": 4,
+            "driver": "Charles Leclerc",
+            "driver_code": "LEC",
+            "team": "Ferrari",
+            "points": 12,
+            "time": "+30.678",
+            "status": "Finished"
+          },
+          {
+            "position": 5,
+            "driver": "Carlos Sainz",
+            "driver_code": "SAI",
+            "team": "Williams",
+            "points": 10,
+            "time": "+34.924",
+            "status": "Finished"
+          },
+          {
+            "position": 6,
+            "driver": "Isack Hadjar",
+            "driver_code": "HAD",
+            "team": "RB F1 Team",
+            "points": 8,
+            "time": "+45.257",
+            "status": "Finished"
+          },
+          {
+            "position": 7,
+            "driver": "Nico Hülkenberg",
+            "driver_code": "HUL",
+            "team": "Sauber",
+            "points": 6,
+            "time": "+51.134",
+            "status": "Finished"
+          },
+          {
+            "position": 8,
+            "driver": "Lewis Hamilton",
+            "driver_code": "HAM",
+            "team": "Ferrari",
+            "points": 4,
+            "time": "+59.369",
+            "status": "Finished"
+          },
+          {
+            "position": 9,
+            "driver": "Esteban Ocon",
+            "driver_code": "OCO",
+            "team": "Haas F1 Team",
+            "points": 2,
+            "time": "+1:00.635",
+            "status": "Finished"
+          },
+          {
+            "position": 10,
+            "driver": "Oliver Bearman",
+            "driver_code": "BEA",
+            "team": "Haas F1 Team",
+            "points": 1,
+            "time": "+1:10.549",
+            "status": "Finished"
+          },
+          {
+            "position": 11,
+            "driver": "Fernando Alonso",
+            "driver_code": "ALO",
+            "team": "Aston Martin",
+            "points": 0,
+            "time": "+1:25.308",
+            "status": "Finished"
+          },
+          {
+            "position": 12,
+            "driver": "Yuki Tsunoda",
+            "driver_code": "TSU",
+            "team": "Red Bull",
+            "points": 0,
+            "time": "+1:26.974",
+            "status": "Finished"
+          },
+          {
+            "position": 13,
+            "driver": "Pierre Gasly",
+            "driver_code": "GAS",
+            "team": "Alpine F1 Team",
+            "points": 0,
+            "time": "+1:31.702",
+            "status": "Finished"
+          },
+          {
+            "position": 14,
+            "driver": "Liam Lawson",
+            "driver_code": "LAW",
+            "team": "RB F1 Team",
+            "points": 0,
+            "time": "+3.291",
+            "status": "Lapped"
+          },
+          {
+            "position": 15,
+            "driver": "Franco Colapinto",
+            "driver_code": "COL",
+            "team": "Alpine F1 Team",
+            "points": 0,
+            "time": "+10.459",
+            "status": "Lapped"
+          },
+          {
+            "position": 16,
+            "driver": "Alexander Albon",
+            "driver_code": "ALB",
+            "team": "Williams",
+            "points": 0,
+            "status": "Retired"
+          },
+          {
+            "position": 17,
+            "driver": "Gabriel Bortoleto",
+            "driver_code": "BOR",
+            "team": "Sauber",
+            "points": 0,
+            "status": "Retired"
+          },
+          {
+            "position": 18,
+            "driver": "Lance Stroll",
+            "driver_code": "STR",
+            "team": "Aston Martin",
+            "points": 0,
+            "status": "Retired"
+          }
+        ]
       },
       {
         "round": 23,
