@@ -31,7 +31,11 @@ export async function scrapeWikipediaSchedule(year: number): Promise<RaceInfo[]>
     const url = `https://ja.wikipedia.org/wiki/${year}年のF1世界選手権`;
     console.log(`Fetching F1 schedule from Wikipedia: ${url}`);
 
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'F1-Calendar-Scraper/1.0 (https://github.com/sofardogood/F1-Calendar; contact@example.com)'
+      }
+    });
     if (!response.ok) {
       throw new Error(`Failed to fetch: ${response.status}`);
     }
@@ -47,7 +51,7 @@ export async function scrapeWikipediaSchedule(year: number): Promise<RaceInfo[]>
     const seenRounds = new Set<number>();
 
     for (const table of tables) {
-      const headers = Array.from(table.querySelectorAll('th')).map(th => th.textContent?.trim() || '');
+      const headers = Array.from(table.querySelectorAll('th') as NodeListOf<HTMLElement>).map(th => th.textContent?.trim() || '');
 
       // レーススケジュールテーブルかどうかを判定
       // ラウンド、グランプリ、サーキット、開催日の4つが揃っているテーブルのみを対象
@@ -64,7 +68,7 @@ export async function scrapeWikipediaSchedule(year: number): Promise<RaceInfo[]>
 
       for (let i = 1; i < rows.length; i++) {
         const row = rows[i];
-        const cells = Array.from(row.querySelectorAll('td, th'));
+        const cells = Array.from(row.querySelectorAll('td, th')) as HTMLElement[];
 
         if (cells.length < 4) continue;
 
@@ -116,7 +120,7 @@ export async function scrapeWikipediaSchedule(year: number): Promise<RaceInfo[]>
             const text = cell.textContent?.trim() || '';
             // サーキット名の列の隣が開催地の可能性が高い
             if (text && !text.includes('GP') && !text.includes('グランプリ') &&
-                !text.includes('サーキット') && text.length < 50) {
+              !text.includes('サーキット') && text.length < 50) {
               location = text.replace(/\[.*?\]/g, '').trim();
               if (location && location !== roundText) break;
             }
@@ -190,7 +194,11 @@ export async function scrapeRaceDetails(year: number, raceName: string): Promise
 
     console.log(`Fetching race details from: ${url}`);
 
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'F1-Calendar-Scraper/1.0 (https://github.com/sofardogood/F1-Calendar; contact@example.com)'
+      }
+    });
     if (!response.ok) {
       console.warn(`Could not fetch race details: ${response.status}`);
       return [];
@@ -209,12 +217,12 @@ export async function scrapeRaceDetails(year: number, raceName: string): Promise
       const rows = table.querySelectorAll('tr');
 
       for (const row of rows) {
-        const cells = Array.from(row.querySelectorAll('td, th'));
+        const cells = Array.from(row.querySelectorAll('td, th')) as HTMLElement[];
         const text = cells.map(c => c.textContent?.trim() || '').join(' ');
 
         // フリー走行、予選、決勝などのキーワードを探す
         if (text.includes('フリー走行') || text.includes('予選') ||
-            text.includes('スプリント') || text.includes('決勝')) {
+          text.includes('スプリント') || text.includes('決勝')) {
 
           let sessionName = '';
           if (text.includes('フリー走行1')) sessionName = 'Free Practice 1';
