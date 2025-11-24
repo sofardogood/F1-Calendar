@@ -30,6 +30,33 @@ async function main() {
     const currentYear = 2025;
     const racesByYear: Record<number, RaceInfo[]> = {};
 
+    // 既存のデータを読み込む
+    const dataPath = path.join(process.cwd(), 'client/src/f1_data.json');
+    let currentData: any = {};
+    try {
+      currentData = JSON.parse(await fs.readFile(dataPath, 'utf-8'));
+    } catch (e) {
+      console.warn('Could not read existing f1_data.json, starting fresh.');
+    }
+
+    // 既存のセッション情報をマップ化 (round -> sessions)
+    const existingSessionsMap = new Map<number, any[]>();
+    if (currentData.races) {
+      currentData.races.forEach((r: any) => {
+        if (r.sessions && r.sessions.length > 0) {
+          existingSessionsMap.set(r.round, r.sessions);
+        }
+      });
+    }
+    // races_by_yearからも取得
+    if (currentData.races_by_year && currentData.races_by_year[currentYear]) {
+      currentData.races_by_year[currentYear].forEach((r: any) => {
+        if (r.sessions && r.sessions.length > 0) {
+          existingSessionsMap.set(r.round, r.sessions);
+        }
+      });
+    }
+
     // 2025年のスケジュールをWikipediaから取得
     console.log(`Fetching ${currentYear} schedule from Wikipedia...`);
     const races2025 = await scrapeWikipediaSchedule(currentYear);
@@ -50,6 +77,12 @@ async function main() {
         } catch (err) {
           console.warn(`  ⚠ Failed to fetch details for ${race.name}:`, err);
         }
+      }
+
+      // スクレイピングでセッションが取得できなかった場合、既存のデータがあればそれを使用
+      if ((!race.sessions || race.sessions.length === 0) && existingSessionsMap.has(race.round)) {
+        race.sessions = existingSessionsMap.get(race.round);
+        console.log(`  ✓ Preserved existing sessions for Round ${race.round}: ${race.name}`);
       }
     }
     console.log('');
@@ -130,8 +163,19 @@ async function main() {
 
     // f1_data.jsonを更新
     console.log('Updating f1_data.json...');
-    const dataPath = path.join(process.cwd(), 'client/src/f1_data.json');
-    const currentData = JSON.parse(await fs.readFile(dataPath, 'utf-8'));
+    // dataPath and currentData are already declared above
+    // const dataPath = path.join(process.cwd(), 'client/src/f1_data.json');
+    // const currentData = JSON.parse(await fs.readFile(dataPath, 'utf-8'));
+
+    // Re-read current data to ensure we have the latest if needed, or just use the one we read at the start
+    // Actually, we should use the one read at the start to preserve structure, but we might want to re-read if other processes updated it?
+    // For now, let's just reuse the variables but re-read the file to be safe, or just use the object we already have.
+    // The original code re-read it. Let's re-read it into the existing variable.
+    try {
+      currentData = JSON.parse(await fs.readFile(dataPath, 'utf-8'));
+    } catch (e) {
+      // Ignore if failed, we'll just use what we have or empty
+    }
 
     // 既存のドライバー/コンストラクター情報は保持し、年度別のレースデータを追加
     const updatedData = {

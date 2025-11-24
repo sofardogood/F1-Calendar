@@ -6407,7 +6407,7 @@
       "points": 20
     }
   ],
-  "last_updated": "2025-11-23T13:58:54.145Z",
+  "last_updated": "2025-11-24T03:28:38.195Z",
   "races_by_year": {
     "2020": [
       {
@@ -28644,7 +28644,38 @@
         "location": "Louis Vuitton Australian Grand Prix",
         "date_start": "2025-03-16",
         "date_end": "2025-03-16",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-03-14",
+            "time_utc": "01:30",
+            "time_jst": "10:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-03-14",
+            "time_utc": "05:00",
+            "time_jst": "14:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-03-15",
+            "time_utc": "01:30",
+            "time_jst": "10:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-03-15",
+            "time_utc": "05:00",
+            "time_jst": "14:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-03-16",
+            "time_utc": "04:00",
+            "time_jst": "13:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -28851,7 +28882,38 @@
         "location": "Heineken Chinese Grand Prix",
         "date_start": "2025-03-23",
         "date_end": "2025-03-23",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-03-21",
+            "time_utc": "03:30",
+            "time_jst": "12:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-03-21",
+            "time_utc": "07:30",
+            "time_jst": "16:30"
+          },
+          {
+            "name": "Sprint",
+            "date": "2025-03-22",
+            "time_utc": "03:00",
+            "time_jst": "12:00"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-03-22",
+            "time_utc": "07:00",
+            "time_jst": "16:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-03-23",
+            "time_utc": "07:00",
+            "time_jst": "16:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -29060,7 +29122,38 @@
         "location": "Lenovo Japanese Grand Prix",
         "date_start": "2025-04-06",
         "date_end": "2025-04-06",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-04-04",
+            "time_utc": "02:30",
+            "time_jst": "11:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-04-04",
+            "time_utc": "06:00",
+            "time_jst": "15:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-04-05",
+            "time_utc": "02:30",
+            "time_jst": "11:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-04-05",
+            "time_utc": "06:00",
+            "time_jst": "15:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-04-06",
+            "time_utc": "05:00",
+            "time_jst": "14:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -29273,7 +29366,38 @@
         "location": "Gulf Air Bahrain Grand Prix",
         "date_start": "2025-04-13",
         "date_end": "2025-04-13",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-04-11",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-04-12",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-04-12",
+            "time_utc": "12:30",
+            "time_jst": "21:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-04-13",
+            "time_utc": "16:00",
+            "time_jst": "01:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-04-14",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -29484,7 +29608,38 @@
         "location": "Stc Saudi Arabian Grand Prix",
         "date_start": "2025-04-20",
         "date_end": "2025-04-20",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-04-18",
+            "time_utc": "13:30",
+            "time_jst": "22:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-04-19",
+            "time_utc": "17:00",
+            "time_jst": "02:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-04-19",
+            "time_utc": "13:30",
+            "time_jst": "22:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-04-20",
+            "time_utc": "17:00",
+            "time_jst": "02:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-04-21",
+            "time_utc": "17:00",
+            "time_jst": "02:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -29695,7 +29850,38 @@
         "location": "Crypto.com Miami Grand Prix",
         "date_start": "2025-05-04",
         "date_end": "2025-05-04",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-05-03",
+            "time_utc": "16:30",
+            "time_jst": "01:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-05-03",
+            "time_utc": "20:30",
+            "time_jst": "05:30"
+          },
+          {
+            "name": "Sprint",
+            "date": "2025-05-04",
+            "time_utc": "16:00",
+            "time_jst": "01:00"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-05-04",
+            "time_utc": "20:00",
+            "time_jst": "05:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-05-05",
+            "time_utc": "20:00",
+            "time_jst": "05:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -29904,7 +30090,38 @@
         "location": "63",
         "date_start": "2025-05-18",
         "date_end": "2025-05-18",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-05-16",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-05-17",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-05-17",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-05-17",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-05-18",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -30115,7 +30332,38 @@
         "location": "Tag Heuer Grand Prix de Monaco",
         "date_start": "2025-05-25",
         "date_end": "2025-05-25",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-05-23",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-05-24",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-05-24",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-05-24",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-05-25",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -30326,7 +30574,38 @@
         "location": "Aramco Gran Premio de España",
         "date_start": "2025-06-01",
         "date_end": "2025-06-01",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-05-30",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-05-31",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-05-31",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-05-31",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-06-01",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -30527,7 +30806,38 @@
         "location": "Pirelli Grand Prix du Canada",
         "date_start": "2025-06-15",
         "date_end": "2025-06-15",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-06-14",
+            "time_utc": "17:30",
+            "time_jst": "02:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-06-14",
+            "time_utc": "21:00",
+            "time_jst": "06:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-06-15",
+            "time_utc": "16:30",
+            "time_jst": "01:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-06-15",
+            "time_utc": "20:00",
+            "time_jst": "05:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-06-16",
+            "time_utc": "18:00",
+            "time_jst": "03:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -30738,7 +31048,38 @@
         "location": "Msc Cruises Austrian Grand Prix",
         "date_start": "2025-06-29",
         "date_end": "2025-06-29",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-06-27",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-06-27",
+            "time_utc": "14:30",
+            "time_jst": "23:30"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-06-28",
+            "time_utc": "10:00",
+            "time_jst": "19:00"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-06-28",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-06-29",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -30947,7 +31288,38 @@
         "location": "Qatar Airways British Grand Prix",
         "date_start": "2025-07-06",
         "date_end": "2025-07-06",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-07-04",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-07-05",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-07-05",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-07-05",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-07-06",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -31155,7 +31527,38 @@
         "location": "Moët & Chandon Belgian Grand Prix",
         "date_start": "2025-07-27",
         "date_end": "2025-07-27",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-07-25",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-07-26",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Sprint",
+            "date": "2025-07-26",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-07-26",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-07-27",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -31368,7 +31771,38 @@
         "location": "Lenovo Hungarian Grand Prix",
         "date_start": "2025-08-03",
         "date_end": "2025-08-03",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-08-01",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-08-02",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-08-02",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-08-02",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-08-03",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -31580,7 +32014,38 @@
         "location": "Heineken Dutch Grand Prix",
         "date_start": "2025-08-31",
         "date_end": "2025-08-31",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-08-29",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-08-29",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-08-30",
+            "time_utc": "09:30",
+            "time_jst": "18:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-08-30",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-08-31",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -31791,7 +32256,38 @@
         "location": "Pirelli Gran Premio d'Italia",
         "date_start": "2025-09-07",
         "date_end": "2025-09-07",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-09-05",
+            "time_utc": "11:30",
+            "time_jst": "20:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-09-06",
+            "time_utc": "15:00",
+            "time_jst": "00:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-09-06",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-09-06",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-09-07",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -32002,7 +32498,38 @@
         "location": "Qatar Airways Azerbaijan Grand Prix",
         "date_start": "2025-09-21",
         "date_end": "2025-09-21",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-09-19",
+            "time_utc": "08:30",
+            "time_jst": "17:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-09-19",
+            "time_utc": "12:00",
+            "time_jst": "21:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-09-20",
+            "time_utc": "08:30",
+            "time_jst": "17:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-09-20",
+            "time_utc": "12:00",
+            "time_jst": "21:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-09-21",
+            "time_utc": "11:00",
+            "time_jst": "20:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -32214,7 +32741,38 @@
         "location": "Singapore Airlines Singapore Grand Prix",
         "date_start": "2025-10-05",
         "date_end": "2025-10-05",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-10-03",
+            "time_utc": "09:30",
+            "time_jst": "18:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-10-03",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-10-04",
+            "time_utc": "09:30",
+            "time_jst": "18:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-10-04",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-10-05",
+            "time_utc": "12:00",
+            "time_jst": "21:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -32427,7 +32985,38 @@
         "location": "Msc Cruises United States Grand Prix",
         "date_start": "2025-10-19",
         "date_end": "2025-10-19",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-10-18",
+            "time_utc": "17:30",
+            "time_jst": "02:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-10-18",
+            "time_utc": "21:30",
+            "time_jst": "06:30"
+          },
+          {
+            "name": "Sprint",
+            "date": "2025-10-19",
+            "time_utc": "17:00",
+            "time_jst": "02:00"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-10-19",
+            "time_utc": "21:00",
+            "time_jst": "06:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-10-20",
+            "time_utc": "19:00",
+            "time_jst": "04:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -32639,7 +33228,38 @@
         "location": "Gran Premio de La Ciudad de México",
         "date_start": "2025-10-26",
         "date_end": "2025-10-26",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-10-25",
+            "time_utc": "18:30",
+            "time_jst": "03:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-10-25",
+            "time_utc": "22:00",
+            "time_jst": "07:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-10-26",
+            "time_utc": "17:30",
+            "time_jst": "02:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-10-26",
+            "time_utc": "21:00",
+            "time_jst": "06:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-10-27",
+            "time_utc": "20:00",
+            "time_jst": "05:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -32849,7 +33469,38 @@
         "location": "Msc Cruises Grande Prêmio de São Paulo",
         "date_start": "2025-11-09",
         "date_end": "2025-11-09",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-11-07",
+            "time_utc": "14:30",
+            "time_jst": "23:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-11-08",
+            "time_utc": "18:30",
+            "time_jst": "03:30"
+          },
+          {
+            "name": "Sprint",
+            "date": "2025-11-08",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-11-09",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Race",
+            "date": "2025-11-10",
+            "time_utc": "15:30",
+            "time_jst": "00:30"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -33059,7 +33710,38 @@
         "location": "Heineken Las Vegas Grand Prix",
         "date_start": "2025-11-22",
         "date_end": "2025-11-22",
-        "sessions": [],
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-11-21",
+            "time_utc": "00:30",
+            "time_jst": "09:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-11-21",
+            "time_utc": "04:00",
+            "time_jst": "13:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-11-22",
+            "time_utc": "00:30",
+            "time_jst": "09:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-11-22",
+            "time_utc": "04:00",
+            "time_jst": "13:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-11-23",
+            "time_utc": "04:00",
+            "time_jst": "13:00"
+          }
+        ],
         "results": [
           {
             "position": 1,
@@ -33069,16 +33751,6 @@
             "team": "Red Bull",
             "points": 25,
             "time": "1:21:08.429",
-            "status": "Finished"
-          },
-          {
-            "position": 2,
-            "position_text": "2",
-            "driver": "Lando Norris",
-            "driver_code": "NOR",
-            "team": "McLaren",
-            "points": 18,
-            "time": "+20.741",
             "status": "Finished"
           },
           {
@@ -33099,16 +33771,6 @@
             "team": "Mercedes",
             "points": 15,
             "time": "+30.488",
-            "status": "Finished"
-          },
-          {
-            "position": 4,
-            "position_text": "4",
-            "driver": "Oscar Piastri",
-            "driver_code": "PIA",
-            "team": "McLaren",
-            "points": 12,
-            "time": "+27.650",
             "status": "Finished"
           },
           {
@@ -33257,6 +33919,24 @@
             "team": "Aston Martin",
             "points": 0,
             "status": "Retired"
+          },
+          {
+            "position": 19,
+            "position_text": "D",
+            "driver": "Lando Norris",
+            "driver_code": "NOR",
+            "team": "McLaren",
+            "points": 0,
+            "status": "Disqualified"
+          },
+          {
+            "position": 20,
+            "position_text": "D",
+            "driver": "Oscar Piastri",
+            "driver_code": "PIA",
+            "team": "McLaren",
+            "points": 0,
+            "status": "Disqualified"
           }
         ]
       },
@@ -33269,7 +33949,38 @@
         "location": "Qatar Airways Qatar Grand Prix",
         "date_start": "2025-11-30",
         "date_end": "2025-11-30",
-        "sessions": []
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-11-28",
+            "time_utc": "13:30",
+            "time_jst": "22:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-11-29",
+            "time_utc": "17:30",
+            "time_jst": "02:30"
+          },
+          {
+            "name": "Sprint",
+            "date": "2025-11-29",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-11-30",
+            "time_utc": "18:00",
+            "time_jst": "03:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-12-01",
+            "time_utc": "16:00",
+            "time_jst": "01:00"
+          }
+        ]
       },
       {
         "round": 24,
@@ -33280,7 +33991,38 @@
         "location": "Etihad Airways Abu Dhabi Grand Prix",
         "date_start": "2025-12-07",
         "date_end": "2025-12-07",
-        "sessions": []
+        "sessions": [
+          {
+            "name": "Free Practice 1",
+            "date": "2025-12-05",
+            "time_utc": "09:30",
+            "time_jst": "18:30"
+          },
+          {
+            "name": "Free Practice 2",
+            "date": "2025-12-05",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          },
+          {
+            "name": "Free Practice 3",
+            "date": "2025-12-06",
+            "time_utc": "10:30",
+            "time_jst": "19:30"
+          },
+          {
+            "name": "Qualifying",
+            "date": "2025-12-06",
+            "time_utc": "14:00",
+            "time_jst": "23:00"
+          },
+          {
+            "name": "Race",
+            "date": "2025-12-07",
+            "time_utc": "13:00",
+            "time_jst": "22:00"
+          }
+        ]
       }
     ]
   },
