@@ -6407,7 +6407,7 @@
       "points": 20
     }
   ],
-  "last_updated": "2025-11-30T04:05:19.439Z",
+  "last_updated": "2025-12-01T04:20:04.041Z",
   "races_by_year": {
     "2020": [
       {
@@ -33979,6 +33979,206 @@
             "date": "2025-12-01",
             "time_utc": "16:00",
             "time_jst": "01:00"
+          }
+        ],
+        "results": [
+          {
+            "position": 1,
+            "position_text": "1",
+            "driver": "Max Verstappen",
+            "driver_code": "VER",
+            "team": "Red Bull",
+            "points": 25,
+            "time": "1:24:38.241",
+            "status": "Finished"
+          },
+          {
+            "position": 2,
+            "position_text": "2",
+            "driver": "Oscar Piastri",
+            "driver_code": "PIA",
+            "team": "McLaren",
+            "points": 18,
+            "time": "+7.995",
+            "status": "Finished"
+          },
+          {
+            "position": 3,
+            "position_text": "3",
+            "driver": "Carlos Sainz",
+            "driver_code": "SAI",
+            "team": "Williams",
+            "points": 15,
+            "time": "+22.665",
+            "status": "Finished"
+          },
+          {
+            "position": 4,
+            "position_text": "4",
+            "driver": "Lando Norris",
+            "driver_code": "NOR",
+            "team": "McLaren",
+            "points": 12,
+            "time": "+23.315",
+            "status": "Finished"
+          },
+          {
+            "position": 5,
+            "position_text": "5",
+            "driver": "Andrea Kimi Antonelli",
+            "driver_code": "ANT",
+            "team": "Mercedes",
+            "points": 10,
+            "time": "+28.317",
+            "status": "Finished"
+          },
+          {
+            "position": 6,
+            "position_text": "6",
+            "driver": "George Russell",
+            "driver_code": "RUS",
+            "team": "Mercedes",
+            "points": 8,
+            "time": "+48.599",
+            "status": "Finished"
+          },
+          {
+            "position": 7,
+            "position_text": "7",
+            "driver": "Fernando Alonso",
+            "driver_code": "ALO",
+            "team": "Aston Martin",
+            "points": 6,
+            "time": "+54.045",
+            "status": "Finished"
+          },
+          {
+            "position": 8,
+            "position_text": "8",
+            "driver": "Charles Leclerc",
+            "driver_code": "LEC",
+            "team": "Ferrari",
+            "points": 4,
+            "time": "+56.785",
+            "status": "Finished"
+          },
+          {
+            "position": 9,
+            "position_text": "9",
+            "driver": "Liam Lawson",
+            "driver_code": "LAW",
+            "team": "RB F1 Team",
+            "points": 2,
+            "time": "+1:00.073",
+            "status": "Finished"
+          },
+          {
+            "position": 10,
+            "position_text": "10",
+            "driver": "Yuki Tsunoda",
+            "driver_code": "TSU",
+            "team": "Red Bull",
+            "points": 1,
+            "time": "+1:01.770",
+            "status": "Finished"
+          },
+          {
+            "position": 11,
+            "position_text": "11",
+            "driver": "Alexander Albon",
+            "driver_code": "ALB",
+            "team": "Williams",
+            "points": 0,
+            "time": "+1:06.931",
+            "status": "Finished"
+          },
+          {
+            "position": 12,
+            "position_text": "12",
+            "driver": "Lewis Hamilton",
+            "driver_code": "HAM",
+            "team": "Ferrari",
+            "points": 0,
+            "time": "+1:17.730",
+            "status": "Finished"
+          },
+          {
+            "position": 13,
+            "position_text": "13",
+            "driver": "Gabriel Bortoleto",
+            "driver_code": "BOR",
+            "team": "Sauber",
+            "points": 0,
+            "time": "+1:24.812",
+            "status": "Finished"
+          },
+          {
+            "position": 14,
+            "position_text": "14",
+            "driver": "Franco Colapinto",
+            "driver_code": "COL",
+            "team": "Alpine F1 Team",
+            "points": 0,
+            "time": "+3.283",
+            "status": "Lapped"
+          },
+          {
+            "position": 15,
+            "position_text": "15",
+            "driver": "Esteban Ocon",
+            "driver_code": "OCO",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "time": "+4.253",
+            "status": "Lapped"
+          },
+          {
+            "position": 16,
+            "position_text": "16",
+            "driver": "Pierre Gasly",
+            "driver_code": "GAS",
+            "team": "Alpine F1 Team",
+            "points": 0,
+            "time": "+4.941",
+            "status": "Lapped"
+          },
+          {
+            "position": 17,
+            "position_text": "17",
+            "driver": "Lance Stroll",
+            "driver_code": "STR",
+            "team": "Aston Martin",
+            "points": 0,
+            "time": "+-1:58:56.962",
+            "status": "Retired"
+          },
+          {
+            "position": 18,
+            "position_text": "18",
+            "driver": "Isack Hadjar",
+            "driver_code": "HAD",
+            "team": "RB F1 Team",
+            "points": 0,
+            "time": "+-1:59:14.083",
+            "status": "Retired"
+          },
+          {
+            "position": 19,
+            "position_text": "R",
+            "driver": "Oliver Bearman",
+            "driver_code": "BEA",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "status": "Retired"
+          },
+          {
+            "position": 20,
+            "position_text": "R",
+            "driver": "Nico Hülkenberg",
+            "driver_code": "HUL",
+            "team": "Sauber",
+            "points": 0,
+            "status": "Retired"
           }
         ]
       },
