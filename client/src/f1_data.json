@@ -6407,7 +6407,7 @@
       "points": 20
     }
   ],
-  "last_updated": "2026-03-06T04:52:38.178Z",
+  "last_updated": "2026-03-07T04:31:20.257Z",
   "races_by_year": {
     "2020": [
       {
@@ -19490,7 +19490,7 @@
             "driver_code": "GAS",
             "team": "Alpine F1 Team",
             "points": 0,
-            "time": "+-1:24:05.036",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -19500,7 +19500,7 @@
             "driver_code": "OCO",
             "team": "Alpine F1 Team",
             "points": 0,
-            "time": "+-1:24:06.409",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -19510,7 +19510,7 @@
             "driver_code": "DEV",
             "team": "AlphaTauri",
             "points": 0,
-            "time": "+-1:24:07.342",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -19520,7 +19520,7 @@
             "driver_code": "SAR",
             "team": "Williams",
             "points": 0,
-            "time": "+-1:24:07.559",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -19530,7 +19530,7 @@
             "driver_code": "MAG",
             "team": "Haas F1 Team",
             "points": 0,
-            "time": "+-1:01:16.239",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -20184,7 +20184,7 @@
             "driver_code": "MAG",
             "team": "Haas F1 Team",
             "points": 0,
-            "time": "+-1:53:44.819",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -21022,7 +21022,7 @@
             "driver_code": "GAS",
             "team": "Alpine F1 Team",
             "points": 0,
-            "time": "+-1:52:18.651",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -21233,7 +21233,7 @@
             "driver_code": "SAR",
             "team": "Williams",
             "points": 0,
-            "time": "+-1:58:20.590",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -22056,7 +22056,7 @@
             "driver_code": "RUS",
             "team": "Mercedes",
             "points": 0,
-            "time": "+-1:58:21.514",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -23328,7 +23328,7 @@
             "driver_code": "TSU",
             "team": "AlphaTauri",
             "points": 0,
-            "time": "+-1:54:30.642",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -23338,7 +23338,7 @@
             "driver_code": "HUL",
             "team": "Haas F1 Team",
             "points": 0,
-            "time": "+-1:52:35.501",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -23540,7 +23540,7 @@
             "driver_code": "SAI",
             "team": "Ferrari",
             "points": 0,
-            "time": "+-1:59:48.299",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -24180,7 +24180,7 @@
             "driver_code": "RUS",
             "team": "Mercedes",
             "points": 0,
-            "time": "+-1:57:37.891",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -25885,7 +25885,7 @@
             "driver_code": "NOR",
             "team": "McLaren",
             "points": 0,
-            "time": "+-1:52:13.256",
+            "time": "",
             "status": "Lapped"
           }
         ]
@@ -26520,7 +26520,7 @@
             "driver_code": "RUS",
             "team": "Mercedes",
             "points": 0,
-            "time": "+-1:59:59.474",
+            "time": "",
             "status": "Disqualified"
           }
         ]
@@ -27128,7 +27128,7 @@
             "driver_code": "PER",
             "team": "Red Bull",
             "points": 0,
-            "time": "+-1:55:43.191",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -27138,7 +27138,7 @@
             "driver_code": "SAI",
             "team": "Ferrari",
             "points": 0,
-            "time": "+-1:55:43.761",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -27148,7 +27148,7 @@
             "driver_code": "STR",
             "team": "Aston Martin",
             "points": 0,
-            "time": "+-1:50:23.073",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -27360,7 +27360,7 @@
             "driver_code": "MAG",
             "team": "Haas F1 Team",
             "points": 0,
-            "time": "+-1:55:59.335",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -28601,7 +28601,7 @@
             "driver_code": "LAW",
             "team": "RB F1 Team",
             "points": 0,
-            "time": "+-1:58:03.658",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -31016,7 +31016,7 @@
             "driver_code": "NOR",
             "team": "McLaren",
             "points": 0,
-            "time": "+-1:52:09.782",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -32224,7 +32224,7 @@
             "driver_code": "NOR",
             "team": "McLaren",
             "points": 0,
-            "time": "+-1:47:38.638",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -33428,7 +33428,7 @@
             "driver_code": "SAI",
             "team": "Williams",
             "points": 0,
-            "time": "+-1:55:35.558",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -34149,7 +34149,7 @@
             "driver_code": "STR",
             "team": "Aston Martin",
             "points": 0,
-            "time": "+-1:58:56.962",
+            "time": "",
             "status": "Retired"
           },
           {
@@ -34159,7 +34159,7 @@
             "driver_code": "HAD",
             "team": "RB F1 Team",
             "points": 0,
-            "time": "+-1:59:14.083",
+            "time": "",
             "status": "Retired"
           },
           {
