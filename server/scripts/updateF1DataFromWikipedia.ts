@@ -81,7 +81,7 @@ async function main() {
 
       // スクレイピングでセッションが取得できなかった場合、既存のデータがあればそれを使用
       if ((!race.sessions || race.sessions.length === 0) && existingSessionsMap.has(race.round)) {
-        race.sessions = existingSessionsMap.get(race.round);
+        race.sessions = existingSessionsMap.get(race.round)!;
         console.log(`  ✓ Preserved existing sessions for Round ${race.round}: ${race.name}`);
       }
     }

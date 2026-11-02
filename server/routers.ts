@@ -73,7 +73,7 @@ export const appRouter = router({
           seasons.push({
             season,
             races,
-            count: races.length,
+            count: Array.isArray(races) ? races.length : 0,
           });
         }
         return seasons;

@@ -1,8 +1,13 @@
 import { Link } from 'wouter';
-import { Calendar, Trophy, TrendingUp } from 'lucide-react';
+import { Calendar, Trophy, TrendingUp, Radio } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import f1Data from '../f1_data.json';
+
+// The integrated deployment serves the monitor at /timing. During local
+// development it runs as its own Next.js process, so keep the navigation
+// usable without requiring the reverse proxy stack.
+const timingUrl = import.meta.env.VITE_TIMING_URL || (import.meta.env.DEV ? 'http://localhost:3002' : '/timing');
 
 interface RaceSession {
   name: string;
@@ -91,6 +96,11 @@ export default function Home() {
                 統計
               </Button>
             </Link>
+            <a href={timingUrl}>
+              <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white text-xs md:text-sm px-2 md:px-4">
+                タイミング
+              </Button>
+            </a>
           </nav>
         </div>
       </header>
@@ -112,6 +122,11 @@ export default function Home() {
                 <Trophy className="mr-2 w-4 h-4 md:w-5 md:h-5" /> 順位を見る
               </Button>
             </Link>
+            <a href={timingUrl}>
+              <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800 w-full sm:w-auto">
+                <Radio className="mr-2 w-4 h-4 md:w-5 md:h-5" /> ライブタイミング
+              </Button>
+            </a>
           </div>
         </section>
 

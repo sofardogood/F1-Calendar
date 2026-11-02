@@ -38,14 +38,23 @@ export async function getLatestSeasonRaces(season: number) {
     const sessions = await getSessionsByYear(season);
 
     // Transform OpenF1 data to match Ergast format
-    data = meetings.map((meeting) => {
+    // OpenF1 also returns testing and support-series meetings. A calendar must
+    // contain race weekends only; use the presence of an F1 race session as
+    // the stable discriminator instead of assuming meeting_key is a round.
+    const raceMeetings = meetings
+      .filter((meeting) => sessions.some(
+        (session) => session.meeting_key === meeting.meeting_key && session.session_type === "Race"
+      ))
+      .sort((a, b) => new Date(a.date_start).getTime() - new Date(b.date_start).getTime());
+
+    data = raceMeetings.map((meeting, index) => {
       const meetingSessions = sessions.filter(
         (s) => s.meeting_key === meeting.meeting_key
       );
 
       return {
         season: String(season),
-        round: String(meeting.meeting_key),
+        round: String(index + 1),
         raceName: meeting.meeting_name,
         date: meeting.date_start,
         Circuit: {

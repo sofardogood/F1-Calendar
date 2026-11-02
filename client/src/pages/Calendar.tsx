@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'wouter';
 import { ChevronLeft, ChevronRight, Clock, MapPin, Trophy, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -56,18 +56,60 @@ const sessionNameJa: Record<string, string> = {
 
 export default function Calendar() {
   const data = f1Data as F1Data;
+  const currentYear = new Date().getFullYear();
+  const [liveRaces, setLiveRaces] = useState<Race[] | null>(null);
+  const [scheduleError, setScheduleError] = useState(false);
 
   // 利用可能な年度を取得
-  const availableYears = data.races_by_year
+  const archivedYears = data.races_by_year
     ? Object.keys(data.races_by_year).map(Number).sort((a, b) => b - a) // 降順にソート
     : [data.current_season || 2025];
+  const availableYears = Array.from(new Set([currentYear, ...archivedYears])).sort((a, b) => b - a);
 
   const [selectedYear, setSelectedYear] = useState(availableYears[0]);
   const [selectedRound, setSelectedRound] = useState<number | string | null>(null);
   const [currentMonth, setCurrentMonth] = useState(0);
 
-  // 選択された年度のレースデータを取得
-  const races = (data.races_by_year?.[selectedYear] || data.races || []) as Race[];
+  useEffect(() => {
+    if (selectedYear !== currentYear) {
+      setLiveRaces(null);
+      return;
+    }
+    const controller = new AbortController();
+    setScheduleError(false);
+    fetch(`/api/f1/seasons/${currentYear}/races`, { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error("schedule unavailable");
+        return response.json();
+      })
+      .then((meetings: any[]) => {
+        const races: Race[] = meetings.map((meeting) => ({
+          round: meeting.round,
+          name: meeting.raceName,
+          circuit: meeting.Circuit?.circuitName || "",
+          location: [meeting.Circuit?.Location?.locality, meeting.Circuit?.Location?.country].filter(Boolean).join(", "),
+          date_start: meeting.date?.slice(0, 10) || "",
+          date_end: meeting.date?.slice(0, 10) || "",
+          sessions: (meeting.sessions || []).map((session: any) => ({
+            name: session.session_name,
+            date: session.date_start?.slice(0, 10) || "",
+            time_utc: session.date_start ? new Date(session.date_start).toISOString().slice(11, 16) : "",
+            time_jst: session.date_start ? new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(session.date_start)) : "",
+          })),
+        }));
+        if (!controller.signal.aborted) setLiveRaces(races);
+      })
+      .catch(() => {
+        if (!controller.signal.aborted) setScheduleError(true);
+      });
+    return () => controller.abort();
+  }, [selectedYear, currentYear]);
+
+  // Current/future data comes from OpenF1 through our server; historical data
+  // stays available from the bundled archive if the upstream source is down.
+  const races = useMemo(() => selectedYear === currentYear && liveRaces
+    ? liveRaces
+    : (data.races_by_year?.[selectedYear] || data.races || []) as Race[], [currentYear, data.races, data.races_by_year, liveRaces, selectedYear]);
 
   const months = [
     '1月', '2月', '3月', '4月', '5月', '6月',
@@ -75,7 +117,6 @@ export default function Calendar() {
   ];
 
   // 過去年度（結果のみ）かどうかを判定
-  const currentYear = new Date().getFullYear();
   const isHistoricalYear = selectedYear < currentYear;
 
   // 全年度で月別表示を有効化
@@ -143,6 +184,11 @@ export default function Calendar() {
       </header>
 
       <main className="container mx-auto px-4 py-4 md:py-8">
+        {selectedYear === currentYear && scheduleError && (
+          <div className="mb-4 rounded-lg border border-amber-500/50 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
+            最新スケジュールを取得できないため、保存済みのデータを表示しています。
+          </div>
+        )}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center justify-between mb-4 md:mb-6">

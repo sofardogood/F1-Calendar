@@ -101,7 +101,7 @@ const teamNameMap: Record<string, string> = {
 };
 
 interface RaceData {
-  round: number;
+  round: number | string;
   raceName: string;
   raceNameJa: string;
   circuit: string;

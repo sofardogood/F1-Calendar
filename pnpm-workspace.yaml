@@ -1,0 +1,15 @@
+packages: []
+
+# pnpm 10 reads these settings from the workspace configuration rather than
+# package.json. Keeping them here makes a clean production install reproduce
+# the lockfile and preserves the Wouter compatibility patch.
+patchedDependencies:
+  wouter@3.7.1: patches/wouter@3.7.1.patch
+overrides:
+  tailwindcss>nanoid: 3.3.7
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - esbuild
+allowBuilds:
+  '@tailwindcss/oxide': true
+  esbuild: true
