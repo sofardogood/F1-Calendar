@@ -1,5 +1,9 @@
 # F1 Calendar & Timing App
 
+## 公開URL
+
+[F1-Calendar を開く](https://f1-calendar-chi.vercel.app/)
+
 ## リポジトリ概要
 
 **F1 Calendar & Timing App** は、F1（フォーミュラ1）のレース日程・セッションスケジュール（日本時間/UTC対応）、ドライバーズ＆コンストラクターズのポイントランキング、およびシーズン統計データを直感的に確認できるWebアプリケーションです。
