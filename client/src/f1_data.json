@@ -6407,7 +6407,7 @@
       "points": 20
     }
   ],
-  "last_updated": "2026-11-23T12:07:03.703Z",
+  "last_updated": "2026-11-24T13:32:36.630Z",
   "races_by_year": {
     "2020": [
       {
@@ -7151,7 +7151,206 @@
         "location": "Gulf Air Bahrain Grand Prix",
         "date_start": "2023-03-05",
         "date_end": "2023-03-05",
-        "sessions": []
+        "sessions": [],
+        "results": [
+          {
+            "position": 1,
+            "position_text": "1",
+            "driver": "Max Verstappen",
+            "driver_code": "VER",
+            "team": "Red Bull",
+            "points": 25,
+            "time": "1:33:56.736",
+            "status": "Finished"
+          },
+          {
+            "position": 2,
+            "position_text": "2",
+            "driver": "Sergio Pérez",
+            "driver_code": "PER",
+            "team": "Red Bull",
+            "points": 18,
+            "time": "+11.987",
+            "status": "Finished"
+          },
+          {
+            "position": 3,
+            "position_text": "3",
+            "driver": "Fernando Alonso",
+            "driver_code": "ALO",
+            "team": "Aston Martin",
+            "points": 15,
+            "time": "+38.637",
+            "status": "Finished"
+          },
+          {
+            "position": 4,
+            "position_text": "4",
+            "driver": "Carlos Sainz",
+            "driver_code": "SAI",
+            "team": "Ferrari",
+            "points": 12,
+            "time": "+48.052",
+            "status": "Finished"
+          },
+          {
+            "position": 5,
+            "position_text": "5",
+            "driver": "Lewis Hamilton",
+            "driver_code": "HAM",
+            "team": "Mercedes",
+            "points": 10,
+            "time": "+50.977",
+            "status": "Finished"
+          },
+          {
+            "position": 6,
+            "position_text": "6",
+            "driver": "Lance Stroll",
+            "driver_code": "STR",
+            "team": "Aston Martin",
+            "points": 8,
+            "time": "+54.502",
+            "status": "Finished"
+          },
+          {
+            "position": 7,
+            "position_text": "7",
+            "driver": "George Russell",
+            "driver_code": "RUS",
+            "team": "Mercedes",
+            "points": 6,
+            "time": "+55.873",
+            "status": "Finished"
+          },
+          {
+            "position": 8,
+            "position_text": "8",
+            "driver": "Valtteri Bottas",
+            "driver_code": "BOT",
+            "team": "Alfa Romeo",
+            "points": 4,
+            "time": "+1:12.647",
+            "status": "Finished"
+          },
+          {
+            "position": 9,
+            "position_text": "9",
+            "driver": "Pierre Gasly",
+            "driver_code": "GAS",
+            "team": "Alpine F1 Team",
+            "points": 2,
+            "time": "+1:13.753",
+            "status": "Finished"
+          },
+          {
+            "position": 10,
+            "position_text": "10",
+            "driver": "Alexander Albon",
+            "driver_code": "ALB",
+            "team": "Williams",
+            "points": 1,
+            "time": "+1:29.774",
+            "status": "Finished"
+          },
+          {
+            "position": 11,
+            "position_text": "11",
+            "driver": "Yuki Tsunoda",
+            "driver_code": "TSU",
+            "team": "AlphaTauri",
+            "points": 0,
+            "time": "+1:30.870",
+            "status": "Finished"
+          },
+          {
+            "position": 12,
+            "position_text": "12",
+            "driver": "Logan Sargeant",
+            "driver_code": "SAR",
+            "team": "Williams",
+            "points": 0,
+            "time": "+1.136",
+            "status": "Lapped"
+          },
+          {
+            "position": 13,
+            "position_text": "13",
+            "driver": "Kevin Magnussen",
+            "driver_code": "MAG",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "time": "+16.757",
+            "status": "Lapped"
+          },
+          {
+            "position": 14,
+            "position_text": "14",
+            "driver": "Nyck de Vries",
+            "driver_code": "DEV",
+            "team": "AlphaTauri",
+            "points": 0,
+            "time": "+22.523",
+            "status": "Lapped"
+          },
+          {
+            "position": 15,
+            "position_text": "15",
+            "driver": "Nico Hülkenberg",
+            "driver_code": "HUL",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "time": "+38.911",
+            "status": "Lapped"
+          },
+          {
+            "position": 16,
+            "position_text": "16",
+            "driver": "Guanyu Zhou",
+            "driver_code": "ZHO",
+            "team": "Alfa Romeo",
+            "points": 0,
+            "time": "+39.649",
+            "status": "Lapped"
+          },
+          {
+            "position": 17,
+            "position_text": "17",
+            "driver": "Lando Norris",
+            "driver_code": "NOR",
+            "team": "McLaren",
+            "points": 0,
+            "time": "+6.636",
+            "status": "Lapped"
+          },
+          {
+            "position": 18,
+            "position_text": "R",
+            "driver": "Esteban Ocon",
+            "driver_code": "OCO",
+            "team": "Alpine F1 Team",
+            "points": 0,
+            "status": "Retired"
+          },
+          {
+            "position": 19,
+            "position_text": "R",
+            "driver": "Charles Leclerc",
+            "driver_code": "LEC",
+            "team": "Ferrari",
+            "points": 0,
+            "status": "Retired"
+          },
+          {
+            "position": 20,
+            "position_text": "R",
+            "driver": "Oscar Piastri",
+            "driver_code": "PIA",
+            "team": "McLaren",
+            "points": 0,
+            "status": "Retired"
+          }
+        ]
       },
       {
         "round": 2,
@@ -7406,7 +7605,209 @@
         "location": "Gulf Air Bahrain Grand Prix",
         "date_start": "2024-03-02",
         "date_end": "2024-03-02",
-        "sessions": []
+        "sessions": [],
+        "results": [
+          {
+            "position": 1,
+            "position_text": "1",
+            "driver": "Max Verstappen",
+            "driver_code": "VER",
+            "team": "Red Bull",
+            "points": 26,
+            "time": "1:31:44.742",
+            "status": "Finished"
+          },
+          {
+            "position": 2,
+            "position_text": "2",
+            "driver": "Sergio Pérez",
+            "driver_code": "PER",
+            "team": "Red Bull",
+            "points": 18,
+            "time": "+22.457",
+            "status": "Finished"
+          },
+          {
+            "position": 3,
+            "position_text": "3",
+            "driver": "Carlos Sainz",
+            "driver_code": "SAI",
+            "team": "Ferrari",
+            "points": 15,
+            "time": "+25.110",
+            "status": "Finished"
+          },
+          {
+            "position": 4,
+            "position_text": "4",
+            "driver": "Charles Leclerc",
+            "driver_code": "LEC",
+            "team": "Ferrari",
+            "points": 12,
+            "time": "+39.669",
+            "status": "Finished"
+          },
+          {
+            "position": 5,
+            "position_text": "5",
+            "driver": "George Russell",
+            "driver_code": "RUS",
+            "team": "Mercedes",
+            "points": 10,
+            "time": "+46.788",
+            "status": "Finished"
+          },
+          {
+            "position": 6,
+            "position_text": "6",
+            "driver": "Lando Norris",
+            "driver_code": "NOR",
+            "team": "McLaren",
+            "points": 8,
+            "time": "+48.458",
+            "status": "Finished"
+          },
+          {
+            "position": 7,
+            "position_text": "7",
+            "driver": "Lewis Hamilton",
+            "driver_code": "HAM",
+            "team": "Mercedes",
+            "points": 6,
+            "time": "+50.324",
+            "status": "Finished"
+          },
+          {
+            "position": 8,
+            "position_text": "8",
+            "driver": "Oscar Piastri",
+            "driver_code": "PIA",
+            "team": "McLaren",
+            "points": 4,
+            "time": "+56.082",
+            "status": "Finished"
+          },
+          {
+            "position": 9,
+            "position_text": "9",
+            "driver": "Fernando Alonso",
+            "driver_code": "ALO",
+            "team": "Aston Martin",
+            "points": 2,
+            "time": "+1:14.887",
+            "status": "Finished"
+          },
+          {
+            "position": 10,
+            "position_text": "10",
+            "driver": "Lance Stroll",
+            "driver_code": "STR",
+            "team": "Aston Martin",
+            "points": 1,
+            "time": "+1:33.216",
+            "status": "Finished"
+          },
+          {
+            "position": 11,
+            "position_text": "11",
+            "driver": "Guanyu Zhou",
+            "driver_code": "ZHO",
+            "team": "Sauber",
+            "points": 0,
+            "time": "+6.759",
+            "status": "Lapped"
+          },
+          {
+            "position": 12,
+            "position_text": "12",
+            "driver": "Kevin Magnussen",
+            "driver_code": "MAG",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "time": "+8.316",
+            "status": "Lapped"
+          },
+          {
+            "position": 13,
+            "position_text": "13",
+            "driver": "Daniel Ricciardo",
+            "driver_code": "RIC",
+            "team": "RB F1 Team",
+            "points": 0,
+            "time": "+8.958",
+            "status": "Lapped"
+          },
+          {
+            "position": 14,
+            "position_text": "14",
+            "driver": "Yuki Tsunoda",
+            "driver_code": "TSU",
+            "team": "RB F1 Team",
+            "points": 0,
+            "time": "+9.482",
+            "status": "Lapped"
+          },
+          {
+            "position": 15,
+            "position_text": "15",
+            "driver": "Alexander Albon",
+            "driver_code": "ALB",
+            "team": "Williams",
+            "points": 0,
+            "time": "+11.886",
+            "status": "Lapped"
+          },
+          {
+            "position": 16,
+            "position_text": "16",
+            "driver": "Nico Hülkenberg",
+            "driver_code": "HUL",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "time": "+17.632",
+            "status": "Lapped"
+          },
+          {
+            "position": 17,
+            "position_text": "17",
+            "driver": "Esteban Ocon",
+            "driver_code": "OCO",
+            "team": "Alpine F1 Team",
+            "points": 0,
+            "time": "+31.450",
+            "status": "Lapped"
+          },
+          {
+            "position": 18,
+            "position_text": "18",
+            "driver": "Pierre Gasly",
+            "driver_code": "GAS",
+            "team": "Alpine F1 Team",
+            "points": 0,
+            "time": "+32.417",
+            "status": "Lapped"
+          },
+          {
+            "position": 19,
+            "position_text": "19",
+            "driver": "Valtteri Bottas",
+            "driver_code": "BOT",
+            "team": "Sauber",
+            "points": 0,
+            "time": "+1:23.230",
+            "status": "Lapped"
+          },
+          {
+            "position": 20,
+            "position_text": "20",
+            "driver": "Logan Sargeant",
+            "driver_code": "SAR",
+            "team": "Williams",
+            "points": 0,
+            "time": "+20.795",
+            "status": "Lapped"
+          }
+        ]
       },
       {
         "round": 2,
@@ -7505,7 +7906,209 @@
         "location": "Aramco Gran Premio de España",
         "date_start": "2024-06-23",
         "date_end": "2024-06-23",
-        "sessions": []
+        "sessions": [],
+        "results": [
+          {
+            "position": 1,
+            "position_text": "1",
+            "driver": "Max Verstappen",
+            "driver_code": "VER",
+            "team": "Red Bull",
+            "points": 25,
+            "time": "1:28:20.227",
+            "status": "Finished"
+          },
+          {
+            "position": 2,
+            "position_text": "2",
+            "driver": "Lando Norris",
+            "driver_code": "NOR",
+            "team": "McLaren",
+            "points": 19,
+            "time": "+2.219",
+            "status": "Finished"
+          },
+          {
+            "position": 3,
+            "position_text": "3",
+            "driver": "Lewis Hamilton",
+            "driver_code": "HAM",
+            "team": "Mercedes",
+            "points": 15,
+            "time": "+17.790",
+            "status": "Finished"
+          },
+          {
+            "position": 4,
+            "position_text": "4",
+            "driver": "George Russell",
+            "driver_code": "RUS",
+            "team": "Mercedes",
+            "points": 12,
+            "time": "+22.320",
+            "status": "Finished"
+          },
+          {
+            "position": 5,
+            "position_text": "5",
+            "driver": "Charles Leclerc",
+            "driver_code": "LEC",
+            "team": "Ferrari",
+            "points": 10,
+            "time": "+22.709",
+            "status": "Finished"
+          },
+          {
+            "position": 6,
+            "position_text": "6",
+            "driver": "Carlos Sainz",
+            "driver_code": "SAI",
+            "team": "Ferrari",
+            "points": 8,
+            "time": "+31.028",
+            "status": "Finished"
+          },
+          {
+            "position": 7,
+            "position_text": "7",
+            "driver": "Oscar Piastri",
+            "driver_code": "PIA",
+            "team": "McLaren",
+            "points": 6,
+            "time": "+33.760",
+            "status": "Finished"
+          },
+          {
+            "position": 8,
+            "position_text": "8",
+            "driver": "Sergio Pérez",
+            "driver_code": "PER",
+            "team": "Red Bull",
+            "points": 4,
+            "time": "+59.524",
+            "status": "Finished"
+          },
+          {
+            "position": 9,
+            "position_text": "9",
+            "driver": "Pierre Gasly",
+            "driver_code": "GAS",
+            "team": "Alpine F1 Team",
+            "points": 2,
+            "time": "+1:02.025",
+            "status": "Finished"
+          },
+          {
+            "position": 10,
+            "position_text": "10",
+            "driver": "Esteban Ocon",
+            "driver_code": "OCO",
+            "team": "Alpine F1 Team",
+            "points": 1,
+            "time": "+1:11.889",
+            "status": "Finished"
+          },
+          {
+            "position": 11,
+            "position_text": "11",
+            "driver": "Nico Hülkenberg",
+            "driver_code": "HUL",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "time": "+1:19.215",
+            "status": "Finished"
+          },
+          {
+            "position": 12,
+            "position_text": "12",
+            "driver": "Fernando Alonso",
+            "driver_code": "ALO",
+            "team": "Aston Martin",
+            "points": 0,
+            "time": "+9.497",
+            "status": "Lapped"
+          },
+          {
+            "position": 13,
+            "position_text": "13",
+            "driver": "Guanyu Zhou",
+            "driver_code": "ZHO",
+            "team": "Sauber",
+            "points": 0,
+            "time": "+15.476",
+            "status": "Lapped"
+          },
+          {
+            "position": 14,
+            "position_text": "14",
+            "driver": "Lance Stroll",
+            "driver_code": "STR",
+            "team": "Aston Martin",
+            "points": 0,
+            "time": "+25.252",
+            "status": "Lapped"
+          },
+          {
+            "position": 15,
+            "position_text": "15",
+            "driver": "Daniel Ricciardo",
+            "driver_code": "RIC",
+            "team": "RB F1 Team",
+            "points": 0,
+            "time": "+44.050",
+            "status": "Lapped"
+          },
+          {
+            "position": 16,
+            "position_text": "16",
+            "driver": "Valtteri Bottas",
+            "driver_code": "BOT",
+            "team": "Sauber",
+            "points": 0,
+            "time": "+53.313",
+            "status": "Lapped"
+          },
+          {
+            "position": 17,
+            "position_text": "17",
+            "driver": "Kevin Magnussen",
+            "driver_code": "MAG",
+            "team": "Haas F1 Team",
+            "points": 0,
+            "time": "+54.788",
+            "status": "Lapped"
+          },
+          {
+            "position": 18,
+            "position_text": "18",
+            "driver": "Alexander Albon",
+            "driver_code": "ALB",
+            "team": "Williams",
+            "points": 0,
+            "time": "+58.149",
+            "status": "Lapped"
+          },
+          {
+            "position": 19,
+            "position_text": "19",
+            "driver": "Yuki Tsunoda",
+            "driver_code": "TSU",
+            "team": "RB F1 Team",
+            "points": 0,
+            "time": "+1:08.904",
+            "status": "Lapped"
+          },
+          {
+            "position": 20,
+            "position_text": "20",
+            "driver": "Logan Sargeant",
+            "driver_code": "SAR",
+            "team": "Williams",
+            "points": 0,
+            "time": "+4.866",
+            "status": "Lapped"
+          }
+        ]
       },
       {
         "round": 11,
